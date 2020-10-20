@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="channels" xml:lang="cs">
+
+<info>
+  <revision pkgversion="3.30" date="2019-01-12" status="stub"/>
+    <link type="guide" xref="index#playing-media"/>
+
+  <credit type="author">
+    <name its:translate="no">Andre Klapper</name>
+    <email its:translate="no">ak-47@gmx.net</email>
+  </credit>
+  <credit type="author">
+    <name its:translate="no">Bastien Nocera</name>
+    <email its:translate="no">hadess@hadess.net</email>
+  </credit>
+
+  <license>
+    <p>Creative Commons Share Alike 3.0</p>
+  </license>
+
+  <desc>Jak najít kanály s videi.</desc>
+
+</info>
+
+  <title>Kanály</title>
+  <p>Stránka <gui>Kanály</gui> v uživatelském rozhraní zobrazuje několik síťových zdrojů videí, ať už Internetových nebo místních, jako je sdílení přes UPnP/DLNA.</p>
+
+  <p>Zdroje jsou poskytovány pomocí vyhledávacího systému multimédií <link href="https://wiki.gnome.org/Projects/Grilo">grilo</link>. Vývojáři a pokročilí uživatelé se zájmem o rozšiřování schopností přehrávače <app>Videa</app> najdou příslušnou dokumentaci na odkazovaných webových stránkách.</p>
+
+</page>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="troubleshooting-DVD" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#troubleshooting"/>
+    <link type="seealso" xref="supported-formats"/>
+    <revision pkgversion="3.30" version="0.2" date="2019-01-11" status="draft"/>
+    <desc>Eine DVD kann nicht abgespielt werden.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan-Arne Petersen</mal:name>
+      <mal:email>jap@gnome.org</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2010, 2012, 2019.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stefan Horning</mal:name>
+      <mal:email>stefan@hornings.de</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2013, 2015,2019.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Problem beim Abspielen von Filmen auf einer DVD</title>
+
+  <p>Es kann passieren, dass <app>Videos</app> nach dem Einlegen einer DVD in Ihr DVD/CD-Laufwerk die Fehlermeldung <gui>Ein Fehler ist aufgetreten – Der Film konnte nicht gelesen werden.</gui> ausgibt. Das könnte daran liegen, dass eine <link xref="supported-formats"> <sys>GStreamer</sys>-Erweiterung nicht installiert ist</link>, mit der das Format des Films gelesen werden kann. Möglich wäre auch, dass die DVD verschlüsselt ist und auf Ihrem System kein DVD-Entschlüsselungspaket installiert ist.</p>
+
+  <note style="tip">
+    <p>Um entschlüsselte DVDs zu öffnen, sollten Sie das Paket <sys>libdvdcss</sys> installieren. Sie sollten aber beachten, dass die Nutzung dieses Pakets nicht in allen Ländern legal ist. Für weitere Informationen dazu, ob oder wo das Paket für Ihre Distribution verfügbar sein könnte, wenden Sie sich an ein Supportforum Ihrer Distribution.</p>
+  </note>
+
+</page>

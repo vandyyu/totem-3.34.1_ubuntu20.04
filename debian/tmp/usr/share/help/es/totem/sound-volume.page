@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="sound-volume" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#playing-media"/>
+    <revision pkgversion="3.30.0" version="0.1" date="2019-01-09" status="draft"/>
+
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name its:translate="no">Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+
+    <license>
+      <p>Creative Commons Compartir Igual 3.0</p>
+    </license>
+
+    <desc>Incrementar o reducir el volumen de una película.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodrigo Lledó</mal:name>
+      <mal:email>rodhos92@gmail.com</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012-2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@cvs.GNOME.org</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ajustar el volumen</title>
+
+  <p>Puede ajustar el volumen en la esquina inferior derecha:</p>
+
+  <list>
+    <item>
+      <p>Pulse el <gui>Botón de volumen</gui> que está debajo del área de vídeo y arrastre el deslizador para cambiar el volumen.</p>
+    </item>
+    <item>
+      <p>También puede usar la tecla <key>Arriba</key> para incrementar el volumen y la tecla <key>Abajo</key> para disminuir el volumen.</p>
+    </item>
+  </list>
+
+  <figure>
+    <title>Botón de volumen y control deslizante</title>
+    <media type="image" mime="image/png" src="figures/volume-button-slider.png" its:translate="no">
+    <p>Screenshot of the volume button and slider.</p>
+    </media>
+  </figure>
+
+</page>

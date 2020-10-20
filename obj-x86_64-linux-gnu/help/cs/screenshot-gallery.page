@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="screenshot-gallery" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#advanced-options"/>
+    <revision pkgversion="3.30.0" version="0.1" date="2019-01-11" status="draft"/>
+    <desc>Jak z filmu vytvořit sérii snímků.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+  <title>Galerie snímků obrazovky</title>
+
+  <p>Když chcete vytvořit galerii snímků záběrů v jediném obrázkovém souboru:</p>
+
+  <steps>
+    <item>
+      <p>Zmáčkněte tlačítko nabídky v pravém horním rohu okna a vyberte <gui style="menuitem">Vytvořit galerii snímků…</gui></p>
+    </item>
+    <item>
+      <p>V dialogovém okně zadejte název souboru s galerií, který se má vytvořit.</p>
+    </item>
+    <item>
+      <p>Volitelně můžete změnit složku, do které se má galerie uložit.</p>
+    </item>
+    <item>
+      <p>Když jste hotovi, zmáčkněte <gui>Uložit</gui>.</p>
+    </item>
+    <item>
+      <p>Během pořizování snímků se zobrazí ukazatel průběhu. Galerie se uloží jako soubor <file>.jpg</file>.</p>
+    </item>
+  </steps>
+
+  <note style="advanced">
+    <p>V dolní části dialogového okna můžete určit šířku snímků v pixelech. Můžete také nastavit, kolik snímků se má do galerie vložit, nebo zaškrtnout volbu <gui>Vypočítat počet snímků</gui> a <app>Videa</app> nastaví počet automaticky.</p>
+  </note>
+
+</page>

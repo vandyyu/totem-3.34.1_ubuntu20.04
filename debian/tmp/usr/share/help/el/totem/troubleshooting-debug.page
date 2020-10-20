@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="troubleshooting-debug" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#troubleshooting"/>
+    <revision pkgversion="3.30" version="0.1" date="2019-01-11" status="draft"/>
+    <desc>How to get debug information for a bug report.</desc>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Άδεια Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα του GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2008-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Γιάννης Κατσαμπίρης</mal:name>
+      <mal:email>giannis1_86@hotmail.com</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Νίκος Παράσχου</mal:name>
+      <mal:email>niparasc@gmail.com</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μιχάλης Κοτσαρίνης</mal:name>
+      <mal:email>mk73628@hotmail.com</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ευστάθιος Ιωσηφίδης</mal:name>
+      <mal:email>iosifidis@opensuse.org</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Track down other video problems</title>
+
+<p>If you have already followed <link xref="supported-formats"/> and
+<link xref="troubleshooting-DVD"/> and a video still cannot be played, open a
+terminal window and enter the command <cmd>totem --help-gst</cmd>. This will
+show a list of available options you can use to get debug output. Often the
+problem is in an underlying plugin, for example in <sys>GStreamer</sys> and not
+in <app>Videos</app> itself.</p>
+
+<note style="info"><p>Software bugs in <sys>GStreamer</sys> can be reported in the
+<link href="https://gitlab.freedesktop.org/gstreamer"><sys>GStreamer</sys> issue tracker</link>.</p></note>
+
+</page>

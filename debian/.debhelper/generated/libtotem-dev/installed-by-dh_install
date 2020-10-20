@@ -1,0 +1,4 @@
+debian/tmp/usr/include/totem/1.0/
+debian/tmp/usr/lib/x86_64-linux-gnu/libtotem.so
+debian/tmp/usr/lib/x86_64-linux-gnu/pkgconfig/
+debian/tmp/usr/share/gir-1.0/

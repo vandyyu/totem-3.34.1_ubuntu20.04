@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="subtitles" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#playing-media"/>
+    <link type="seealso" xref="preferences"/>
+    <revision pkgversion="3.30.0" version="0.1" date="2019-01-11" status="draft"/>
+    <desc>Seleccionar los subtítulos manualmente para la película.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Compartir Igual 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodrigo Lledó</mal:name>
+      <mal:email>rodhos92@gmail.com</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012-2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@cvs.GNOME.org</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Subtítulos</title>
+
+  <p>Dependiendo del formato de vídeo, los subtítulos se pueden integrar en el archivo de vídeo o disco, o estar disponibles como un archivo externo.</p>
+
+  <p>Para seleccionar qué subtítulo usar cuando el archivo de vídeo o disco contiene subtítulos, pulse el botón de menú el la esquina superior derecha de la ventana y seleccione <gui style="menuitem">Subtítulos</gui>.</p>
+
+  <p><app>Vídeos</app> carga los subtítulos externos automáticamente si <gui>Cargar los archivos de subtítulos al cargar la película</gui> está activado en <link xref="preferences">Preferencias</link>.</p>
+
+  <p>Para cargar manualmente un archivo de subtítulos externo en una película:</p>
+  <steps>
+    <item>
+      <p>Pulse el botón de menú en la esquina superior derecha de la ventana y seleccione <guiseq><gui style="menuitem">Subtítulos</gui> <gui>Seleccionar subtítulos de texto…</gui></guiseq>.</p>
+    </item>
+    <item>
+       <p>Se abrirá el selector de archivos. Busque los subtítulos que quiera.</p>
+    </item>
+    <item>
+      <p>Selecciónelos y pulse <gui>Abrir</gui>.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Ajuste el tamaño y tipografía de los subtítulos de acuerdo con sus necesidades. Consulte <guiseq><gui>General</gui><gui>Subtítulos externos</gui></guiseq> en la página de la <link xref="preferences"/>.</p>
+  </note>
+
+</page>

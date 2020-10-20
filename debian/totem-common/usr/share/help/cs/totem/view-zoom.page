@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="view-zoom" xml:lang="cs">
+
+  <info>
+    <revision pkgversion="3.8" version="0.1" date="2013-03-29" status="draft"/>
+    <revision pkgversion="3.30.0" version="0.2" date="2019-01-09" status="draft"/>
+    <link type="guide" xref="index#playing-media"/>
+
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name its:translate="no">Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+
+    <desc>Jak video zvětšit a jak mu zachovat správné proporce.</desc>
+  </info>
+
+  <title>Změna velikosti a poměru stran videa</title>
+
+  <p>Můžete měnit velikost videa a korigovat poměr stran.</p>
+
+  <terms>
+    <item>
+      <title>Přiblížení</title>
+      <p>Zmáčkněte tlačítko nabídky v pravém horním rohu okna a vyberte <gui style="menuitem">Přiblížit</gui> nebo zmáčkněte <key>R</key>. Pro oddálení tu stejnou volbu <gui style="menuitem">Přiblížit</gui> opětovným vybráním vypněte nebo zmáčkněte <key>T</key>.</p>
+    </item>
+    <item>
+      <title>Nastavení poměru stran</title>
+      <p>Zmáčkněte tlačítko nabídky v pravém horním rohu okna a vyberte <gui style="menuitem">Poměr stran</gui>.</p>
+      <p>Vyberte z:</p>
+      <list>
+        <item><p><gui>Automaticky</gui></p></item>
+        <item><p><gui>Čtvercový</gui></p></item>
+        <item><p><gui>4∶3 (TV)</gui></p></item>
+        <item><p><gui>16∶9 (širokoúhlá obrazovka)</gui></p></item>
+        <item><p><gui>2.11∶1 (DVB)</gui></p></item>
+      </list>
+    </item>
+  </terms>
+
+  <note style="info">
+    <p>Poměr stran je poměr mezi šířkou a výškou. Pomocí této volby můžete vynutit jiný poměr stran, který se má pro pro zobrazení filmu použít.</p>
+  </note>
+
+</page>

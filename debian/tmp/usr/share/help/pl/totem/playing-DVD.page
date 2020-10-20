@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="playing-DVD" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="index#playing-media"/>
+    <revision pkgversion="3.30" version="0.2" date="2019-01-11" status="draft"/>
+    <desc>Odtwarzanie plików multimedialnych z płyt DVD lub VCD.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Oglądanie płyt DVD lub VCD</title>
+
+  <list>
+    <item>
+      <p>Aby odtworzyć płytę DVD, którą włożono do napędu, przesuń kursor myszy nad <link xref="help:gnome-help/shell-notifications" href="https://help.gnome.org/users/gnome-help/stable/shell-notifications">powiadomienie</link> i kliknij przycisk <gui style="button">Otwórz za pomocą „Filmy”</gui>.</p>
+      <figure>
+        <title>Powiadomienie środowiska GNOME, umożliwiające otwarcie płyty za pomocą programu <app>Filmy</app></title>
+        <media type="image" mime="image/png" src="figures/dvd-gnome-notification.png">
+          <p>Zrzut ekranu powiadomienia środowiska GNOME.</p>
+        </media>
+      </figure>
+    </item>
+    <item>
+      <p>Aby odtworzyć płytę DVD w napędzie, otwórz program <app>Pliki</app>, kliknij płytę na bocznym pasku i kliknij przycisk <gui style="button">Filmy</gui> na pasku <gui>Płyta wideo DVD</gui>.</p>
+      <figure>
+        <title><app>Menedżer plików</app>, umożliwiający otwarcie płyty za pomocą programu <app>Filmy</app></title>
+        <media type="image" mime="image/png" src="figures/dvd-nautilus.png">
+        <p>Zrzut ekranu <app>Menedżera plików</app>.</p>
+        </media>
+      </figure>
+    </item>
+    <item>
+      <p>Aby odtworzyć płytę DVD w napędzie, otwórz program <app>Filmy</app> i kliknij płytę DVD na siatce <gui>Filmy</gui>.</p>
+    </item>
+  </list>
+
+  <p>Można poruszać się podczas oglądania filmu:</p>
+  <list>
+    <item>
+      <p>Kliknij <gui>przycisk menu</gui> pod obszarem z filmem.</p>
+    </item>
+    <item>
+    <p>Wybierz jedną z tych opcji:</p>
+    <list>
+      <item>
+        <p>Wybierz <gui style="menuitem">Menu DVD</gui>, aby wyświetlić główne menu płyty DVD. Dostosuj język i napisy lub wyświetl spis scen lub dodatki specjalne.</p>
+      </item>
+      <item>
+        <p>Wybierz <gui style="menuitem">Menu tytułu</gui>, aby wybrać język interfejsu DVD.</p>
+      </item>
+      <item>
+        <p>Wybierz <gui style="menuitem">Menu dźwięku</gui> i wybierz język filmu.</p>
+      </item>
+      <item>
+        <p>Wybierz <gui style="menuitem">Menu kamer</gui>, aby wybrać inny punkt widzenia kamery.</p>
+      </item>
+      <item>
+        <p>Wybierz <gui style="menuitem">Menu rozdziałów</gui>, aby wyświetlić spis scen.</p>
+      </item>
+    </list>
+    <note><p>Nie wszystkie płyty DVD mogą obsługiwać te opcje.</p></note>
+    </item>
+  </list>
+
+</page>

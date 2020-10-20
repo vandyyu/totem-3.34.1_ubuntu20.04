@@ -1,0 +1,928 @@
+<FUNCTION>
+<NAME>totem_interface_load_pixbuf</NAME>
+<RETURNS>GdkPixbuf *</RETURNS>
+const char *name
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_interface_get_full_path</NAME>
+<RETURNS>char *</RETURNS>
+const char *name
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_interface_load</NAME>
+<RETURNS>GtkBuilder *</RETURNS>
+const char *name, gboolean fatal, GtkWindow *parent, gpointer user_data
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_interface_load_with_full_path</NAME>
+<RETURNS>GtkBuilder *</RETURNS>
+const char *filename, gboolean fatal, GtkWindow *parent, gpointer user_data
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_interface_error</NAME>
+<RETURNS>void</RETURNS>
+const char *title, const char *reason, GtkWindow *parent
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_interface_error_blocking</NAME>
+<RETURNS>void</RETURNS>
+const char *title, const char *reason, GtkWindow *parent
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_interface_error_with_link</NAME>
+<RETURNS>void</RETURNS>
+const char *title, const char *reason, const char *uri, const char *label, GtkWindow *parent
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_interface_create_header_button</NAME>
+<RETURNS>GtkWidget *</RETURNS>
+GtkWidget  *header, GtkWidget  *button, const char *icon_name, GtkPackType pack_type
+</FUNCTION>
+<MACRO>
+<NAME>TOTEM_GSETTINGS_SCHEMA</NAME>
+#define TOTEM_GSETTINGS_SCHEMA "org.gnome.totem"
+</MACRO>
+<ENUM>
+<NAME>TotemRemoteCommand</NAME>
+typedef enum {
+	TOTEM_REMOTE_COMMAND_UNKNOWN = 0,
+	TOTEM_REMOTE_COMMAND_PLAY,
+	TOTEM_REMOTE_COMMAND_PAUSE,
+	TOTEM_REMOTE_COMMAND_STOP,
+	TOTEM_REMOTE_COMMAND_PLAYPAUSE,
+	TOTEM_REMOTE_COMMAND_NEXT,
+	TOTEM_REMOTE_COMMAND_PREVIOUS,
+	TOTEM_REMOTE_COMMAND_SEEK_FORWARD,
+	TOTEM_REMOTE_COMMAND_SEEK_BACKWARD,
+	TOTEM_REMOTE_COMMAND_VOLUME_UP,
+	TOTEM_REMOTE_COMMAND_VOLUME_DOWN,
+	TOTEM_REMOTE_COMMAND_FULLSCREEN,
+	TOTEM_REMOTE_COMMAND_QUIT,
+	TOTEM_REMOTE_COMMAND_ENQUEUE,
+	TOTEM_REMOTE_COMMAND_REPLACE,
+	TOTEM_REMOTE_COMMAND_SHOW,
+	TOTEM_REMOTE_COMMAND_UP,
+	TOTEM_REMOTE_COMMAND_DOWN,
+	TOTEM_REMOTE_COMMAND_LEFT,
+	TOTEM_REMOTE_COMMAND_RIGHT,
+	TOTEM_REMOTE_COMMAND_SELECT,
+	TOTEM_REMOTE_COMMAND_DVD_MENU,
+	TOTEM_REMOTE_COMMAND_ZOOM_UP,
+	TOTEM_REMOTE_COMMAND_ZOOM_DOWN,
+	TOTEM_REMOTE_COMMAND_EJECT,
+	TOTEM_REMOTE_COMMAND_PLAY_DVD,
+	TOTEM_REMOTE_COMMAND_MUTE,
+	TOTEM_REMOTE_COMMAND_TOGGLE_ASPECT
+} TotemRemoteCommand;
+</ENUM>
+<ENUM>
+<NAME>TotemRemoteSetting</NAME>
+typedef enum {
+	TOTEM_REMOTE_SETTING_REPEAT
+} TotemRemoteSetting;
+</ENUM>
+<FUNCTION>
+<NAME>totem_remote_command_get_type</NAME>
+<RETURNS>GType</RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_remote_command_quark</NAME>
+<RETURNS>GQuark</RETURNS>
+void
+</FUNCTION>
+<MACRO>
+<NAME>TOTEM_TYPE_REMOTE_COMMAND</NAME>
+#define TOTEM_TYPE_REMOTE_COMMAND	(totem_remote_command_get_type())
+</MACRO>
+<MACRO>
+<NAME>TOTEM_REMOTE_COMMAND</NAME>
+#define TOTEM_REMOTE_COMMAND		totem_remote_command_quark ()
+</MACRO>
+<FUNCTION>
+<NAME>totem_remote_setting_get_type</NAME>
+<RETURNS>GType</RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_remote_setting_quark</NAME>
+<RETURNS>GQuark</RETURNS>
+void
+</FUNCTION>
+<MACRO>
+<NAME>TOTEM_TYPE_REMOTE_SETTING</NAME>
+#define TOTEM_TYPE_REMOTE_SETTING	(totem_remote_setting_get_type())
+</MACRO>
+<MACRO>
+<NAME>TOTEM_REMOTE_SETTING</NAME>
+#define TOTEM_REMOTE_SETTING		totem_remote_setting_quark ()
+</MACRO>
+<MACRO>
+<NAME>TOTEM_TYPE_OBJECT</NAME>
+#define TOTEM_TYPE_OBJECT              (totem_object_get_type ())
+</MACRO>
+<MACRO>
+<NAME>TOTEM_OBJECT</NAME>
+#define TOTEM_OBJECT(obj)              (G_TYPE_CHECK_INSTANCE_CAST ((obj), totem_object_get_type (), TotemObject))
+</MACRO>
+<MACRO>
+<NAME>TOTEM_OBJECT_CLASS</NAME>
+#define TOTEM_OBJECT_CLASS(klass)      (G_TYPE_CHECK_CLASS_CAST ((klass), totem_object_get_type (), TotemObjectClass))
+</MACRO>
+<MACRO>
+<NAME>TOTEM_IS_OBJECT</NAME>
+#define TOTEM_IS_OBJECT(obj)           (G_TYPE_CHECK_INSTANCE_TYPE (obj, totem_object_get_type ()))
+</MACRO>
+<MACRO>
+<NAME>TOTEM_IS_OBJECT_CLASS</NAME>
+#define TOTEM_IS_OBJECT_CLASS(klass)   (G_CHECK_INSTANCE_GET_CLASS ((klass), totem_object_get_type ()))
+</MACRO>
+<TYPEDEF>
+<NAME>Totem</NAME>
+typedef struct _TotemObject Totem;
+</TYPEDEF>
+<STRUCT>
+<NAME>TotemObjectClass</NAME>
+typedef struct {
+	GtkApplicationClass parent_class;
+
+	void (*file_opened)			(TotemObject *totem, const char *mrl);
+	void (*file_closed)			(TotemObject *totem);
+	void (*file_has_played)			(TotemObject *totem, const char *mrl);
+	void (*metadata_updated)		(TotemObject *totem,
+						 const char *artist,
+						 const char *title,
+						 const char *album,
+						 guint track_num);
+	char * (*get_user_agent)		(TotemObject *totem,
+						 const char  *mrl);
+	char * (*get_text_subtitle)		(TotemObject *totem,
+						 const char  *mrl);
+} TotemObjectClass;
+</STRUCT>
+<FUNCTION>
+<NAME>totem_object_get_type</NAME>
+<RETURNS>GType</RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_exit</NAME>
+<RETURNS>void</RETURNS>
+TotemObject *totem
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_play</NAME>
+<RETURNS>void</RETURNS>
+TotemObject *totem
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_stop</NAME>
+<RETURNS>void</RETURNS>
+TotemObject *totem
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_play_pause</NAME>
+<RETURNS>void</RETURNS>
+TotemObject *totem
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_pause</NAME>
+<RETURNS>void</RETURNS>
+TotemObject *totem
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_can_seek_next</NAME>
+<RETURNS>gboolean</RETURNS>
+TotemObject *totem
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_seek_next</NAME>
+<RETURNS>void</RETURNS>
+TotemObject *totem
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_can_seek_previous</NAME>
+<RETURNS>gboolean</RETURNS>
+TotemObject *totem
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_seek_previous</NAME>
+<RETURNS>void</RETURNS>
+TotemObject *totem
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_seek_time</NAME>
+<RETURNS>void</RETURNS>
+TotemObject *totem, gint64 msec, gboolean accurate
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_seek_relative</NAME>
+<RETURNS>void</RETURNS>
+TotemObject *totem, gint64 offset, gboolean accurate
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_get_volume</NAME>
+<RETURNS>double</RETURNS>
+TotemObject *totem
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_set_volume</NAME>
+<RETURNS>void</RETURNS>
+TotemObject *totem, double volume
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_next_angle</NAME>
+<RETURNS>void</RETURNS>
+TotemObject *totem
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_show_error</NAME>
+<RETURNS>void</RETURNS>
+TotemObject *totem, const char *title, const char *reason
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_is_fullscreen</NAME>
+<RETURNS>gboolean</RETURNS>
+TotemObject *totem
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_is_playing</NAME>
+<RETURNS>gboolean</RETURNS>
+TotemObject *totem
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_is_paused</NAME>
+<RETURNS>gboolean</RETURNS>
+TotemObject *totem
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_is_seekable</NAME>
+<RETURNS>gboolean</RETURNS>
+TotemObject *totem
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_get_main_window</NAME>
+<RETURNS>GtkWindow *</RETURNS>
+TotemObject *totem
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_get_menu_section</NAME>
+<RETURNS>GMenu *</RETURNS>
+TotemObject *totem, const char  *id
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_empty_menu_section</NAME>
+<RETURNS>void</RETURNS>
+TotemObject *totem, const char  *id
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_get_rate</NAME>
+<RETURNS>float</RETURNS>
+TotemObject *totem
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_set_rate</NAME>
+<RETURNS>gboolean</RETURNS>
+TotemObject *totem, float rate
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_get_video_widget</NAME>
+<RETURNS>GtkWidget *</RETURNS>
+TotemObject *totem
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_add_to_view</NAME>
+<RETURNS>void</RETURNS>
+TotemObject *totem, GFile       *file, const char  *title
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_get_short_title</NAME>
+<RETURNS>char *</RETURNS>
+TotemObject *totem
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_get_current_time</NAME>
+<RETURNS>gint64</RETURNS>
+TotemObject *totem
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_get_playlist_length</NAME>
+<RETURNS>guint</RETURNS>
+TotemObject *totem
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_get_playlist_pos</NAME>
+<RETURNS>int</RETURNS>
+TotemObject *totem
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_get_title_at_playlist_pos</NAME>
+<RETURNS>char *</RETURNS>
+TotemObject *totem, guint playlist_index
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_clear_playlist</NAME>
+<RETURNS>void</RETURNS>
+TotemObject *totem
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_add_to_playlist</NAME>
+<RETURNS>void</RETURNS>
+TotemObject *totem, const char  *uri, const char  *display_name, gboolean     play
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_get_current_mrl</NAME>
+<RETURNS>char *</RETURNS>
+TotemObject *totem
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_set_current_subtitle</NAME>
+<RETURNS>void</RETURNS>
+TotemObject *totem, const char *subtitle_uri
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_remote_command</NAME>
+<RETURNS>void</RETURNS>
+TotemObject *totem, TotemRemoteCommand cmd, const char *url
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_remote_set_setting</NAME>
+<RETURNS>void</RETURNS>
+TotemObject *totem, TotemRemoteSetting setting, gboolean value
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_remote_get_setting</NAME>
+<RETURNS>gboolean</RETURNS>
+TotemObject *totem, TotemRemoteSetting setting
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_get_supported_content_types</NAME>
+<RETURNS>const gchar * const *</RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_object_get_supported_uri_schemes</NAME>
+<RETURNS>const gchar * const *</RETURNS>
+void
+</FUNCTION>
+<STRUCT>
+<NAME>TotemObject</NAME>
+</STRUCT>
+<MACRO>
+<NAME>BACON_TYPE_VIDEO_WIDGET</NAME>
+#define BACON_TYPE_VIDEO_WIDGET		     (bacon_video_widget_get_type ())
+</MACRO>
+<MACRO>
+<NAME>BACON_VIDEO_WIDGET</NAME>
+#define BACON_VIDEO_WIDGET(obj)              (G_TYPE_CHECK_INSTANCE_CAST ((obj), bacon_video_widget_get_type (), BaconVideoWidget))
+</MACRO>
+<MACRO>
+<NAME>BACON_VIDEO_WIDGET_CLASS</NAME>
+#define BACON_VIDEO_WIDGET_CLASS(klass)      (G_TYPE_CHECK_CLASS_CAST ((klass), bacon_video_widget_get_type (), BaconVideoWidgetClass))
+</MACRO>
+<MACRO>
+<NAME>BACON_IS_VIDEO_WIDGET</NAME>
+#define BACON_IS_VIDEO_WIDGET(obj)           (G_TYPE_CHECK_INSTANCE_TYPE (obj, bacon_video_widget_get_type ()))
+</MACRO>
+<MACRO>
+<NAME>BACON_IS_VIDEO_WIDGET_CLASS</NAME>
+#define BACON_IS_VIDEO_WIDGET_CLASS(klass)   (G_CHECK_INSTANCE_GET_CLASS ((klass), bacon_video_widget_get_type ()))
+</MACRO>
+<MACRO>
+<NAME>BVW_ERROR</NAME>
+#define BVW_ERROR bacon_video_widget_error_quark ()
+</MACRO>
+<TYPEDEF>
+<NAME>BaconVideoWidgetPrivate</NAME>
+typedef struct BaconVideoWidgetPrivate BaconVideoWidgetPrivate;
+</TYPEDEF>
+<STRUCT>
+<NAME>BaconVideoWidget</NAME>
+typedef struct {
+	/*< private >*/
+	GtkClutterEmbed parent;
+	BaconVideoWidgetPrivate *priv;
+} BaconVideoWidget;
+</STRUCT>
+<STRUCT>
+<NAME>BaconVideoWidgetClass</NAME>
+typedef struct {
+	/*< private >*/
+	GtkClutterEmbedClass parent_class;
+
+	void (*error) (GtkWidget *bvw, const char *message, gboolean playback_stopped);
+	void (*eos) (GtkWidget *bvw);
+	void (*got_metadata) (GtkWidget *bvw);
+	void (*got_redirect) (GtkWidget *bvw, const char *mrl);
+	void (*channels_change) (GtkWidget *bvw);
+	void (*tick) (GtkWidget *bvw, gint64 current_time, gint64 stream_length,
+			double current_position, gboolean seekable);
+	void (*buffering) (GtkWidget *bvw, gdouble percentage);
+	void (*download_buffering) (GtkWidget *bvw, gdouble percentage);
+} BaconVideoWidgetClass;
+</STRUCT>
+<ENUM>
+<NAME>BvwError</NAME>
+typedef enum {
+	/* Plugins */
+	BVW_ERROR_NO_PLUGIN_FOR_FILE,
+	/* File */
+	BVW_ERROR_BROKEN_FILE,
+	BVW_ERROR_FILE_GENERIC,
+	BVW_ERROR_FILE_PERMISSION,
+	BVW_ERROR_FILE_ENCRYPTED,
+	BVW_ERROR_FILE_NOT_FOUND,
+	/* Devices */
+	BVW_ERROR_DVD_ENCRYPTED,
+	BVW_ERROR_INVALID_DEVICE,
+	/* Network */
+	BVW_ERROR_UNKNOWN_HOST,
+	BVW_ERROR_NETWORK_UNREACHABLE,
+	BVW_ERROR_CONNECTION_REFUSED,
+	/* Generic */
+	BVW_ERROR_INVALID_LOCATION,
+	BVW_ERROR_GENERIC,
+	BVW_ERROR_CODEC_NOT_HANDLED,
+	BVW_ERROR_CANNOT_CAPTURE,
+	BVW_ERROR_READ_ERROR,
+	BVW_ERROR_PLUGIN_LOAD,
+	BVW_ERROR_EMPTY_FILE
+} BvwError;
+</ENUM>
+<FUNCTION>
+<NAME>bacon_video_widget_error_quark</NAME>
+<RETURNS>GQuark</RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_get_type</NAME>
+<RETURNS>GType</RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_get_option_group</NAME>
+<RETURNS>GOptionGroup *</RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_new</NAME>
+<RETURNS>GtkWidget *</RETURNS>
+GError **error
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_open</NAME>
+<RETURNS>void</RETURNS>
+BaconVideoWidget *bvw, const char *mrl
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_play</NAME>
+<RETURNS>gboolean</RETURNS>
+BaconVideoWidget *bvw, GError **error
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_pause</NAME>
+<RETURNS>void</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_is_playing</NAME>
+<RETURNS>gboolean</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_is_seekable</NAME>
+<RETURNS>gboolean</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_seek</NAME>
+<RETURNS>gboolean</RETURNS>
+BaconVideoWidget *bvw, double position, GError **error
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_seek_time</NAME>
+<RETURNS>gboolean</RETURNS>
+BaconVideoWidget *bvw, gint64 _time, gboolean accurate, GError **error
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_step</NAME>
+<RETURNS>gboolean</RETURNS>
+BaconVideoWidget *bvw, gboolean forward, GError **error
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_can_direct_seek</NAME>
+<RETURNS>gboolean</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_get_position</NAME>
+<RETURNS>double</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_get_current_time</NAME>
+<RETURNS>gint64</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_get_stream_length</NAME>
+<RETURNS>gint64</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_stop</NAME>
+<RETURNS>void</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_close</NAME>
+<RETURNS>void</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_can_set_volume</NAME>
+<RETURNS>gboolean</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_set_volume</NAME>
+<RETURNS>void</RETURNS>
+BaconVideoWidget *bvw, double volume
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_get_volume</NAME>
+<RETURNS>double</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_set_text_subtitle</NAME>
+<RETURNS>void</RETURNS>
+BaconVideoWidget * bvw, const gchar * subtitle_uri
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_set_logo</NAME>
+<RETURNS>void</RETURNS>
+BaconVideoWidget *bvw, const char *name
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_set_logo_mode</NAME>
+<RETURNS>void</RETURNS>
+BaconVideoWidget *bvw, gboolean logo_mode
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_get_logo_mode</NAME>
+<RETURNS>gboolean</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_set_subtitle_font</NAME>
+<RETURNS>void</RETURNS>
+BaconVideoWidget *bvw, const char *font
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_set_subtitle_encoding</NAME>
+<RETURNS>void</RETURNS>
+BaconVideoWidget *bvw, const char *encoding
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_set_user_agent</NAME>
+<RETURNS>void</RETURNS>
+BaconVideoWidget *bvw, const char *user_agent
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_set_referrer</NAME>
+<RETURNS>void</RETURNS>
+BaconVideoWidget *bvw, const char *referrer
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_set_rate</NAME>
+<RETURNS>gboolean</RETURNS>
+BaconVideoWidget *bvw, gfloat new_rate
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_get_rate</NAME>
+<RETURNS>gfloat</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_set_fullscreen</NAME>
+<RETURNS>void</RETURNS>
+BaconVideoWidget *bvw, gboolean          fullscreen
+</FUNCTION>
+<ENUM>
+<NAME>BvwMetadataType</NAME>
+typedef enum {
+	BVW_INFO_TITLE,
+	BVW_INFO_ARTIST,
+	BVW_INFO_YEAR,
+	BVW_INFO_COMMENT,
+	BVW_INFO_ALBUM,
+	BVW_INFO_DURATION,
+	BVW_INFO_TRACK_NUMBER,
+	BVW_INFO_COVER,
+	BVW_INFO_CONTAINER,
+	/* Video */
+	BVW_INFO_HAS_VIDEO,
+	BVW_INFO_DIMENSION_X,
+	BVW_INFO_DIMENSION_Y,
+	BVW_INFO_VIDEO_BITRATE,
+	BVW_INFO_VIDEO_CODEC,
+	BVW_INFO_FPS,
+	/* Audio */
+	BVW_INFO_HAS_AUDIO,
+	BVW_INFO_AUDIO_BITRATE,
+	BVW_INFO_AUDIO_CODEC,
+	BVW_INFO_AUDIO_SAMPLE_RATE,
+	BVW_INFO_AUDIO_CHANNELS
+} BvwMetadataType;
+</ENUM>
+<FUNCTION>
+<NAME>bacon_video_widget_get_metadata</NAME>
+<RETURNS>void</RETURNS>
+BaconVideoWidget *bvw, BvwMetadataType type, GValue *value
+</FUNCTION>
+<ENUM>
+<NAME>BvwVideoProperty</NAME>
+typedef enum {
+	BVW_VIDEO_BRIGHTNESS,
+	BVW_VIDEO_CONTRAST,
+	BVW_VIDEO_SATURATION,
+	BVW_VIDEO_HUE
+} BvwVideoProperty;
+</ENUM>
+<ENUM>
+<NAME>BvwAspectRatio</NAME>
+typedef enum {
+	BVW_RATIO_AUTO = 0,
+	BVW_RATIO_SQUARE = 1,
+	BVW_RATIO_FOURBYTHREE = 2,
+	BVW_RATIO_ANAMORPHIC = 3,
+	BVW_RATIO_DVB = 4
+} BvwAspectRatio;
+</ENUM>
+<ENUM>
+<NAME>BvwZoomMode</NAME>
+typedef enum {
+	BVW_ZOOM_NONE = 0,
+	BVW_ZOOM_EXPAND = 1
+} BvwZoomMode;
+</ENUM>
+<ENUM>
+<NAME>BvwRotation</NAME>
+typedef enum {
+	BVW_ROTATION_R_ZERO = 0,
+	BVW_ROTATION_R_90R  = 1,
+	BVW_ROTATION_R_180  = 2,
+	BVW_ROTATION_R_90L  = 3
+} BvwRotation;
+</ENUM>
+<FUNCTION>
+<NAME>bacon_video_widget_set_deinterlacing</NAME>
+<RETURNS>void</RETURNS>
+BaconVideoWidget *bvw, gboolean deinterlace
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_get_deinterlacing</NAME>
+<RETURNS>gboolean</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_set_aspect_ratio</NAME>
+<RETURNS>void</RETURNS>
+BaconVideoWidget *bvw, BvwAspectRatio ratio
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_get_aspect_ratio</NAME>
+<RETURNS>BvwAspectRatio</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_set_zoom</NAME>
+<RETURNS>void</RETURNS>
+BaconVideoWidget *bvw, BvwZoomMode       mode
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_get_zoom</NAME>
+<RETURNS>BvwZoomMode</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_set_rotation</NAME>
+<RETURNS>void</RETURNS>
+BaconVideoWidget *bvw, BvwRotation       rotation
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_get_rotation</NAME>
+<RETURNS>BvwRotation</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_get_video_property</NAME>
+<RETURNS>int</RETURNS>
+BaconVideoWidget *bvw, BvwVideoProperty type
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_set_video_property</NAME>
+<RETURNS>void</RETURNS>
+BaconVideoWidget *bvw, BvwVideoProperty type, int value
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_set_next_angle</NAME>
+<RETURNS>void</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_has_menus</NAME>
+<RETURNS>gboolean</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_has_angles</NAME>
+<RETURNS>gboolean</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<ENUM>
+<NAME>BvwDVDEvent</NAME>
+typedef enum {
+	BVW_DVD_ROOT_MENU,
+	BVW_DVD_TITLE_MENU,
+	BVW_DVD_SUBPICTURE_MENU,
+	BVW_DVD_AUDIO_MENU,
+	BVW_DVD_ANGLE_MENU,
+	BVW_DVD_CHAPTER_MENU,
+	BVW_DVD_NEXT_CHAPTER,
+	BVW_DVD_PREV_CHAPTER,
+	BVW_DVD_NEXT_TITLE,
+	BVW_DVD_PREV_TITLE,
+	BVW_DVD_ROOT_MENU_UP,
+	BVW_DVD_ROOT_MENU_DOWN,
+	BVW_DVD_ROOT_MENU_LEFT,
+	BVW_DVD_ROOT_MENU_RIGHT,
+	BVW_DVD_ROOT_MENU_SELECT
+} BvwDVDEvent;
+</ENUM>
+<FUNCTION>
+<NAME>bacon_video_widget_dvd_event</NAME>
+<RETURNS>void</RETURNS>
+BaconVideoWidget *bvw, BvwDVDEvent type
+</FUNCTION>
+<STRUCT>
+<NAME>BvwLangInfo</NAME>
+typedef struct {
+	char *language;
+	char *codec;
+} BvwLangInfo;
+</STRUCT>
+<ENUM>
+<NAME>BvwTrackType</NAME>
+typedef enum {
+	BVW_TRACK_TYPE_AUDIO,
+	BVW_TRACK_TYPE_SUBTITLE,
+	BVW_TRACK_TYPE_VIDEO
+} BvwTrackType;
+</ENUM>
+<FUNCTION>
+<NAME>bacon_video_widget_lang_info_free</NAME>
+<RETURNS>void</RETURNS>
+BvwLangInfo *info
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_get_languages</NAME>
+<RETURNS>GList *</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_get_language</NAME>
+<RETURNS>int</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_set_language</NAME>
+<RETURNS>void</RETURNS>
+BaconVideoWidget *bvw, int language
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_set_next_language</NAME>
+<RETURNS>void</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_get_subtitles</NAME>
+<RETURNS>GList *</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_get_subtitle</NAME>
+<RETURNS>int</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_set_subtitle</NAME>
+<RETURNS>void</RETURNS>
+BaconVideoWidget *bvw, int subtitle
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_set_next_subtitle</NAME>
+<RETURNS>void</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_has_next_track</NAME>
+<RETURNS>gboolean</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_has_previous_track</NAME>
+<RETURNS>gboolean</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_can_get_frames</NAME>
+<RETURNS>gboolean</RETURNS>
+BaconVideoWidget *bvw, GError **error
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_get_current_frame</NAME>
+<RETURNS>GdkPixbuf *</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<ENUM>
+<NAME>BvwAudioOutputType</NAME>
+typedef enum {
+	BVW_AUDIO_SOUND_STEREO,
+	BVW_AUDIO_SOUND_4CHANNEL,
+	BVW_AUDIO_SOUND_41CHANNEL,
+	BVW_AUDIO_SOUND_5CHANNEL,
+	BVW_AUDIO_SOUND_51CHANNEL,
+	BVW_AUDIO_SOUND_AC3PASSTHRU
+} BvwAudioOutputType;
+</ENUM>
+<FUNCTION>
+<NAME>bacon_video_widget_get_audio_output_type</NAME>
+<RETURNS>BvwAudioOutputType</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_set_audio_output_type</NAME>
+<RETURNS>void</RETURNS>
+BaconVideoWidget *bvw, BvwAudioOutputType type
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_show_popup</NAME>
+<RETURNS>void</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_mark_popup_busy</NAME>
+<RETURNS>void</RETURNS>
+BaconVideoWidget *bvw, const char       *reason
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_unmark_popup_busy</NAME>
+<RETURNS>void</RETURNS>
+BaconVideoWidget *bvw, const char       *reason
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_get_controls_object</NAME>
+<RETURNS>GObject *</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<FUNCTION>
+<NAME>bacon_video_widget_get_header_controls_object</NAME>
+<RETURNS>GObject *</RETURNS>
+BaconVideoWidget *bvw
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_get_plugin_paths</NAME>
+<RETURNS>char **</RETURNS>
+void
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_plugin_find_file</NAME>
+<RETURNS>char *</RETURNS>
+const char *plugin_name, const char *file
+</FUNCTION>
+<FUNCTION>
+<NAME>totem_plugin_load_interface</NAME>
+<RETURNS>GtkBuilder *</RETURNS>
+const char *plugin_name, const char *name, gboolean fatal, GtkWindow *parent, gpointer user_data
+</FUNCTION>
+<MACRO>
+<NAME>TOTEM_PLUGIN_REGISTER</NAME>
+#define TOTEM_PLUGIN_REGISTER(TYPE_NAME, TypeName, type_name)			\
+	_TOTEM_PLUGIN_REGISTER(TYPE_NAME, TypeName, type_name,,)
+</MACRO>
+<MACRO>
+<NAME>TOTEM_PLUGIN_REGISTER_CONFIGURABLE</NAME>
+#define TOTEM_PLUGIN_REGISTER_CONFIGURABLE(TYPE_NAME, TypeName, type_name)	\
+	static GtkWidget *impl_create_configure_widget (PeasGtkConfigurable *configurable); \
+	static void peas_gtk_configurable_iface_init (PeasGtkConfigurableInterface *iface); \
+	_TOTEM_PLUGIN_REGISTER(TYPE_NAME, TypeName, type_name,			\
+		(G_IMPLEMENT_INTERFACE_DYNAMIC (PEAS_GTK_TYPE_CONFIGURABLE, peas_gtk_configurable_iface_init)), \
+		peas_object_module_register_extension_type (module, PEAS_GTK_TYPE_CONFIGURABLE, TYPE_NAME);) \
+	static void								\
+	peas_gtk_configurable_iface_init (PeasGtkConfigurableInterface *iface)	\
+	{									\
+		iface->create_configure_widget = impl_create_configure_widget;	\
+	}
+</MACRO>

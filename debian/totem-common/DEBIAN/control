@@ -1,0 +1,17 @@
+Package: totem-common
+Source: totem
+Version: 3.34.1-2ubuntu2
+Architecture: all
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 5966
+Depends: dconf-gsettings-backend | gsettings-backend
+Section: video
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://wiki.gnome.org/Apps/Videos
+Description: Data files for the Totem media player
+ Totem is a simple yet featureful media player for GNOME which can read
+ a large number of file formats.
+ .
+ This package contains common data files and translations.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>

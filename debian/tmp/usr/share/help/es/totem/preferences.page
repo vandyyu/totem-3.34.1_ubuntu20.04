@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="preferences" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#advanced-options"/>
+    <link type="seealso" xref="subtitles"/>
+    <revision pkgversion="3.30" version="0.2" date="2019-01-10" status="draft"/>
+    <desc>Configurar la salida de sonido y vídeo y los complementos.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Compartir Igual 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodrigo Lledó</mal:name>
+      <mal:email>rodhos92@gmail.com</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012-2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@cvs.GNOME.org</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Preferencias y características adicionales</title>
+
+  <p><app>Vídeos</app> ofrece algunas opciones adicionales. Configure la aplicación de acuerdo con sus preferencias. Vea la ventana de <gui>Preferencias</gui> abriendo el botón de menú en la esquina superior derecha de la ventana y seleccione <gui style="menuitem">Preferencias</gui>.</p>
+
+  <section id="pref-general">
+    <title>General</title>
+      <terms>
+        <item>
+          <title><gui>Subtítulos externos</gui></title>
+            <list>
+              <item>
+                <p>Marque la opción <gui>Cargar los archivos de subtítulo cuando la película esté cargada</gui> si quiere que los subtítulos se carguen automáticamente.</p>
+              </item>
+              <item>
+                <p>Ajuste la tipografía y el tamaño pulsando sobre el nombre. Elija la tipografía desde la lista desplegable. Pulse en el deslizador y cambie el tamaño de la tipografía. Cuando esté listo pulse <gui>Seleccionar</gui>.</p>
+              </item>
+              <item>
+                <p>Elija la codificación desde la lista desplegable.</p>
+              </item>
+            </list>
+        </item>
+        <item>
+          <title><gui>Complementos</gui></title>
+          <p>Los complementos ofrecen características adicionales y funcionalidad extendida. Para ver la lista de complementos pulse <gui style="button">Complementos…</gui>. Seleccione el que quiera y pulse <gui style="button">Preferencias</gui> si está disponible.</p>
+        </item>
+      </terms>
+  </section>
+
+  <section id="pref-display">
+    <title>Área de visualización</title>
+      <terms>
+        <item>
+          <title><gui>Vídeo</gui></title>
+          <p><app>Videos</app> le permite especificar si se debe <gui>Desactivar el desentrelazado para películas entrelazadas</gui>. Para ello marque esta opción.</p>
+        </item>
+        <item>
+          <title><gui>Balance de color</gui></title>
+          <p>Esta opción le permite ajustar <gui>Brillo</gui>, <gui>Contraste</gui>, <gui>Saturación</gui> o <gui>Tono</gui> de los vídeos. Para ello pulse y arrastre los deslizadores.</p>
+            <note style="tip">
+              <p>Puede volver a la configuración anterior pulsando en el botón <gui style="button">Restablecer predeterminados</gui>.</p>
+            </note>
+        </item>
+      </terms>
+  </section>
+
+  <section id="pref-audio">
+    <title>Sonido</title>
+      <terms>
+        <item>
+          <title><gui>Salida de sonido</gui></title>
+          <p>Seleccione el tipo de <gui>Salida de sonido</gui> desde la lista desplegable.</p>
+        </item>
+      </terms>
+  </section>
+
+</page>

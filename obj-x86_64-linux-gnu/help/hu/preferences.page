@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="preferences" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#advanced-options"/>
+    <link type="seealso" xref="subtitles"/>
+    <revision pkgversion="3.30" version="0.2" date="2019-01-10" status="draft"/>
+    <desc>Hang- és videokimenet, valamint bővítmények beállítása.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Így add tovább! 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>ur.balazs at fsf dot hu</mal:email>
+      <mal:years>2019.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Beállítások és további funkciók</title>
+
+  <p>A <app>Videók</app> további lehetőségeket is kínál. Állítsa be az alkalmazást az igényei szerint. Nézze meg a <gui>Beállítások</gui> ablakot az ablak jobb felső sarkában lévő menügomb megnyitásával, és a <gui style="menuitem">Beállítások</gui> menüpont kiválasztásával.</p>
+
+  <section id="pref-general">
+    <title>Általános</title>
+      <terms>
+        <item>
+          <title><gui>Külső feliratok</gui></title>
+            <list>
+              <item>
+                <p>Jelölje be a <gui>Feliratfájlok betöltése a film betöltésekor</gui> lehetőséget, ha automatikusan be szeretné tölteni a feliratokat.</p>
+              </item>
+              <item>
+                <p>Állítsa be a betűkészlet típusát és méretét a nevére kattintva. Válasszon betűtípust a lenyíló listából. Kattintson a csúszkára, és változtassa meg a betűméretet. Ha készen van, kattintson <gui>Kiválasztás</gui> gombra.</p>
+              </item>
+              <item>
+                <p>Válassza ki a kódolást a lenyíló listából.</p>
+              </item>
+            </list>
+        </item>
+        <item>
+          <title><gui>Bővítmények</gui></title>
+          <p>A bővítmények további funkciókat és bővített funkcionalitást nyújtanak. A bővítmények listáját a <gui style="button">Bővítmények…</gui> gomb megnyomásával nézheti meg. Válassza ki a kívánt bővítményt, és nyomja meg a <gui style="button">Beállítások</gui> gombot, ha elérhető.</p>
+        </item>
+      </terms>
+  </section>
+
+  <section id="pref-display">
+    <title>Megjelenítés</title>
+      <terms>
+        <item>
+          <title><gui>Videó</gui></title>
+          <p>A <app>Videók</app> lehetővé teszi annak megadását, hogy szeretné-e a <gui>Váltottsoros videók váltottsorosság-mentesítésének letiltása</gui> lehetőséget. A lehetőség bejelölésével tegye ezt meg.</p>
+        </item>
+        <item>
+          <title><gui>Színegyensúly</gui></title>
+          <p>Ez a beállítás lehetővé teszi a megtekintett videó <gui>Fényerősség</gui>, <gui>Kontraszt</gui>, <gui>Telítettség</gui> vagy <gui>Árnyalat</gui> értékeinek állítását. A csúszkákra kattintva és elhúzva tegye ezt meg.</p>
+            <note style="tip">
+              <p>Ha vissza szeretne térni az előző beállításokra, akkor nyomja meg az <gui style="button">Alapértelmezések visszaállítása</gui> gombot.</p>
+            </note>
+        </item>
+      </terms>
+  </section>
+
+  <section id="pref-audio">
+    <title>Hang</title>
+      <terms>
+        <item>
+          <title><gui>Hangkimenet</gui></title>
+          <p>Válassza ki a <gui>Hangkimenet</gui> típusát a lenyíló listából.</p>
+        </item>
+      </terms>
+  </section>
+
+</page>

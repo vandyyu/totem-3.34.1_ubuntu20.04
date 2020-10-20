@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="playing-DVD" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#playing-media"/>
+    <revision pkgversion="3.30" version="0.2" date="2019-01-11" status="draft"/>
+    <desc>Médiafájlok lejátszása DVD-ről vagy VCD-ről.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Így add tovább! 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>ur.balazs at fsf dot hu</mal:email>
+      <mal:years>2019.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>DVD vagy VCD megtekintése</title>
+
+  <list>
+    <item>
+      <p>A meghajtóba helyezett DVD lejátszásához vigye az egérmutatót az <link xref="help:gnome-help/shell-notifications" href="https://help.gnome.org/users/gnome-help/stable/shell-notifications">értesítés</link> fölé, és nyomja meg a <gui style="button">Megnyitás a Videókkal</gui> gombot.</p>
+      <figure>
+        <title>A lemez megnyitását a <app>Videók</app> alkalmazással felajánló GNOME értesítés</title>
+        <media type="image" mime="image/png" src="figures/dvd-gnome-notification.png">
+          <p>A GNOME értesítés párbeszédablakának képernyőképe.</p>
+        </media>
+      </figure>
+    </item>
+    <item>
+      <p>A meghajtóban lévő DVD lejátszásához nyissa meg a <app>Fájlok</app> alkalmazást, válassza ki a lemezt az oldalsávon, majd nyomja meg a <gui style="button">Videók</gui> gombot a <gui>Videó DVD</gui> sávon.</p>
+      <figure>
+        <title>A lemez megnyitását a <app>Videók</app> alkalmazással felajánló <app>Fájlok</app> alkalmazás</title>
+        <media type="image" mime="image/png" src="figures/dvd-nautilus.png">
+        <p>A <app>Fájlok</app> képernyőképe.</p>
+        </media>
+      </figure>
+    </item>
+    <item>
+      <p>A meghajtóban lévő DVD lejátszásához nyissa meg a <app>Videók</app> alkalmazást, majd válassza a <gui>Videók</gui> rácson lévő DVD-t.</p>
+    </item>
+  </list>
+
+  <p>Navigálhat a film nézése közben:</p>
+  <list>
+    <item>
+      <p>Nyomja meg a videoterület alatti <gui>menü gombot</gui>.</p>
+    </item>
+    <item>
+    <p>Válassza a következő lehetőségek egyikét:</p>
+    <list>
+      <item>
+        <p>Válassza a <gui style="menuitem">DVD menüt</gui> a DVD főmenüjének megtekintéséhez. Válasszon nyelvet és feliratot, vagy nézze meg a fejezetindexet, illetve a különleges funkciókat.</p>
+      </item>
+      <item>
+        <p>Válassza a <gui style="menuitem">Cím menüt</gui> a DVD felület nyelvének kiválasztásához.</p>
+      </item>
+      <item>
+        <p>Válassza a <gui style="menuitem">Hang menüt</gui> a film beszélt nyelvének kiválasztásához.</p>
+      </item>
+      <item>
+        <p>Válassza a <gui style="menuitem">Szög menüt</gui> különböző kameranézőpontok kiválasztásához.</p>
+      </item>
+      <item>
+        <p>Válassza a <gui style="menuitem">Fejezet menüt</gui> a jelenetindex megtekintéséhez.</p>
+      </item>
+    </list>
+    <note><p>Nem minden DVD támogatja ezeket a lehetőségeket.</p></note>
+    </item>
+  </list>
+
+</page>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="navigation" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#playing-media"/>
+    <desc>Navigáció médialejátszás közben.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Így add tovább! 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>ur.balazs at fsf dot hu</mal:email>
+      <mal:years>2019.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Navigáció</title>
+
+  <p>Navigálhat a <app>Videókban</app> vezérlőgombok, menüpontok vagy gyorsbillentyűk segítségével.</p>
+
+  <p>A lenti vezérlőgombok megjelenítéséhez videónézés közben mozgassa az egérmutatót. Itt a következőket teheti:</p>
+
+  <list>
+    <item>
+      <p>Média lejátszása vagy szüneteltetése: használja a <key>Szóköz</key> gyorsbillentyűt, vagy nyomja meg a <gui style="button">Leállítás/Szünet</gui> gombot.</p>
+    </item>
+    <item>
+      <p>Videó megtekintése teljes képernyőn: nyomja meg az <key>F11</key> billentyűt, vagy nyomja meg a két nyilat tartalmazó gombot a fejlécsávon.</p>
+    </item>
+    <item>
+      <p>Hangerő beállítása: további információkért nézze meg a <link xref="sound-volume"/> szakaszt.</p>
+    </item>
+    <item>
+      <p>Másik videóra váltás: nyomja meg a bal felső sarokban lévő <gui style="button">Vissza nyíl</gui> gombot.</p>
+    </item>
+    <item>
+      <p>Egy DVD másik fejezetére váltáshoz vagy a főképernyőre való visszatéréshez nézze meg a <link xref="playing-DVD"/> szakaszt.</p>
+    </item>
+  </list>
+
+</page>

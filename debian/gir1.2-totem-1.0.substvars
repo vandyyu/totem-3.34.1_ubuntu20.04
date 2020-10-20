@@ -1,0 +1,5 @@
+gnome:NextVersion=3.35
+gnome:Version=3.34
+gir:Depends=gir1.2-glib-2.0 (>= 0.9.12), gir1.2-gtk-3.0 (>= 3.19.4), gir1.2-totemplparser-1.0 (>= 3.10.1), libtotem0 (<< 3.35), libtotem0 (>= 3.34.1-2ubuntu2)
+misc:Depends=
+misc:Pre-Depends=

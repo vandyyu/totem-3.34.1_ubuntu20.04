@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="screenshot-gallery" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="index#advanced-options"/>
+    <revision pkgversion="3.30.0" version="0.1" date="2019-01-11" status="draft"/>
+    <desc>Utworzenie wielu zrzutów z filmu.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Galeria zrzutów ekranu</title>
+
+  <p>Aby utworzyć galerię zrzutów ekranu w jednym pliku obrazu:</p>
+
+  <steps>
+    <item>
+      <p>Kliknij przycisk menu w górnym prawym rogu okna i wybierz <gui style="menuitem">Galeria zrzutów ekranu…</gui>.</p>
+    </item>
+    <item>
+      <p>W oknie wpisz nazwę pliku galerii do utworzenia.</p>
+    </item>
+    <item>
+      <p>Opcjonalnie zmień katalog, w którym galeria zostanie zapisana.</p>
+    </item>
+    <item>
+      <p>Po ukończeniu kliknij przycisk <gui>Zapisz</gui>.</p>
+    </item>
+    <item>
+      <p>Podczas wykonywania zrzutów ekranu wyświetlany będzie pasek postępu. Galeria zostanie zapisana jako plik <file>.jpg</file>.</p>
+    </item>
+  </steps>
+
+  <note style="advanced">
+    <p>Na dole okna można określić szerokość zrzutów ekranu w pikselach. Można także ustawić liczbę zrzutów w galerii lub zaznaczyć opcję <gui>Automatyczne dobranie liczby zrzutów ekranu</gui>, a program <app>Filmy</app> ustawi ją automatycznie.</p>
+  </note>
+
+</page>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="troubleshooting-subtitles" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#troubleshooting"/>
+    <link type="seealso" xref="subtitles"/>
+    <link type="seealso" xref="preferences"/>
+    <revision pkgversion="3.30" version="0.2" date="2019-01-11" status="draft"/>
+    <desc>No puedo cargar subtítulos.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Compartir Igual 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodrigo Lledó</mal:name>
+      <mal:email>rodhos92@gmail.com</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012-2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@cvs.GNOME.org</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Problema al cargar los subtítulos</title>
+
+  <p>Puede pasar que, aunque siga las instrucciones sobre los subtítulos en la página de la secciones <link xref="subtitles"/> o <link xref="preferences"/>, <app>Vídeos</app> siga sin cargar los subtítulos. La razón de esto podría ser que:</p>
+
+  <list>
+    <item>
+      <p>El archivo de subtítulos tiene un nombre incorrecto: abra el selector de archivos y compruebe si el nombre del archivo de subtítulos es el mismo que el nombre de la película.</p>
+    </item>
+    <item>
+      <p>Faltan el archivo de subtítulos: abra el selector de archivos y compruebe si hay un archivo con los subtítulos en la carpeta de la película.</p>
+    </item>
+  </list>
+
+  <p>Si no tiene un archivo de subtítulos para la película, puede buscar uno en <app>Vídeos</app>:</p>
+  <steps>
+    <item><p>Pulse el botón de menú en la esquina superior derecha de la ventana y elija <gui style="menuitem">Preferencias</gui>.</p>
+    </item>
+    <item>
+      <p>En la pestaña <gui>General</gui> debajo de <gui>Complementos</gui>, pulse en <gui style="button">Complementos…</gui>.</p>
+    </item>
+    <item>
+      <p>En la ventana <gui>Configurar complementos</gui>, active el complemento <gui>Descargador de subtítulos</gui>. Intentará encontrar y descargar subtítulos para la película actual.</p>
+    </item>
+  </steps>
+
+  <note>
+  <p>Tenga en cuenta que para buscar subtítulos necesita estar conectado a Internet.</p>
+  </note>
+
+</page>

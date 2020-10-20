@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="channels" xml:lang="pl">
+
+<info>
+  <revision pkgversion="3.30" date="2019-01-12" status="stub"/>
+    <link type="guide" xref="index#playing-media"/>
+
+  <credit type="author">
+    <name its:translate="no">Andre Klapper</name>
+    <email its:translate="no">ak-47@gmx.net</email>
+  </credit>
+  <credit type="author">
+    <name its:translate="no">Bastien Nocera</name>
+    <email its:translate="no">hadess@hadess.net</email>
+  </credit>
+
+  <license>
+    <p>Creative Commons Share Alike 3.0</p>
+  </license>
+
+  <desc>Kanały.</desc>
+
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Kanały</title>
+  <p>Sekcja kanałów wyświetla sieciowe zasoby wideo, zarówno z Internetu, jak i lokalne, takie jak zasoby UPnP/DLNA, zwiastuny filmów, aktualności i inne.</p>
+
+  <p>Źródła są zaimplementowane za pomocą systemu wykrywania multimediów <link href="https://wiki.gnome.org/Projects/Grilo">Grilo</link>. Programiści i zaawansowani użytkownicy zainteresowani rozszerzeniem programu <app>Filmy</app> mogą odwiedzić wspomnianą stronę z dokumentacją.</p>
+
+</page>

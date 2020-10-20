@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="subtitles" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#playing-media"/>
+    <link type="seealso" xref="preferences"/>
+    <revision pkgversion="3.30.0" version="0.1" date="2019-01-11" status="draft"/>
+    <desc>Untertitel für den abgespielten Film manuell auswählen.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan-Arne Petersen</mal:name>
+      <mal:email>jap@gnome.org</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2010, 2012, 2019.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stefan Horning</mal:name>
+      <mal:email>stefan@hornings.de</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2013, 2015,2019.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Untertitel</title>
+
+  <p>Abhängig vom Videoformat können Untertitel in der Videodatei der der Disc eingebaut oder als externe Dateien verfügbar sein.</p>
+
+  <p>Um auszuwählen, welche Untertitel verwendet werden sollen, wenn die Videodatei oder das Medium solche enthält, klicken Sie auf den Menüknopf in der oberen rechten Ecke des Fensters und wählen Sie <gui style="menuitem">Untertitel</gui>.</p>
+
+  <p><app>Videos</app> lädt externe Untertitel automatisch, wenn <gui>Untertitel laden, sobald ein Video geladen wird</gui> in den <link xref="preferences">Einstellungen</link> aktiviert ist.</p>
+
+  <p>So laden Sie eine externe Untertiteldatei für einen Film manuell:</p>
+  <steps>
+    <item>
+      <p>Klicken Sie auf den Menüknopf in Ecke des Fensters und wählen Sie <guiseq><gui style="menuitem">Untertitel</gui> <gui>Text-Untertitel auswählen …</gui></guiseq>.</p>
+    </item>
+    <item>
+       <p>Der Dateiauswahldialog wird geöffnet. Suchen Sie nach den gewünschten Untertiteln.</p>
+    </item>
+    <item>
+      <p>Wählen Sie sie aus und klicken Sie auf <gui>Öffnen</gui>.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Passen Sie die Größe und die Schrift der Untertitel nach Ihren Wünschen an. Siehe den Abschnitt <guiseq><gui>Abschnitt</gui><gui>Externe Untertitel</gui></guiseq> auf der Seite <link xref="preferences"/>.</p>
+  </note>
+
+</page>

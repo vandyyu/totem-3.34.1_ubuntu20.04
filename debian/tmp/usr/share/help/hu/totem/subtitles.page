@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="subtitles" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#playing-media"/>
+    <link type="seealso" xref="preferences"/>
+    <revision pkgversion="3.30.0" version="0.1" date="2019-01-11" status="draft"/>
+    <desc>Feliratok kézi kiválasztása a lejátszott filmhez.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Így add tovább! 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>ur.balazs at fsf dot hu</mal:email>
+      <mal:years>2019.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Feliratok</title>
+
+  <p>A videoformátumtól függően a feliratok lehetnek a videofájlba vagy magába a lemezbe égetettek, vagy elérhetők lehetnek külső fájlokból.</p>
+
+  <p>Annak kiválasztásához, hogy mely feliratot használja, ha a videofájl vagy lemez feliratokat tartalmaz, nyomja meg az ablak jobb felső sarkában lévő menügombot, és válassza a <gui style="menuitem">Feliratok</gui> menüpontot.</p>
+
+  <p>A <app>Videók</app> akkor tölti be automatikusan a külső feliratokat, ha a <gui>Feliratfájlok betöltése a film betöltésekor</gui> engedélyezve van a <link xref="preferences">Beállításokban</link>.</p>
+
+  <p>Egy film külső feliratfájljának kézi betöltéséhez:</p>
+  <steps>
+    <item>
+      <p>Nyomja meg az ablak jobb felső sarkában lévő menügombot, és válassza a <guiseq><gui style="menuitem">Feliratok</gui> <gui>Felirat kiválasztása…</gui></guiseq> menüpontot.</p>
+    </item>
+    <item>
+       <p>Megnyílik a fájlválasztó. Keresse meg a kívánt feliratokat.</p>
+    </item>
+    <item>
+      <p>Válassza ki a feliratokat, és kattintson a <gui>Megnyitás</gui> gombra.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Állítsa be a feliratok méretét és betűkészletét, ahogy szeretné. Nézze meg az <guiseq><gui>Általános</gui><gui>Külső feliratok</gui></guiseq> szakaszt a <link xref="preferences"/> oldalon.</p>
+  </note>
+
+</page>

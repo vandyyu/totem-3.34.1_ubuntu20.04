@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="screenshot" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#advanced-options"/>
+    <revision pkgversion="3.30.0" version="0.1" date="2019-01-09" status="draft"/>
+    <desc>Jak ze záběru pořídit snímek do souboru.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+  <title>Snímky obrazovky</title>
+
+  <p>Když chcete při sledování filmu pořídit snímek záběru, postupujte následovně:</p>
+
+  <steps>
+    <item>
+      <p>Zmáčkněte tlačítko nabídky v pravém horním rohu okna a zvolte <gui style="menuitem">Pořídit snímek</gui>.</p>
+    </item>
+  </steps>
+
+  <note>
+    <p>Snímek záběru se uloží do vaší složky <gui>Obrázky</gui> pod názvem <file>Snímek z Název-videa.png</file>.</p>
+  </note>
+
+</page>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE indexdiv PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+	<!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+	<!ENTITY version SYSTEM "version.xml">
+	<!ENTITY slash "/">
+]>
+<indexdiv id="api-index-2.90.0">
+<indexdiv><title>G</title>
+<indexentry><primaryie linkends="totem-get-plugin-paths"><link linkend="totem-get-plugin-paths">totem_get_plugin_paths</link>, function in <link linkend="totem-TotemPlugin">TotemPlugin</link></primaryie></indexentry>
+</indexdiv>
+</indexdiv>

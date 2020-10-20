@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="preferences" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#advanced-options"/>
+    <link type="seealso" xref="subtitles"/>
+    <revision pkgversion="3.30" version="0.2" date="2019-01-10" status="draft"/>
+    <desc>Jak nastavit zvukový a obrazový výstup a zásuvné moduly.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+  <title>Předvolby a doplňkové funkce</title>
+
+  <p><app>Videa</app> nabízejí některé doplňkové volby. Můžete si tak aplikaci nastavit podle svých představ. Okno <gui>Předvolby</gui> zobrazíte zmáčknutím tlačítka nabídky v pravém horním rohu okna a vybráním položky <gui style="menuitem">Předvolby</gui>.</p>
+
+  <section id="pref-general">
+    <title>Obecné</title>
+      <terms>
+        <item>
+          <title><gui>Externí titulky</gui></title>
+            <list>
+              <item>
+                <p>Zaškrtněte volbu <gui>Po načtení videa načíst soubory s titulky</gui>, pokud chcete načítat titulky automaticky.</p>
+              </item>
+              <item>
+                <p>Upravte typ a velikost fontu kliknutím na jeho název. V seznamu vyberte typ fontu. Pomocí táhla upravte velikost fontu. Když jste hotovi, zmáčkněte <gui>Vybrat</gui>.</p>
+              </item>
+              <item>
+                <p>V rozbalovacím seznamu vyberte kódování.</p>
+              </item>
+            </list>
+        </item>
+        <item>
+          <title><gui>Zásuvné moduly</gui></title>
+          <p>Zásuvné moduly nabízejí dodatečné vlastnosti a rozšířující funkce. Seznam zásuvných modulů si můžete zobrazit zmáčknutím tlačítka <gui style="button">Zásuvné moduly…</gui>. Vyberte požadovaný a zmáčkněte tlačítko <gui style="button">Předvolby</gui>, za předpokladu že je přístupné.</p>
+        </item>
+      </terms>
+  </section>
+
+  <section id="pref-display">
+    <title>Zobrazení</title>
+      <terms>
+        <item>
+          <title><gui>Video</gui></title>
+          <p><app>Videa</app> umožňují určit, jestli chcete <gui>Zakázat odstranění prokládání u prokládaných videí</gui>. Stačí zaškrtnout tuto volbu.</p>
+        </item>
+        <item>
+          <title><gui>Vyvážení barev</gui></title>
+          <p>Tato volba umožňuje upravit <gui>Jas</gui>, <gui>Kontrast</gui>, <gui>Sytost</gui> a <gui>Odstín</gui> sledovaného videa. Stačí kliknout na táhlo a posunout jej.</p>
+            <note style="tip">
+              <p>Lze se vrátit na původní nastavení zmáčknutím tlačítka <gui style="button">Vrátit na výchozí</gui>.</p>
+            </note>
+        </item>
+      </terms>
+  </section>
+
+  <section id="pref-audio">
+    <title>Zvuk</title>
+      <terms>
+        <item>
+          <title><gui>Zvukový výstup</gui></title>
+          <p>V rozbalovacím seznamu <guilabel>Zvukový výstupu</guilabel> zvolte typ zvukového výstupu.</p>
+        </item>
+      </terms>
+  </section>
+
+</page>

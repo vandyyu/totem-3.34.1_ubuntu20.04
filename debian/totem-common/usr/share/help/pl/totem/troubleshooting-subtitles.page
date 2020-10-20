@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="troubleshooting-subtitles" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="index#troubleshooting"/>
+    <link type="seealso" xref="subtitles"/>
+    <link type="seealso" xref="preferences"/>
+    <revision pkgversion="3.30" version="0.2" date="2019-01-11" status="draft"/>
+    <desc>Nie można wczytać napisów.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Problem z wczytywaniem napisów</title>
+
+  <p>Może się wydarzyć, że mimo skorzystania z instrukcji na temat napisów ze stron <link xref="subtitles"/> lub <link xref="preferences"/>, program <app>Filmy</app> nadal nie może wczytać napisów. Kilka możliwych przyczyn:</p>
+
+  <list>
+    <item>
+      <p>Błędna nazwa pliku z napisami — otwórz okno wyboru pliku i sprawdź, czy nazwa pliku z napisami jest taka sama, jak nazwa pliku z filmem.</p>
+    </item>
+    <item>
+      <p>Brak pliku z napisami — otwórz okno wyboru pliku i sprawdź, czy w katalogu z filmem jest także plik z napisami.</p>
+    </item>
+  </list>
+
+  <p>Jeśli nie ma pliku z napisami do oglądanego filmu, to można go wyszukać za pomocą programu <app>Filmy</app>:</p>
+  <steps>
+    <item><p>Kliknij przycisk menu w górnym prawym rogu okna i wybierz <gui style="menuitem">Preferencje</gui>.</p>
+    </item>
+    <item>
+      <p>W karcie <gui>Ogólne</gui> pod <gui>Wtyczki</gui> kliknij przycisk <gui style="button">Wtyczki…</gui>.</p>
+    </item>
+    <item>
+      <p>W oknie <gui>Konfiguracja wtyczek</gui> włącz wtyczkę <gui>Pobieranie napisów</gui>. Spróbuje ona znaleźć i pobrać napisy do obecnie oglądanego filmu.</p>
+    </item>
+  </steps>
+
+  <note>
+  <p>Proszę zauważyć, że wyszukiwanie napisów wymaga połączenia z Internetem.</p>
+  </note>
+
+</page>

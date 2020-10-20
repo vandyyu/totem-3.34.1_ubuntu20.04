@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="properties" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#advanced-options"/>
+    <revision pkgversion="3.30" version="0.2" date="2019-01-10" status="draft"/>
+    <desc>Die Eigenschaften einer abgespielten Audio- oder Videodatei anzeigen.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name its:translate="no">Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan-Arne Petersen</mal:name>
+      <mal:email>jap@gnome.org</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2010, 2012, 2019.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stefan Horning</mal:name>
+      <mal:email>stefan@hornings.de</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2013, 2015,2019.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Dateieigenschaften</title>
+
+  <p>Sie können die Eigenschaften eineums anzeigen, indem Sie auf den Menüknopf in der oberen rechten Ecke des Fenster klicken und <gui style="menuitem">Eigenschaften</gui> wählen oder <keyseq><key>Strg</key><key>P</key></keyseq> drücken. Es werden drei Bereiche angezeigt:</p>
+
+  <terms>
+    <item>
+      <title><gui>Allgemein</gui></title>
+      <p>Informationen zu Titel, Künstler, Album, Jahr, Spieldauer, Kommentar und Container.</p>
+    </item>
+    <item>
+      <title><gui>Video</gui></title>
+      <p>Informationen zu Abmessungen, Codec, Einzelbildrate und Bitrate.</p>
+    </item>
+    <item>
+      <title><gui>Audio</gui></title>
+      <p>Informationen zu codec, Kanälen, Samplingrate udn Bitrate.</p>
+    </item>
+  </terms>
+
+</page>

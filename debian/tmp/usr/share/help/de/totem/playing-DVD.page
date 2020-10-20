@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="playing-DVD" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#playing-media"/>
+    <revision pkgversion="3.30" version="0.2" date="2019-01-11" status="draft"/>
+    <desc>Mediendateien von DVD oder VCD abspielen.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan-Arne Petersen</mal:name>
+      <mal:email>jap@gnome.org</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2010, 2012, 2019.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stefan Horning</mal:name>
+      <mal:email>stefan@hornings.de</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2013, 2015,2019.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Eine DVD oder VCD abspielen</title>
+
+  <list>
+    <item>
+      <p>Um eine DVD abzuspielen, die Sie gerade in Ihr Laufwerk eingelegt haben, bewegen Sie den Mauszeiger über die <link xref="help:gnome-help/shell-notifications" href="https://help.gnome.org/users/gnome-help/stable/shell-notifications">Benachrichtigung</link> und klicken Sie auf <gui style="button">Mit Videos öffnen</gui>.</p>
+      <figure>
+        <title>GNOME-Benachrichtigung, welche das Öffnen einer optischen Disk mit <app>Videos</app> anbietet</title>
+        <media type="image" mime="image/png" src="figures/dvd-gnome-notification.png">
+          <p>Bildschirmfoto des Benachrichtigungsdialogs von GNOME.</p>
+        </media>
+      </figure>
+    </item>
+    <item>
+      <p>Um eine DVD abzuspielen, die sich in Ihrem Laufwerk befindet, öffnen Sie <app>Dateien</app>, wählen Sie das Medium in der Seitenleiste und klicken Sie auf <gui style="button">Videos</gui> in der Leiste <gui>Video-DVD</gui>.</p>
+      <figure>
+        <title><app>Dateien</app>, welches das Öffnen einer DVD mit <app>Videos</app> anbietet</title>
+        <media type="image" mime="image/png" src="figures/dvd-nautilus.png">
+        <p>Bildschirmfoto von <app>Dateien</app>.</p>
+        </media>
+      </figure>
+    </item>
+    <item>
+      <p>Um eine DVD abzuspielen, die sich in Ihrem Laufwerk befindet, öffnen Sie <app>Videos</app> und wählen Sie das DVD-Medium in der Liste der <gui>Videos</gui>.</p>
+    </item>
+  </list>
+
+  <p>Sie können navigieren, während Sie den Film ansehen:</p>
+  <list>
+    <item>
+      <p>Klicken Sie auf den <gui>Menüknopf</gui> unterhalb des Videobereichs.</p>
+    </item>
+    <item>
+    <p>Wählen Sie aus einer der folgenden Optionen:</p>
+    <list>
+      <item>
+        <p>Wählen Sie <gui style="menuitem">DVD-Menü</gui>, um das Hauptmenü einer DVD anzuzeigen. Passen Sie die Sprache und die Untertitel oder den Szenenindex oder spezielle Funktionsmerkmale an.</p>
+      </item>
+      <item>
+        <p>Wählen Sie <gui style="menuitem">Titelmenü</gui>, um die Sprache der DVD-Oberfläche anzupassen.</p>
+      </item>
+      <item>
+        <p>Wählen Sie <gui style="menuitem">Audio-Menü</gui> und wählen Sie die Sprache des Films aus.</p>
+      </item>
+      <item>
+        <p>Wählen Sie <gui style="menuitem">Kameramenü</gui>, um eine andere Kameraperspektive auszuwählen.</p>
+      </item>
+      <item>
+        <p>Wählen Sie <gui style="menuitem">Kapitelmenü</gui>, um den Szenenindex anzuzeigen.</p>
+      </item>
+    </list>
+    <note><p>Es könnte sein, dass nicht alle DVDs diese Optionen unterstützen.</p></note>
+    </item>
+  </list>
+
+</page>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="screenshot" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#advanced-options"/>
+    <revision pkgversion="3.30.0" version="0.1" date="2019-01-09" status="draft"/>
+    <desc>Ein Bildschirmfoto eines Videos erstellen.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan-Arne Petersen</mal:name>
+      <mal:email>jap@gnome.org</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2010, 2012, 2019.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stefan Horning</mal:name>
+      <mal:email>stefan@hornings.de</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2013, 2015,2019.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Bildschirmfotos</title>
+
+  <p>Um während der Wiedergabe eines Films ein Bildschirmfoto aufzunehmen, gehen Sie wie folgt vor:</p>
+
+  <steps>
+    <item>
+      <p>Klicken Sie auf den Menüknopf in der oberen rechten Ecke des Fensters und wählen Sie <gui style="menuitem">Bildschirmfoto aufnehmen</gui>.</p>
+    </item>
+  </steps>
+
+  <note>
+    <p>Ihr Bildschirmfoto wird in Ihrem <gui>Bilder</gui>-Ordner unter dem Namen <file>Bildschirmfoto von Name-des-Videos.png</file> gespeichert.</p>
+  </note>
+
+</page>

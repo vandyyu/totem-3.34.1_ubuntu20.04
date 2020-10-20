@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="supported-formats" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#troubleshooting"/>
+    <revision pkgversion="3.30" version="0.2" date="2019-01-11" status="draft"/>
+    <desc>Jak zjistit, které formáty souborů jsou podporované.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+  <title>Nelze přehrát určitý formát souboru</title>
+
+  <p>Formáty souborů, které je přehrávač <app>Videa</app> schopen zobrazit, závisí na zásuvných modulech <sys>GStreamer</sys>. Pokud není některý formát podporován, obraťte se na zdroje podpory vaší distribuce, abyste zjistili, který balíček doinstalovat.</p>
+
+  <note><p>V případě, že zkusíte otevřít formát, který není podporovaný, na řadě distribucí zobrazí <app>Videa</app> dialogové okno, ve kterém můžete vyhledat chybějící zásuvný modul (kodek) a nainstalovat jej.</p></note>
+
+</page>

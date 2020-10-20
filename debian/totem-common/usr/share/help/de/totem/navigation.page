@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="navigation" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#playing-media"/>
+    <desc>Navigation während der Medienwiedergabe.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan-Arne Petersen</mal:name>
+      <mal:email>jap@gnome.org</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2010, 2012, 2019.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stefan Horning</mal:name>
+      <mal:email>stefan@hornings.de</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2013, 2015,2019.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Navigation</title>
+
+  <p>Sie können in <app>Videos</app> über Bedienknöpfe, Menüeinträge oder Tastenkombinationen navigieren.</p>
+
+  <p>Um die Bedienknöpfe unten während der Wiedergabe eines Videos anzuzeigen, bewegen Sie den Mauszeiger. Hier können Sie:</p>
+
+  <list>
+    <item>
+      <p>Medien wiedergeben oder pausieren: Verwenden Sie die <key>Leertaste</key> oder klicken Sie auf den Knopf <gui style="button">Wiedergabe/Pause</gui>.</p>
+    </item>
+    <item>
+      <p>Das Video im Vollbildmodus wiedergeben. Drücken Sie <key>F11</key> oder klicken Sie auf den Knopf mit den Pfeilen in der Kopfleiste.</p>
+    </item>
+    <item>
+      <p>Lautstärke anpassen. Für weitere Informationen siehe <link xref="sound-volume"/>.</p>
+    </item>
+    <item>
+      <p>Um zu einem anderen Video zu wechseln, klicken Sie auf den <gui style="button">Rückwärtspfeil</gui>-Knopf in der oberen linken Ecke.</p>
+    </item>
+    <item>
+      <p>Um zu einem anderen Kapitel auf einer DVD zu wechseln, gehen Sie zum Hauptbildschirm zurück. Lesen Sie bitte auch <link xref="playing-DVD"/>.</p>
+    </item>
+  </list>
+
+</page>

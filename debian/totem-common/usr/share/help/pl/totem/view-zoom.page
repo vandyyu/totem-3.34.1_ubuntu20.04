@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="view-zoom" xml:lang="pl">
+
+  <info>
+    <revision pkgversion="3.8" version="0.1" date="2013-03-29" status="draft"/>
+    <revision pkgversion="3.30.0" version="0.2" date="2019-01-09" status="draft"/>
+    <link type="guide" xref="index#playing-media"/>
+
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name its:translate="no">Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+
+    <desc>Powiększanie filmu i utrzymywanie właściwych proporcji.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Zmiana rozmiaru filmu i proporcji obrazu</title>
+
+  <p>Można powiększyć film lub poprawić jego proporcje.</p>
+
+  <terms>
+    <item>
+      <title>Przybliżanie</title>
+      <p>Kliknij przycisk menu w górnym prawym rogu okna i wybierz <gui style="menuitem">Powiększenie</gui> lub naciśnij klawisz <key>R</key>. Aby pomniejszyć, wyłącz <gui style="menuitem">Powiększenie</gui> lub naciśnij klawisz <key>T</key>.</p>
+    </item>
+    <item>
+      <title>Ustawianie proporcji obrazu</title>
+      <p>Kliknij przycisk menu w górnym prawym rogu okna i wybierz <gui style="menuitem">Proporcje obrazu</gui>.</p>
+      <p>Wybierz jedno z:</p>
+      <list>
+        <item><p><gui>Automatyczne</gui></p></item>
+        <item><p><gui>Kwadratowe</gui></p></item>
+        <item><p><gui>4∶3 (TV)</gui></p></item>
+        <item><p><gui>16∶9 (HDTV)</gui></p></item>
+        <item><p><gui>2,11∶1 (DVB)</gui></p></item>
+      </list>
+    </item>
+  </terms>
+
+  <note style="info">
+    <p>Proporcje obrazu to różnica między szerokością a wysokością. Ta opcja umożliwia wymuszenie innych proporcji wyświetlanego filmu.</p>
+  </note>
+
+</page>

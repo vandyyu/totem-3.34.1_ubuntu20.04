@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="navigation" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#playing-media"/>
+    <desc>Navegar durante la reproducción de medios.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Compartir Igual 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodrigo Lledó</mal:name>
+      <mal:email>rodhos92@gmail.com</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012-2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@cvs.GNOME.org</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Navegación</title>
+
+  <p>Puede navegar por <app>Vídeos</app> mediante botones de control, elementos del menú o atajos de teclado.</p>
+
+  <p>Para mostrar los botones de control en la parte inferior al ver un vídeo, mueva el puntero del ratón. Aquí puede:</p>
+
+  <list>
+    <item>
+      <p>Reproducir medios o pausarlos: use el atajo de teclado <key>Espacio</key> o pulse el botón <gui style="button">Reproducir/Pausar</gui>.</p>
+    </item>
+    <item>
+      <p>Ver el vídeo en pantalla completa. Pulse <key>F11</key> o pulse el botón con dos flechas en la barra de cabecera.</p>
+    </item>
+    <item>
+      <p>Ajustar el volumen. Para más información consulte la sección <link xref="sound-volume"/>.</p>
+    </item>
+    <item>
+      <p>Para cambiar a otro vídeo, pulse el botón <gui style="button">Flecha hacia atrás</gui> en la esquina superior izquierda.</p>
+    </item>
+    <item>
+      <p>Para cambiar a un capítulo diferente de un DVD o para volver a la pantalla principal, consulte la sección <link xref="playing-DVD"/>.</p>
+    </item>
+  </list>
+
+</page>

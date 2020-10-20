@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="navigation" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="index#playing-media"/>
+    <desc>Nawigacja podczas odtwarzania multimediów.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Nawigacja</title>
+
+  <p>Można poruszać się po programie <app>Filmy</app> za pomocą przycisków sterowania, elementów menu lub skrótów klawiszowych.</p>
+
+  <p>Aby wyświetlić przyciski sterowania na dole okna podczas oglądania filmu, porusz myszą.</p>
+
+  <list>
+    <item>
+      <p>Odtwarzanie i wstrzymywanie: użyj <key>spacji</key> lub kliknij przycisk <gui style="button">Odtwórz/wstrzymaj</gui>.</p>
+    </item>
+    <item>
+      <p>Oglądanie filmu na pełnym ekranie. Naciśnij klawisz <key>F11</key> lub kliknij przycisk z dwoma strzałkami na pasku nagłówka.</p>
+    </item>
+    <item>
+      <p>Dostosowanie głośności. <link xref="sound-volume"/> zawiera więcej informacji.</p>
+    </item>
+    <item>
+      <p>Aby przejść do kolejnego filmu, kliknij przycisk <gui style="button">Strzałka wstecz</gui> w górnym lewym rogu.</p>
+    </item>
+    <item>
+      <p>Aby przejść do innego rozdziału płyty DVD lub wstecz do głównego ekranu, patrz <link xref="playing-DVD"/>.</p>
+    </item>
+  </list>
+
+</page>

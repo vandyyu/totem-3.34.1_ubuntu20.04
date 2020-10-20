@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="troubleshooting-debug" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#troubleshooting"/>
+    <revision pkgversion="3.30" version="0.1" date="2019-01-11" status="draft"/>
+    <desc>Jak získat ladicí informace pro nahlášení chyby.</desc>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+<title>Vystopování problémů s videem</title>
+
+<p>Pokud jste již zkusili rady uvedené v <link xref="supported-formats"/> a <link xref="troubleshooting-DVD"/> a video stále nejde přehrát, otevřete terminálové okno a zadejte příkaz <cmd>totem --help-gst</cmd>. Zobrazí se vám seznam dostupných voleb pro ladicí výstup. Problém je totiž často v podkladovém zásuvném modulu, například v knihovně <sys>GStreamer</sys> a ne přímo v přehrávači <app>Videa</app>.</p>
+
+<note style="info"><p>Softwarové chyby v knihovně <sys>GStreamer</sys> můžete hlásit do <link href="https://gitlab.freedesktop.org/gstreamer">systému pro sledování chyb <sys>GStreamer</sys></link>.</p></note>
+
+</page>

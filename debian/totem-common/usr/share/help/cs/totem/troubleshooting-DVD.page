@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="troubleshooting-DVD" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#troubleshooting"/>
+    <link type="seealso" xref="supported-formats"/>
+    <revision pkgversion="3.30" version="0.2" date="2019-01-11" status="draft"/>
+    <desc>Jak řešit, když se nedaří přehrát DVD.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+  <title>Problém s přehráváním filmu z DVD</title>
+
+  <p>Může se stát, že po vložení DVD do mechaniky, zobrazí <app>Videa</app> chybovou hlášku <gui>Došlo k chybě ‒ Film se nezdařilo číst.</gui> Může to být tím, že <link xref="supported-formats">požadovaný zásuvný modul <sys>GStreamer</sys> pro čtení formátu filmu není nainstalovaný ve vašem operačním systému</link>, nebo je DVD šifrované a není nainstalovaný balíček pro dešifrování DVD.</p>
+
+  <note style="tip">
+    <p>Abyste mohli otevírat šifrovaná DVD, můžete nainstalovat balíček <sys>libdvdcss</sys>. Vezměte ale na vědomí, že v některých zemích není používání tohoto balíčku legální. Ohledně dostupnosti balíčku ve vaší distribuci se informujte ve zdrojích podpory distribuce.</p>
+  </note>
+
+</page>

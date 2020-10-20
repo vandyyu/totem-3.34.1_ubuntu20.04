@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="screenshot" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#advanced-options"/>
+    <revision pkgversion="3.30.0" version="0.1" date="2019-01-09" status="draft"/>
+    <desc>Képernyőkép készítése egy videóról.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Így add tovább! 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>ur.balazs at fsf dot hu</mal:email>
+      <mal:years>2019.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Képernyőképek</title>
+
+  <p>Film nézése közben történő képernyőképek készítéséhez kövesse ezeket a lépéseket:</p>
+
+  <steps>
+    <item>
+      <p>Nyomja meg az ablak jobb felső sarkában lévő menügombot, és válassza a <gui style="menuitem">Képernyőkép készítése</gui> menüpontot.</p>
+    </item>
+  </steps>
+
+  <note>
+    <p>A képernyőkép a <gui>Képek</gui> mappába kerül mentésre <file>Képernyőkép erről: a-videó-neve.png</file> néven.</p>
+  </note>
+
+</page>

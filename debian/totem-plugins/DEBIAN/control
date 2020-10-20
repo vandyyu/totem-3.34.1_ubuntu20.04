@@ -1,0 +1,29 @@
+Package: totem-plugins
+Source: totem
+Version: 3.34.1-2ubuntu2
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 1420
+Depends: libc6 (>= 2.28), libgdk-pixbuf2.0-0 (>= 2.23.0), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (>= 3.19.4), libpeas-1.0-0 (>= 1.1.0), libtotem0 (>= 3.34.1-2ubuntu2), libtotem0 (<< 3.35), python3.8, python3:any, totem (= 3.34.1-2ubuntu2), gir1.2-gdkpixbuf-2.0, gir1.2-glib-2.0, gir1.2-gtk-3.0, gir1.2-pango-1.0, gir1.2-peas-1.0, gir1.2-totem-1.0 (= 3.34.1-2ubuntu2), python3-gi (>= 2.90.3), python3-xdg
+Section: video
+Priority: optional
+Homepage: https://wiki.gnome.org/Apps/Videos
+Description: Plugins for the Totem media player
+ Totem is a simple yet featureful media player for GNOME which can read
+ a large number of file formats.
+ .
+ This package contains a set of recommended plugins for Totem:
+ .
+    * Control Totem with an Infrared remote control
+    * Control Totem with the keyboard's media player keys
+    * Display movie properties
+    * Deactivate the screensaver when a movie is playing
+    * Skip to a defined time in the movie
+    * Set the away status in the instant messenger when a movie is
+      playing
+    * Control totem with a mobile phone using the Bluetooth protocol
+    * Share the current playlist via HTTP
+    * Search, browse for and play videos from YouTube
+ .
+ Additional plugins can be written in C or Python.
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>

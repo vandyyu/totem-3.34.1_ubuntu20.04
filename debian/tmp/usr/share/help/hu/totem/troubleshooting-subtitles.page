@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="troubleshooting-subtitles" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#troubleshooting"/>
+    <link type="seealso" xref="subtitles"/>
+    <link type="seealso" xref="preferences"/>
+    <revision pkgversion="3.30" version="0.2" date="2019-01-11" status="draft"/>
+    <desc>Nem tudok betölteni feliratokat.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Így add tovább! 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>ur.balazs at fsf dot hu</mal:email>
+      <mal:years>2019.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Probléma a feliratok betöltésével</title>
+
+  <p>Előfordulhat, hogy a <link xref="subtitles"/> vagy a <link xref="preferences"/> oldalon a feliratokra vonatkozó utasítások betartásának ellenére a <app>Videók</app> mégse tölti be a feliratokat. Ennek oka a következő lehet:</p>
+
+  <list>
+    <item>
+      <p>A feliratfájl neve rossz: nyissa meg a fájlválasztót, és ellenőrizze, hogy a feliratfájl neve megegyezik-e a film nevével.</p>
+    </item>
+    <item>
+      <p>A feliratfájl hiányzik: nyissa meg a fájlválasztót, és ellenőrizze, hogy feliratfájl is van-e abban a könyvtárban, ahol a film van.</p>
+    </item>
+  </list>
+
+  <p>Ha nincs feliratfájl a filmhez, akkor kereshet egyet a <app>Videók</app> alkalmazással:</p>
+  <steps>
+    <item><p>Nyomja meg az ablak jobb felső sarkában lévő menügombot, és válassza a <gui style="menuitem">Beállítások</gui> menüpontot.</p>
+    </item>
+    <item>
+      <p>Az <gui>Általános</gui> lapon a <gui>Bővítmények</gui> alatt nyomja meg a <gui style="button">Bővítmények…</gui> gombot.</p>
+    </item>
+    <item>
+      <p>A <gui>Bővítmények beállítása</gui> ablakban engedélyezze a <gui>Feliratletöltő</gui> bővítményt. Ez megpróbálja megkeresni és letölteni a jelenleg lejátszott film feliratait.</p>
+    </item>
+  </steps>
+
+  <note>
+  <p>Ne feledje, hogy feliratok kereséséhez kapcsolódva kell lennie az internethez.</p>
+  </note>
+
+</page>

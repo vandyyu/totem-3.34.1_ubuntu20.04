@@ -1,0 +1,17 @@
+debian/tmp/usr/lib/x86_64-linux-gnu/totem/plugins/apple-trailers
+debian/tmp/usr/lib/x86_64-linux-gnu/totem/plugins/autoload-subtitles
+debian/tmp/usr/lib/x86_64-linux-gnu/totem/plugins/dbus
+debian/tmp/usr/lib/x86_64-linux-gnu/totem/plugins/im-status
+debian/tmp/usr/lib/x86_64-linux-gnu/totem/plugins/media-player-keys
+debian/tmp/usr/lib/x86_64-linux-gnu/totem/plugins/opensubtitles
+debian/tmp/usr/lib/x86_64-linux-gnu/totem/plugins/open-directory
+debian/tmp/usr/lib/x86_64-linux-gnu/totem/plugins/properties
+debian/tmp/usr/lib/x86_64-linux-gnu/totem/plugins/pythonconsole
+debian/tmp/usr/lib/x86_64-linux-gnu/totem/plugins/recent
+debian/tmp/usr/lib/x86_64-linux-gnu/totem/plugins/rotation
+debian/tmp/usr/lib/x86_64-linux-gnu/totem/plugins/save-file
+debian/tmp/usr/lib/x86_64-linux-gnu/totem/plugins/screensaver
+debian/tmp/usr/lib/x86_64-linux-gnu/totem/plugins/screenshot
+debian/tmp/usr/lib/x86_64-linux-gnu/totem/plugins/skipto
+debian/tmp/usr/lib/x86_64-linux-gnu/totem/plugins/variable-rate
+debian/tmp/usr/lib/x86_64-linux-gnu/totem/plugins/vimeo

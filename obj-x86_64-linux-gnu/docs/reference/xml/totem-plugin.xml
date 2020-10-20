@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+	<!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+	<!ENTITY version SYSTEM "version.xml">
+	<!ENTITY slash "/">
+]>
+<refentry id="totem-TotemPlugin">
+<refmeta>
+<refentrytitle role="top_of_page" id="totem-TotemPlugin.top_of_page">TotemPlugin</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>TOTEM Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>TotemPlugin</refname>
+<refpurpose>base plugin class and loading/unloading functions</refpurpose>
+</refnamediv>
+<refsect1 id="totem-TotemPlugin.stability-level">
+<title>Stability Level</title>
+<acronym>Unstable</acronym>, unless otherwise indicated
+</refsect1>
+
+<refsect1 id="totem-TotemPlugin.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_proto_type" colwidth="150px"/>
+<colspec colname="functions_proto_name"/>
+<tbody>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="TOTEM-PLUGIN-REGISTER:CAPS">TOTEM_PLUGIN_REGISTER</link><phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="TOTEM-PLUGIN-REGISTER-CONFIGURABLE:CAPS">TOTEM_PLUGIN_REGISTER_CONFIGURABLE</link><phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="totem-plugin-find-file">totem_plugin_find_file</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GtkBuilder"><returnvalue>GtkBuilder</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="totem-plugin-load-interface">totem_plugin_load_interface</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="char"><returnvalue>char</returnvalue></link>&#160;**
+</entry><entry role="function_name"><link linkend="totem-get-plugin-paths">totem_get_plugin_paths</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+<refsect1 id="totem-TotemPlugin.includes"><title>Includes</title><synopsis>#include &lt;totem-dirs.h&gt;
+</synopsis></refsect1>
+
+<refsect1 id="totem-TotemPlugin.description" role="desc">
+<title role="desc.title">Description</title>
+<para>libpeas is used as a general-purpose architecture for adding plugins to Totem, with
+derived support for different programming languages.</para>
+<para>The functions in totem-dirs.h are used to allow plugins to find and load files installed alongside the plugins, such as UI files.</para>
+
+</refsect1>
+<refsect1 id="totem-TotemPlugin.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="TOTEM-PLUGIN-REGISTER:CAPS" role="macro">
+<title>TOTEM_PLUGIN_REGISTER()</title>
+<indexterm zone="TOTEM-PLUGIN-REGISTER:CAPS"><primary sortas="PLUGIN_REGISTER">TOTEM_PLUGIN_REGISTER</primary></indexterm>
+<programlisting language="C">#define             TOTEM_PLUGIN_REGISTER(TYPE_NAME, TypeName, type_name)</programlisting>
+<para>Registers a plugin with the Totem plugin system, including registering the type specified in the parameters and declaring its activate and
+deactivate functions.</para>
+<refsect3 id="TOTEM-PLUGIN-REGISTER.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>TYPE_NAME</para></entry>
+<entry role="parameter_description"><para>the name of the plugin type, in UPPER_CASE</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>TypeName</para></entry>
+<entry role="parameter_description"><para>the name of the plugin type, in CamelCase</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>type_name</para></entry>
+<entry role="parameter_description"><para>the name of the plugin type, in lower_case</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="TOTEM-PLUGIN-REGISTER-CONFIGURABLE:CAPS" role="macro">
+<title>TOTEM_PLUGIN_REGISTER_CONFIGURABLE()</title>
+<indexterm zone="TOTEM-PLUGIN-REGISTER-CONFIGURABLE:CAPS"><primary sortas="PLUGIN_REGISTER_CONFIGURABLE">TOTEM_PLUGIN_REGISTER_CONFIGURABLE</primary></indexterm>
+<programlisting language="C">#define             TOTEM_PLUGIN_REGISTER_CONFIGURABLE(TYPE_NAME, TypeName, type_name)</programlisting>
+<para>Registers a configurable plugin with the Totem plugin system, including registering the type specified in the parameters and declaring its activate
+and deactivate and widget creation functions.</para>
+<refsect3 id="TOTEM-PLUGIN-REGISTER-CONFIGURABLE.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>TYPE_NAME</para></entry>
+<entry role="parameter_description"><para>the name of the plugin type, in UPPER_CASE</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>TypeName</para></entry>
+<entry role="parameter_description"><para>the name of the plugin type, in CamelCase</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>type_name</para></entry>
+<entry role="parameter_description"><para>the name of the plugin type, in lower_case</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="totem-plugin-find-file" role="function">
+<title>totem_plugin_find_file&#160;()</title>
+<indexterm zone="totem-plugin-find-file"><primary sortas="plugin_find_file">totem_plugin_find_file</primary></indexterm>
+<programlisting language="C"><link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+totem_plugin_find_file (<parameter>const <link linkend="char"><type>char</type></link> *plugin_name</parameter>,
+                        <parameter>const <link linkend="char"><type>char</type></link> *file</parameter>);</programlisting>
+<para>Finds the specified <parameter>file</parameter>
+ by looking in the plugin paths
+listed by <link linkend="totem-get-plugin-paths"><function>totem_get_plugin_paths()</function></link> and then in the system
+Totem data directory.</para>
+<para>This should be used by plugins to find plugin-specific
+resource files.</para>
+<refsect3 id="totem-plugin-find-file.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>plugin_name</para></entry>
+<entry role="parameter_description"><para>the plugin name</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>file</para></entry>
+<entry role="parameter_description"><para>the file to find</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="totem-plugin-find-file.returns" role="returns">
+<title>Returns</title>
+<para> a newly-allocated absolute path for the file, or <link linkend="NULL:CAPS"><literal>NULL</literal></link></para>
+</refsect3></refsect2>
+<refsect2 id="totem-plugin-load-interface" role="function">
+<title>totem_plugin_load_interface&#160;()</title>
+<indexterm zone="totem-plugin-load-interface"><primary sortas="plugin_load_interface">totem_plugin_load_interface</primary></indexterm>
+<programlisting language="C"><link linkend="GtkBuilder"><returnvalue>GtkBuilder</returnvalue></link>&#160;*
+totem_plugin_load_interface (<parameter>const <link linkend="char"><type>char</type></link> *plugin_name</parameter>,
+                             <parameter>const <link linkend="char"><type>char</type></link> *name</parameter>,
+                             <parameter><link linkend="gboolean"><type>gboolean</type></link> fatal</parameter>,
+                             <parameter><link linkend="GtkWindow"><type>GtkWindow</type></link> *parent</parameter>,
+                             <parameter><link linkend="gpointer"><type>gpointer</type></link> user_data</parameter>);</programlisting>
+<para>Loads an interface file (GtkBuilder UI file) for a plugin, given its filename and
+assuming it's installed in the plugin's data directory.</para>
+<para>This should be used instead of attempting to load interfaces manually in plugins.</para>
+<refsect3 id="totem-plugin-load-interface.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>plugin_name</para></entry>
+<entry role="parameter_description"><para>the plugin name</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>name</para></entry>
+<entry role="parameter_description"><para>interface filename</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fatal</para></entry>
+<entry role="parameter_description"><para><link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if it's a fatal error if the interface can't be loaded</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>parent</para></entry>
+<entry role="parameter_description"><para>the interface's parent <link linkend="GtkWindow"><type>GtkWindow</type></link>. </para></entry>
+<entry role="parameter_annotations"><emphasis role="annotation">[<acronym>allow-none</acronym>]</emphasis></entry></row>
+<row><entry role="parameter_name"><para>user_data</para></entry>
+<entry role="parameter_description"><para>a pointer to be passed to each signal handler in the interface when they're called. </para></entry>
+<entry role="parameter_annotations"><emphasis role="annotation">[<acronym>allow-none</acronym>]</emphasis></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="totem-plugin-load-interface.returns" role="returns">
+<title>Returns</title>
+<para>the <link linkend="GtkBuilder"><type>GtkBuilder</type></link> instance for the interface. </para>
+<para><emphasis role="annotation">[<acronym>transfer full</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="totem-get-plugin-paths" role="function" condition="since:2.90.0">
+<title>totem_get_plugin_paths&#160;()</title>
+<indexterm zone="totem-get-plugin-paths" role="2.90.0"><primary sortas="get_plugin_paths">totem_get_plugin_paths</primary></indexterm>
+<programlisting language="C"><link linkend="char"><returnvalue>char</returnvalue></link>&#160;**
+totem_get_plugin_paths (<parameter><type>void</type></parameter>);</programlisting>
+<para>Return a <link linkend="NULL:CAPS"><literal>NULL</literal></link>-terminated array of paths to directories which can contain Totem plugins. This respects the GSettings disable_user_plugins setting.</para>
+<refsect3 id="totem-get-plugin-paths.returns" role="returns">
+<title>Returns</title>
+<para>a <link linkend="NULL:CAPS"><literal>NULL</literal></link>-terminated array of paths to plugin directories. </para>
+<para><emphasis role="annotation">[<acronym>transfer full</acronym>]</emphasis></para>
+</refsect3><para role="since">Since: <link linkend="api-index-2.90.0">2.90.0</link></para></refsect2>
+
+</refsect1>
+
+</refentry>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="file-open" xml:lang="pl">
+
+  <info>
+    <revision pkgversion="3.8" version="0.1" date="2013-03-29" status="draft"/>
+    <revision pkgversion="3.30" version="0.2" date="2019-01-10" status="draft"/>
+    <link type="guide" xref="index#playing-media"/>
+
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name its:translate="no">Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+
+    <desc>Otwieranie pliku w programie <app>Filmy</app>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Oglądanie filmów</title>
+
+  <p>Można otwierać pliki z filmami w programie <app>Filmy</app> na dowolny z tych sposobów:</p>
+
+  <list>
+    <item>
+      <p>Wybierz film z listy już wyświetlanej w głównym oknie.</p>
+    </item>
+    <item>
+      <p>Wybierz <app>Filmy</app> jako program do otwierania plików z filmami w menedżerze plików.</p>
+    </item>
+    <item>
+      <p>Kliknij przycisk <gui style="button">+</gui> w górnym lewym rogu okna i wybierz <gui style="menuitem">Dodaj lokalny film…</gui>. Zaznacz filmy do otwarcia. Kliknij przycisk <gui style="button">Dodaj</gui>. Film zostanie dodany do listy w głównym oknie, skąd można go wybrać.</p>
+    </item>
+    <item>
+      <p>Kliknij przycisk <gui style="button">+</gui> w górnym lewym rogu okna i wybierz <gui style="menuitem">Dodaj film z Internetu…</gui>. Wpisz lub wklej adres filmu do otwarcia. Kliknij przycisk <gui style="button">Dodaj</gui>. Film zostanie dodany do listy w głównym oknie, skąd można go wybrać.</p>
+    </item>
+  </list>
+
+</page>

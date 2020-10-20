@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="subtitles" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#playing-media"/>
+    <link type="seealso" xref="preferences"/>
+    <revision pkgversion="3.30.0" version="0.1" date="2019-01-11" status="draft"/>
+    <desc>Jak k přehrávanému filmu ručně vybrat titulky.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+  <title>Textové titulky</title>
+
+  <p>V závislosti na formátu videa mohou být titulky přímo součástí souboru nebo disku s videem a nebo v podobě samostatného externího souboru.</p>
+
+  <p>Když chcete vybrat, které z titulků obsažených ve videosouboru nebo na disku, se mají používat, zmáčkněte tlačítko nabídky v pravém horním rohu okna a zvolte <gui style="menuitem">Titulky</gui>.</p>
+
+  <p>Pokud je v <link xref="preferences">Předvolbách</link> zapnuto <gui>Po načtení videa načíst soubory s titulky</gui>, <app>Videa</app> načtou externí titulky automaticky.</p>
+
+  <p>Když chcete ručně načíst externí soubor s titulky k filmu:</p>
+  <steps>
+    <item>
+      <p>Zmáčkněte tlačítko nabídky v pravém horním rohu okna a vyberte <guiseq><gui style="menuitem">Titulky</gui> <gui>Vybrat titulky…</gui></guiseq></p>
+    </item>
+    <item>
+       <p>Otevře se dialogové okno pro výběr souboru. Najděte v něm požadované titulky.</p>
+    </item>
+    <item>
+      <p>Vyberte je a klikněte na <gui>Otevřít</gui>.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Pokud je zapotřebí, upravte velikost a font titulků. Viz část <guiseq><gui>Obecné</gui><gui>Externí titulky</gui></guiseq> na stránce <link xref="preferences"/>.</p>
+  </note>
+
+</page>

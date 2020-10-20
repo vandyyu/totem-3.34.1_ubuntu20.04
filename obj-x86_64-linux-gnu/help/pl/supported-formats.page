@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="supported-formats" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="index#troubleshooting"/>
+    <revision pkgversion="3.30" version="0.2" date="2019-01-11" status="draft"/>
+    <desc>Jakie formaty plików są obsługiwane.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Nie można odtworzyć pewnego formatu pliku</title>
+
+  <p>Formaty plików obsługiwane przez program <app>Filmy</app> zależą od wtyczek biblioteki <sys>GStreamer</sys>. Jeśli pewne formaty nie są obsługiwane, to proszę skierować się na forum pomocy używanej dystrybucji, aby dowiedzieć się, które pakiety należy zainstalować.</p>
+
+  <note><p>Jeśli otwierany jest nieobsługiwany format, to na wielu dystrybucjach program <app>Filmy</app> wyświetli okno umożliwiające wyszukanie brakujących wtyczek (kodeków) i ich zainstalowanie.</p></note>
+
+</page>

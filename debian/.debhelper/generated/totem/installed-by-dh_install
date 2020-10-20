@@ -1,0 +1,5 @@
+debian/tmp/usr/bin
+debian/tmp/usr/libexec/totem-gallery-thumbnailer
+debian/tmp/usr/share/applications
+debian/tmp/usr/share/metainfo/org.gnome.Totem.appdata.xml
+debian/tmp/usr/share/dbus-1/services/

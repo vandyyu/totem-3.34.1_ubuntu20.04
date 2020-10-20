@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="troubleshooting-DVD" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#troubleshooting"/>
+    <link type="seealso" xref="supported-formats"/>
+    <revision pkgversion="3.30" version="0.2" date="2019-01-11" status="draft"/>
+    <desc>Nem tudom lejátszani a DVD-met.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Így add tovább! 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>ur.balazs at fsf dot hu</mal:email>
+      <mal:years>2019.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Probléma a filmek DVD-ről történő lejátszásával</title>
+
+  <p>Előfordulhat, hogy miután betett egy DVD-t a CD/DVD-meghajtóba, a <app>Videók</app> a következő hibát jeleníti meg: <gui>Hiba történt ‒ A film nem olvasható.</gui> Ez azért lehet, mert a <link xref="supported-formats">film formátumának olvasásához szükséges <sys>GStreamer</sys> bővítmény nincs telepítve a rendszerre</link>, vagy mert a DVD titkosított, és a DVD visszafejtő csomag nincs telepítve a rendszerre.</p>
+
+  <note style="tip">
+    <p>A titkosított DVD-k megnyitásához fontolja meg a <sys>libdvdcss</sys> csomag telepítését. Ne feledje azonban, hogy a csomag használata egyes országokban nem törvényes. További információkért arról, hogy a csomag elérhető-e vagy hol érhető el a disztribúciójában, kérdezzen rá a disztribúciója támogatási fórumán.</p>
+  </note>
+
+</page>

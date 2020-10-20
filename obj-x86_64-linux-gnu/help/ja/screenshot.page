@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="screenshot" xml:lang="ja">
+
+  <info>
+    <link type="guide" xref="index#advanced-options"/>
+    <revision pkgversion="3.30.0" version="0.1" date="2019-01-09" status="draft"/>
+    <desc>動画のスクリーンショットを撮れます。</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mitsuya Shibata</mal:name>
+      <mal:email>mty.shibata@gmail.com</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>OKANO Takayoshi</mal:name>
+      <mal:email>kano@na.rim.or.jp</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Takayuki KUSANO</mal:name>
+      <mal:email>AE5T-KSN@asahi-net.or.jp</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiro Matsuzawa</mal:name>
+      <mal:email>jmatsuzawa@src.gnome.org</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>sujiniku</mal:name>
+      <mal:email>sujinikusityuu@gmail.com</mal:email>
+      <mal:years>2016, 2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>sicklylife</mal:name>
+      <mal:email>translation@sicklylife.jp</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>スクリーンショット</title>
+
+  <p>次の手順で、視聴している動画のスクリーンショットを撮れます。</p>
+
+  <steps>
+    <item>
+      <p>ウィンドウの右上にあるメニューボタンを押し、<gui style="menuitem">スクリーンショットを撮る</gui> を選択します。</p>
+    </item>
+  </steps>
+
+  <note>
+    <p>スクリーンショットは、ホームフォルダーの <gui>写真</gui> フォルダーに <file>Screenshot from Name-of-the-Video.png</file> といった名前で保存されます。</p>
+  </note>
+
+</page>

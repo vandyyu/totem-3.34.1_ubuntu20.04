@@ -1,0 +1,13 @@
+[options]
+enable-easy-codec-installation = yes
+enable-gtk-doc = true
+enable-python = yes
+prefix = /usr
+libdir = lib/x86_64-linux-gnu
+localstatedir = /var
+sysconfdir = /etc
+buildtype = plain
+wrap_mode = nodownload
+
+[properties]
+

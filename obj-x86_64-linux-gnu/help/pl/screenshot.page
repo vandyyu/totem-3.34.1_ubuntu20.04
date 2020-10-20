@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="screenshot" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="index#advanced-options"/>
+    <revision pkgversion="3.30.0" version="0.1" date="2019-01-09" status="draft"/>
+    <desc>Wykonywanie zrzutu ekranu z filmu.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Zrzuty ekranu</title>
+
+  <p>Aby wykonać zrzut ekranu podczas oglądania filmu:</p>
+
+  <steps>
+    <item>
+      <p>Kliknij przycisk menu w górnym prawym rogu okna i wybierz <gui style="menuitem">Zrzut ekranu</gui>.</p>
+    </item>
+  </steps>
+
+  <note>
+    <p>Zrzut ekranu zostanie zapisany w katalogu <gui>Obrazy</gui> użytkownika pod nazwą <file>Zrzut ekranu z Nazwa-filmu.png</file>.</p>
+  </note>
+
+</page>

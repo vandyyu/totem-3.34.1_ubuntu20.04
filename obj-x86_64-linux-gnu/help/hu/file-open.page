@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="file-open" xml:lang="hu">
+
+  <info>
+    <revision pkgversion="3.8" version="0.1" date="2013-03-29" status="draft"/>
+    <revision pkgversion="3.30" version="0.2" date="2019-01-10" status="draft"/>
+    <link type="guide" xref="index#playing-media"/>
+
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name its:translate="no">Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+
+    <license>
+      <p>Creative Commons Így add tovább! 3.0</p>
+    </license>
+
+    <desc>Fájl megnyitása a <app>Videókban</app>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>ur.balazs at fsf dot hu</mal:email>
+      <mal:years>2019.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Videó megnézése</title>
+
+  <p>A következő módok egyikével nyithatja meg a fájlokat a <app>Videókban</app>:</p>
+
+  <list>
+    <item>
+      <p>Válasszon egy videót a főablakban már megjelenített listából.</p>
+    </item>
+    <item>
+      <p>Válassza a <app>Videókat</app> egy videofájl megnyitásához használt alkalmazásként a <app>Fájlok</app> fájlkezelőben.</p>
+    </item>
+    <item>
+      <p>Nyomja meg az ablak bal felső sarkában lévő <gui style="button">+</gui> gombot, és válassza a <gui style="menuitem">Helyi videó hozzáadása…</gui> menüpontot. Válassza ki a megnyitni kívánt videókat. Nyomja meg a <gui style="button">Hozzáadás</gui> gombot. A videó hozzáadásra kerül a főablakban lévő listához, és kiválaszthatja onnan.</p>
+    </item>
+    <item>
+      <p>Nyomja meg az ablak bal felső sarkában lévő <gui style="button">+</gui> gombot, és válassza a <gui style="menuitem">Webes videó hozzáadása…</gui> menüpontot. Gépelje be vagy illessze be a megnyitni kívánt videó címét. Nyomja meg a <gui style="button">Hozzáadás</gui> gombot. A videó hozzáadásra kerül a főablakban lévő listához, és kiválaszthatja onnan.</p>
+    </item>
+  </list>
+
+</page>

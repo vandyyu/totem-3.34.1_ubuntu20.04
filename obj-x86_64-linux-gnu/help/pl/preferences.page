@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="preferences" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="index#advanced-options"/>
+    <link type="seealso" xref="subtitles"/>
+    <revision pkgversion="3.30" version="0.2" date="2019-01-10" status="draft"/>
+    <desc>Konfiguracja wyjścia dźwięku i obrazu oraz wtyczek.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Preferencje i dodatkowe funkcje</title>
+
+  <p>Program <app>Filmy</app> zawiera kilka dodatkowych opcji. Skonfiguruj go według własnych upodobań. Wyświetl okno <gui>Preferencje</gui> klikając przycisk menu w górnym prawym rogu okna i wybierając <gui style="menuitem">Preferencje</gui>.</p>
+
+  <section id="pref-general">
+    <title>Ogólne</title>
+      <terms>
+        <item>
+          <title><gui>Zewnętrzne napisy</gui></title>
+            <list>
+              <item>
+                <p>Zaznacz opcję <gui>Wczytywanie pliku napisów po wczytaniu filmu</gui>, jeśli napisy mają być automatycznie wczytywane.</p>
+              </item>
+              <item>
+                <p>Dostosuj typ i rozmiar czcionki klikając jej nazwę. Wybierz typ czcionki z rozwijanej listy. Kliknij suwak i zmień rozmiar czcionki. Po ukończeniu kliknij przycisk <gui>Wybierz</gui>.</p>
+              </item>
+              <item>
+                <p>Wybierz kodowanie z rozwijanej listy.</p>
+              </item>
+            </list>
+        </item>
+        <item>
+          <title><gui>Wtyczki</gui></title>
+          <p>Wtyczki zawierają dodatkowe funkcje i rozszerzają funkcjonalność. Można wyświetlić listę wtyczek klikając przycisk <gui style="button">Wtyczki…</gui>. Zaznacz jedną i kliknij przycisk <gui style="button">Preferencje</gui>, jeśli jest dostępny.</p>
+        </item>
+      </terms>
+  </section>
+
+  <section id="pref-display">
+    <title>Wyświetlanie</title>
+      <terms>
+        <item>
+          <title><gui>Wideo</gui></title>
+          <p>Program <app>Filmy</app> umożliwia określenie, czy funkcja <gui>Wyłączenie usuwania przeplotu z filmów z przeplotem</gui> ma być włączona.</p>
+        </item>
+        <item>
+          <title><gui>Korekcja kolorów</gui></title>
+          <p>Ta opcja umożliwia dostosowanie <gui>Jasności</gui>, <gui>Kontrastu</gui>, <gui>Nasycenia</gui> lub <gui>Ocienia</gui> oglądanych filmów za pomocą suwaków.</p>
+            <note style="tip">
+              <p>Można wrócić do poprzednich ustawień klikając przycisk <gui style="button">Przywróć domyślne</gui>.</p>
+            </note>
+        </item>
+      </terms>
+  </section>
+
+  <section id="pref-audio">
+    <title>Dźwięk</title>
+      <terms>
+        <item>
+          <title><gui>Wyjście dźwięku</gui></title>
+          <p>Wybierz typ <gui>Wyjścia dźwięku</gui> z rozwijanej listy.</p>
+        </item>
+      </terms>
+  </section>
+
+</page>

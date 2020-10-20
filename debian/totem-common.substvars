@@ -1,0 +1,4 @@
+misc:Depends=dconf-gsettings-backend | gsettings-backend
+gnome:Version=3.34
+gnome:NextVersion=3.35
+misc:Pre-Depends=

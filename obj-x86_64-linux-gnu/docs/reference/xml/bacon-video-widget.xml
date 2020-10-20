@@ -1,0 +1,2237 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+	<!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+	<!ENTITY version SYSTEM "version.xml">
+	<!ENTITY slash "/">
+]>
+<refentry id="totem-BaconVideoWidget">
+<refmeta>
+<refentrytitle role="top_of_page" id="totem-BaconVideoWidget.top_of_page">BaconVideoWidget</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>TOTEM Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>BaconVideoWidget</refname>
+<refpurpose>video playing widget and abstraction</refpurpose>
+</refnamediv>
+<refsect1 id="totem-BaconVideoWidget.stability-level">
+<title>Stability Level</title>
+<acronym>Unstable</acronym>, unless otherwise indicated
+</refsect1>
+
+<refsect1 id="totem-BaconVideoWidget.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_proto_type" colwidth="150px"/>
+<colspec colname="functions_proto_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="GtkWidget"><returnvalue>GtkWidget</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="bacon-video-widget-new">bacon_video_widget_new</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-open">bacon_video_widget_open</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-play">bacon_video_widget_play</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-pause">bacon_video_widget_pause</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-seek">bacon_video_widget_seek</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-seek-time">bacon_video_widget_seek_time</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-stop">bacon_video_widget_stop</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-close">bacon_video_widget_close</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-can-direct-seek">bacon_video_widget_can_direct_seek</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-can-get-frames">bacon_video_widget_can_get_frames</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-can-set-volume">bacon_video_widget_can_set_volume</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-dvd-event">bacon_video_widget_dvd_event</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-has-menus">bacon_video_widget_has_menus</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="BvwAspectRatio"><returnvalue>BvwAspectRatio</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-get-aspect-ratio">bacon_video_widget_get_aspect_ratio</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-set-aspect-ratio">bacon_video_widget_set_aspect_ratio</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="BvwAudioOutputType"><returnvalue>BvwAudioOutputType</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-get-audio-output-type">bacon_video_widget_get_audio_output_type</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-set-audio-output-type">bacon_video_widget_set_audio_output_type</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GdkPixbuf"><returnvalue>GdkPixbuf</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="bacon-video-widget-get-current-frame">bacon_video_widget_get_current_frame</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gint64"><returnvalue>gint64</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-get-current-time">bacon_video_widget_get_current_time</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-get-deinterlacing">bacon_video_widget_get_deinterlacing</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-set-deinterlacing">bacon_video_widget_set_deinterlacing</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GList"><returnvalue>GList</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="bacon-video-widget-get-languages">bacon_video_widget_get_languages</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-get-language">bacon_video_widget_get_language</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-set-language">bacon_video_widget_set_language</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-set-logo">bacon_video_widget_set_logo</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-get-logo-mode">bacon_video_widget_get_logo_mode</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-set-logo-mode">bacon_video_widget_set_logo_mode</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-get-metadata">bacon_video_widget_get_metadata</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GOptionGroup"><returnvalue>GOptionGroup</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="bacon-video-widget-get-option-group">bacon_video_widget_get_option_group</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="double"><returnvalue>double</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-get-position">bacon_video_widget_get_position</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-set-referrer">bacon_video_widget_set_referrer</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="BvwRotation"><returnvalue>BvwRotation</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-get-rotation">bacon_video_widget_get_rotation</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-set-rotation">bacon_video_widget_set_rotation</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gint64"><returnvalue>gint64</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-get-stream-length">bacon_video_widget_get_stream_length</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GList"><returnvalue>GList</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="bacon-video-widget-get-subtitles">bacon_video_widget_get_subtitles</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-get-subtitle">bacon_video_widget_get_subtitle</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-set-subtitle">bacon_video_widget_set_subtitle</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-set-text-subtitle">bacon_video_widget_set_text_subtitle</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-set-subtitle-encoding">bacon_video_widget_set_subtitle_encoding</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-set-subtitle-font">bacon_video_widget_set_subtitle_font</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-set-user-agent">bacon_video_widget_set_user_agent</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-get-video-property">bacon_video_widget_get_video_property</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-set-video-property">bacon_video_widget_set_video_property</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="double"><returnvalue>double</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-get-volume">bacon_video_widget_get_volume</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-set-volume">bacon_video_widget_set_volume</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="BvwZoomMode"><returnvalue>BvwZoomMode</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-get-zoom">bacon_video_widget_get_zoom</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-set-zoom">bacon_video_widget_set_zoom</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-has-angles">bacon_video_widget_has_angles</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-set-next-angle">bacon_video_widget_set_next_angle</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-has-next-track">bacon_video_widget_has_next_track</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-has-previous-track">bacon_video_widget_has_previous_track</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-is-playing">bacon_video_widget_is_playing</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-is-seekable">bacon_video_widget_is_seekable</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gfloat"><returnvalue>gfloat</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-get-rate">bacon_video_widget_get_rate</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-set-rate">bacon_video_widget_set_rate</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-step">bacon_video_widget_step</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GObject"><returnvalue>GObject</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="bacon-video-widget-get-controls-object">bacon_video_widget_get_controls_object</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GObject"><returnvalue>GObject</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="bacon-video-widget-get-header-controls-object">bacon_video_widget_get_header_controls_object</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-set-fullscreen">bacon_video_widget_set_fullscreen</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-set-next-language">bacon_video_widget_set_next_language</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-set-next-subtitle">bacon_video_widget_set_next_subtitle</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-show-popup">bacon_video_widget_show_popup</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-mark-popup-busy">bacon_video_widget_mark_popup_busy</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="bacon-video-widget-unmark-popup-busy">bacon_video_widget_unmark_popup_busy</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="totem-BaconVideoWidget.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="other_proto_type" colwidth="150px"/>
+<colspec colname="other_proto_name"/>
+<tbody>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="BaconVideoWidget">BaconVideoWidget</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="BaconVideoWidgetClass">BaconVideoWidgetClass</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="BvwAspectRatio">BvwAspectRatio</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="BvwAudioOutputType">BvwAudioOutputType</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="BvwDVDEvent">BvwDVDEvent</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="BvwMetadataType">BvwMetadataType</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="BvwRotation">BvwRotation</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="BvwVideoProperty">BvwVideoProperty</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="BvwZoomMode">BvwZoomMode</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="BvwError">BvwError</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+<refsect1 id="totem-BaconVideoWidget.includes"><title>Includes</title><synopsis>#include &lt;bacon-video-widget.h&gt;
+</synopsis></refsect1>
+
+<refsect1 id="totem-BaconVideoWidget.description" role="desc">
+<title role="desc.title">Description</title>
+<para><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> is a widget to play audio or video streams, with support for visualisations for audio-only streams. It has a GStreamer
+backend, and abstracts away the differences to provide a simple interface to the functionality required by Totem. It handles all the low-level
+audio and video work for Totem (or passes the work off to the backend).</para>
+
+</refsect1>
+<refsect1 id="totem-BaconVideoWidget.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="bacon-video-widget-new" role="function">
+<title>bacon_video_widget_new&#160;()</title>
+<indexterm zone="bacon-video-widget-new"><primary>bacon_video_widget_new</primary></indexterm>
+<programlisting language="C"><link linkend="GtkWidget"><returnvalue>GtkWidget</returnvalue></link>&#160;*
+bacon_video_widget_new (<parameter><link linkend="GError"><type>GError</type></link> **error</parameter>);</programlisting>
+<para>Creates a new <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link>.</para>
+<para>A <link linkend="BvwError"><type>BvwError</type></link> will be returned on error.</para>
+<refsect3 id="bacon-video-widget-new.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>error</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GError"><type>GError</type></link>, or <link linkend="NULL:CAPS"><literal>NULL</literal></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-new.returns" role="returns">
+<title>Returns</title>
+<para> a new <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link>, or <link linkend="NULL:CAPS"><literal>NULL</literal></link>; destroy with <link linkend="gtk-widget-destroy"><function>gtk_widget_destroy()</function></link></para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-open" role="function">
+<title>bacon_video_widget_open&#160;()</title>
+<indexterm zone="bacon-video-widget-open"><primary>bacon_video_widget_open</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+bacon_video_widget_open (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>,
+                         <parameter>const <link linkend="char"><type>char</type></link> *mrl</parameter>);</programlisting>
+<para>Opens the given <parameter>mrl</parameter>
+ in <parameter>bvw</parameter>
+ for playing.</para>
+<para>The MRL is loaded and waiting to be played with <link linkend="bacon-video-widget-play"><function>bacon_video_widget_play()</function></link>.</para>
+<refsect3 id="bacon-video-widget-open.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>mrl</para></entry>
+<entry role="parameter_description"><para>an MRL</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-play" role="function">
+<title>bacon_video_widget_play&#160;()</title>
+<indexterm zone="bacon-video-widget-play"><primary>bacon_video_widget_play</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+bacon_video_widget_play (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>,
+                         <parameter><link linkend="GError"><type>GError</type></link> **error</parameter>);</programlisting>
+<para>Plays the currently-loaded video in <parameter>bvw</parameter>
+.</para>
+<para>Errors from the GStreamer backend will be returned asynchronously via the
+<link linkend="BaconVideoWidget-error"><type>“error”</type></link> signal, even if this function returns <link linkend="TRUE:CAPS"><literal>TRUE</literal></link>.</para>
+<refsect3 id="bacon-video-widget-play.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>error</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GError"><type>GError</type></link>, or <link linkend="NULL:CAPS"><literal>NULL</literal></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-play.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> on success, <link linkend="FALSE:CAPS"><literal>FALSE</literal></link> otherwise</para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-pause" role="function">
+<title>bacon_video_widget_pause&#160;()</title>
+<indexterm zone="bacon-video-widget-pause"><primary>bacon_video_widget_pause</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+bacon_video_widget_pause (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Pauses the current stream in the video widget.</para>
+<para>If a live stream is being played, playback is stopped entirely.</para>
+<refsect3 id="bacon-video-widget-pause.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-seek" role="function">
+<title>bacon_video_widget_seek&#160;()</title>
+<indexterm zone="bacon-video-widget-seek"><primary>bacon_video_widget_seek</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+bacon_video_widget_seek (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>,
+                         <parameter><link linkend="double"><type>double</type></link> position</parameter>,
+                         <parameter><link linkend="GError"><type>GError</type></link> **error</parameter>);</programlisting>
+<para>Seeks the currently-playing stream to <parameter>position</parameter>
+ as a percentage of the total
+stream length.</para>
+<refsect3 id="bacon-video-widget-seek.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>position</para></entry>
+<entry role="parameter_description"><para>the percentage of the way through the stream to which to seek</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>error</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GError"><type>GError</type></link>, or <link linkend="NULL:CAPS"><literal>NULL</literal></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-seek.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> on success, <link linkend="FALSE:CAPS"><literal>FALSE</literal></link> otherwise</para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-seek-time" role="function">
+<title>bacon_video_widget_seek_time&#160;()</title>
+<indexterm zone="bacon-video-widget-seek-time"><primary>bacon_video_widget_seek_time</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+bacon_video_widget_seek_time (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>,
+                              <parameter><link linkend="gint64"><type>gint64</type></link> _time</parameter>,
+                              <parameter><link linkend="gboolean"><type>gboolean</type></link> accurate</parameter>,
+                              <parameter><link linkend="GError"><type>GError</type></link> **error</parameter>);</programlisting>
+<para>Seeks the currently-playing stream to the absolute position <parameter>time</parameter>
+, in milliseconds.</para>
+<refsect3 id="bacon-video-widget-seek-time.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>_time</para></entry>
+<entry role="parameter_description"><para>the time to which to seek, in milliseconds</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>accurate</para></entry>
+<entry role="parameter_description"><para>whether to use accurate seek, an accurate seek might be slower for some formats (see GStreamer docs)</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>error</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GError"><type>GError</type></link>, or <link linkend="NULL:CAPS"><literal>NULL</literal></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-seek-time.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> on success, <link linkend="FALSE:CAPS"><literal>FALSE</literal></link> otherwise</para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-stop" role="function">
+<title>bacon_video_widget_stop&#160;()</title>
+<indexterm zone="bacon-video-widget-stop"><primary>bacon_video_widget_stop</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+bacon_video_widget_stop (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Stops playing the current stream and resets to the first position in the stream.</para>
+<refsect3 id="bacon-video-widget-stop.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-close" role="function">
+<title>bacon_video_widget_close&#160;()</title>
+<indexterm zone="bacon-video-widget-close"><primary>bacon_video_widget_close</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+bacon_video_widget_close (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Closes the current stream and frees the resources associated with it.</para>
+<refsect3 id="bacon-video-widget-close.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-can-direct-seek" role="function">
+<title>bacon_video_widget_can_direct_seek&#160;()</title>
+<indexterm zone="bacon-video-widget-can-direct-seek"><primary>bacon_video_widget_can_direct_seek</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+bacon_video_widget_can_direct_seek (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Determines whether direct seeking is possible for the current stream.</para>
+<refsect3 id="bacon-video-widget-can-direct-seek.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-can-direct-seek.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if direct seeking is possible, <link linkend="FALSE:CAPS"><literal>FALSE</literal></link> otherwise</para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-can-get-frames" role="function">
+<title>bacon_video_widget_can_get_frames&#160;()</title>
+<indexterm zone="bacon-video-widget-can-get-frames"><primary>bacon_video_widget_can_get_frames</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+bacon_video_widget_can_get_frames (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>,
+                                   <parameter><link linkend="GError"><type>GError</type></link> **error</parameter>);</programlisting>
+<para>Determines whether individual frames from the current stream can
+be returned using <link linkend="bacon-video-widget-get-current-frame"><function>bacon_video_widget_get_current_frame()</function></link>.</para>
+<para>Frames cannot be returned for audio-only streams, unless visualisations
+are enabled.</para>
+<refsect3 id="bacon-video-widget-can-get-frames.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>error</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GError"><type>GError</type></link>, or <link linkend="NULL:CAPS"><literal>NULL</literal></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-can-get-frames.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if frames can be captured, <link linkend="FALSE:CAPS"><literal>FALSE</literal></link> otherwise</para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-can-set-volume" role="function">
+<title>bacon_video_widget_can_set_volume&#160;()</title>
+<indexterm zone="bacon-video-widget-can-set-volume"><primary>bacon_video_widget_can_set_volume</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+bacon_video_widget_can_set_volume (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Returns whether the volume level can be set, given the current settings.</para>
+<para>The volume cannot be set if the audio output type is set to
+<link linkend="BVW-AUDIO-SOUND-AC3PASSTHRU:CAPS"><literal>BVW_AUDIO_SOUND_AC3PASSTHRU</literal></link>.</para>
+<refsect3 id="bacon-video-widget-can-set-volume.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-can-set-volume.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the volume can be set, <link linkend="FALSE:CAPS"><literal>FALSE</literal></link> otherwise</para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-dvd-event" role="function">
+<title>bacon_video_widget_dvd_event&#160;()</title>
+<indexterm zone="bacon-video-widget-dvd-event"><primary>bacon_video_widget_dvd_event</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+bacon_video_widget_dvd_event (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>,
+                              <parameter><link linkend="BvwDVDEvent"><type>BvwDVDEvent</type></link> type</parameter>);</programlisting>
+<para>Issues a DVD navigation event to the video widget, such as one to skip to the
+next chapter, or navigate to the DVD title menu.</para>
+<para>This is a no-op if the current stream is not navigable.</para>
+<refsect3 id="bacon-video-widget-dvd-event.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>type</para></entry>
+<entry role="parameter_description"><para>the type of DVD event to issue</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-has-menus" role="function">
+<title>bacon_video_widget_has_menus&#160;()</title>
+<indexterm zone="bacon-video-widget-has-menus"><primary>bacon_video_widget_has_menus</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+bacon_video_widget_has_menus (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Returns whether the widget is currently displaying a menu,
+such as a DVD menu.</para>
+<refsect3 id="bacon-video-widget-has-menus.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-has-menus.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if a menu is displayed, <link linkend="FALSE:CAPS"><literal>FALSE</literal></link> otherwise</para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-get-aspect-ratio" role="function">
+<title>bacon_video_widget_get_aspect_ratio&#160;()</title>
+<indexterm zone="bacon-video-widget-get-aspect-ratio"><primary>bacon_video_widget_get_aspect_ratio</primary></indexterm>
+<programlisting language="C"><link linkend="BvwAspectRatio"><returnvalue>BvwAspectRatio</returnvalue></link>
+bacon_video_widget_get_aspect_ratio (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Returns the current aspect ratio used by the widget, from
+<link linkend="BvwAspectRatio"><type>BvwAspectRatio</type></link>.</para>
+<refsect3 id="bacon-video-widget-get-aspect-ratio.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-get-aspect-ratio.returns" role="returns">
+<title>Returns</title>
+<para> the aspect ratio</para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-set-aspect-ratio" role="function">
+<title>bacon_video_widget_set_aspect_ratio&#160;()</title>
+<indexterm zone="bacon-video-widget-set-aspect-ratio"><primary>bacon_video_widget_set_aspect_ratio</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+bacon_video_widget_set_aspect_ratio (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>,
+                                     <parameter><link linkend="BvwAspectRatio"><type>BvwAspectRatio</type></link> ratio</parameter>);</programlisting>
+<para>Sets the aspect ratio used by the widget, from <link linkend="BvwAspectRatio"><type>BvwAspectRatio</type></link>.</para>
+<para>Changes to this take effect immediately.</para>
+<refsect3 id="bacon-video-widget-set-aspect-ratio.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>ratio</para></entry>
+<entry role="parameter_description"><para>the new aspect ratio</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-get-audio-output-type" role="function">
+<title>bacon_video_widget_get_audio_output_type&#160;()</title>
+<indexterm zone="bacon-video-widget-get-audio-output-type"><primary>bacon_video_widget_get_audio_output_type</primary></indexterm>
+<programlisting language="C"><link linkend="BvwAudioOutputType"><returnvalue>BvwAudioOutputType</returnvalue></link>
+bacon_video_widget_get_audio_output_type
+                               (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Returns the current audio output type (e.g. how many speaker channels)
+from <link linkend="BvwAudioOutputType"><type>BvwAudioOutputType</type></link>.</para>
+<refsect3 id="bacon-video-widget-get-audio-output-type.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-get-audio-output-type.returns" role="returns">
+<title>Returns</title>
+<para> the audio output type, or <code class="literal">-1</code></para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-set-audio-output-type" role="function">
+<title>bacon_video_widget_set_audio_output_type&#160;()</title>
+<indexterm zone="bacon-video-widget-set-audio-output-type"><primary>bacon_video_widget_set_audio_output_type</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+bacon_video_widget_set_audio_output_type
+                               (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>,
+                                <parameter><link linkend="BvwAudioOutputType"><type>BvwAudioOutputType</type></link> type</parameter>);</programlisting>
+<para>Sets the audio output type (number of speaker channels) in the video widget.</para>
+<refsect3 id="bacon-video-widget-set-audio-output-type.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>type</para></entry>
+<entry role="parameter_description"><para>the new audio output type</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-get-current-frame" role="function">
+<title>bacon_video_widget_get_current_frame&#160;()</title>
+<indexterm zone="bacon-video-widget-get-current-frame"><primary>bacon_video_widget_get_current_frame</primary></indexterm>
+<programlisting language="C"><link linkend="GdkPixbuf"><returnvalue>GdkPixbuf</returnvalue></link>&#160;*
+bacon_video_widget_get_current_frame (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Returns a <link linkend="GdkPixbuf"><type>GdkPixbuf</type></link> containing the current frame from the playing
+stream. This will wait for any pending seeks to complete before
+capturing the frame.</para>
+<refsect3 id="bacon-video-widget-get-current-frame.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-get-current-frame.returns" role="returns">
+<title>Returns</title>
+<para> the current frame, or <link linkend="NULL:CAPS"><literal>NULL</literal></link>; unref with <link linkend="g-object-unref"><function>g_object_unref()</function></link></para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-get-current-time" role="function">
+<title>bacon_video_widget_get_current_time&#160;()</title>
+<indexterm zone="bacon-video-widget-get-current-time"><primary>bacon_video_widget_get_current_time</primary></indexterm>
+<programlisting language="C"><link linkend="gint64"><returnvalue>gint64</returnvalue></link>
+bacon_video_widget_get_current_time (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Returns the current position in the stream, as the time (in milliseconds)
+since the beginning of the stream.</para>
+<refsect3 id="bacon-video-widget-get-current-time.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-get-current-time.returns" role="returns">
+<title>Returns</title>
+<para> time since the beginning of the stream, in milliseconds, or <code class="literal">-1</code></para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-get-deinterlacing" role="function">
+<title>bacon_video_widget_get_deinterlacing&#160;()</title>
+<indexterm zone="bacon-video-widget-get-deinterlacing"><primary>bacon_video_widget_get_deinterlacing</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+bacon_video_widget_get_deinterlacing (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Returns whether deinterlacing of videos is enabled for this widget.</para>
+<refsect3 id="bacon-video-widget-get-deinterlacing.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-get-deinterlacing.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if automatic deinterlacing is enabled, <link linkend="FALSE:CAPS"><literal>FALSE</literal></link> otherwise</para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-set-deinterlacing" role="function">
+<title>bacon_video_widget_set_deinterlacing&#160;()</title>
+<indexterm zone="bacon-video-widget-set-deinterlacing"><primary>bacon_video_widget_set_deinterlacing</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+bacon_video_widget_set_deinterlacing (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>,
+                                      <parameter><link linkend="gboolean"><type>gboolean</type></link> deinterlace</parameter>);</programlisting>
+<para>Sets whether the widget should deinterlace videos.</para>
+<refsect3 id="bacon-video-widget-set-deinterlacing.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>deinterlace</para></entry>
+<entry role="parameter_description"><para><link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if videos should be automatically deinterlaced, <link linkend="FALSE:CAPS"><literal>FALSE</literal></link> otherwise</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-get-languages" role="function">
+<title>bacon_video_widget_get_languages&#160;()</title>
+<indexterm zone="bacon-video-widget-get-languages"><primary>bacon_video_widget_get_languages</primary></indexterm>
+<programlisting language="C"><link linkend="GList"><returnvalue>GList</returnvalue></link>&#160;*
+bacon_video_widget_get_languages (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Returns a list of <link linkend="BvwLangInfo"><type>BvwLangInfo</type></link> for each audio track.</para>
+<refsect3 id="bacon-video-widget-get-languages.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-get-languages.returns" role="returns">
+<title>Returns</title>
+<para> a <link linkend="GList"><type>GList</type></link> of <link linkend="BvwLanginfo"><type>BvwLanginfo</type></link>, or <link linkend="NULL:CAPS"><literal>NULL</literal></link>; free each element with <link linkend="bacon-video-widget-lang-info-free"><function>bacon_video_widget_lang_info_free()</function></link> and the list with <link linkend="g-list-free"><function>g_list_free()</function></link></para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-get-language" role="function">
+<title>bacon_video_widget_get_language&#160;()</title>
+<indexterm zone="bacon-video-widget-get-language"><primary>bacon_video_widget_get_language</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+bacon_video_widget_get_language (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Returns the index of the current audio language.</para>
+<para>If the widget is not playing, or the default language is in use, <code class="literal">-1</code> will be returned.</para>
+<refsect3 id="bacon-video-widget-get-language.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-get-language.returns" role="returns">
+<title>Returns</title>
+<para> the audio language index</para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-set-language" role="function">
+<title>bacon_video_widget_set_language&#160;()</title>
+<indexterm zone="bacon-video-widget-set-language"><primary>bacon_video_widget_set_language</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+bacon_video_widget_set_language (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>,
+                                 <parameter><link linkend="int"><type>int</type></link> language</parameter>);</programlisting>
+<para>Sets the audio language index for <parameter>bvw</parameter>
+. If <parameter>language</parameter>
+ is <code class="literal">-1</code>, the default language will
+be used.</para>
+<refsect3 id="bacon-video-widget-set-language.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>language</para></entry>
+<entry role="parameter_description"><para>an audio language index</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-set-logo" role="function">
+<title>bacon_video_widget_set_logo&#160;()</title>
+<indexterm zone="bacon-video-widget-set-logo"><primary>bacon_video_widget_set_logo</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+bacon_video_widget_set_logo (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>,
+                             <parameter>const <link linkend="char"><type>char</type></link> *name</parameter>);</programlisting>
+<para>Sets the logo displayed on the video widget when no stream is loaded.</para>
+<refsect3 id="bacon-video-widget-set-logo.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>name</para></entry>
+<entry role="parameter_description"><para>the icon name of the logo</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-get-logo-mode" role="function">
+<title>bacon_video_widget_get_logo_mode&#160;()</title>
+<indexterm zone="bacon-video-widget-get-logo-mode"><primary>bacon_video_widget_get_logo_mode</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+bacon_video_widget_get_logo_mode (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Gets whether the logo is displayed when no stream is loaded.</para>
+<refsect3 id="bacon-video-widget-get-logo-mode.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-get-logo-mode.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the logo is displayed, <link linkend="FALSE:CAPS"><literal>FALSE</literal></link> otherwise</para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-set-logo-mode" role="function">
+<title>bacon_video_widget_set_logo_mode&#160;()</title>
+<indexterm zone="bacon-video-widget-set-logo-mode"><primary>bacon_video_widget_set_logo_mode</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+bacon_video_widget_set_logo_mode (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>,
+                                  <parameter><link linkend="gboolean"><type>gboolean</type></link> logo_mode</parameter>);</programlisting>
+<para>Sets whether to display a logo set with <parameter>bacon_video_widget_set_logo</parameter>
+ when
+no stream is loaded. If <parameter>logo_mode</parameter>
+ is <link linkend="FALSE:CAPS"><literal>FALSE</literal></link>, nothing will be displayed
+and the video widget will take up no space. Otherwise, the logo will be
+displayed and will requisition a corresponding amount of space.</para>
+<refsect3 id="bacon-video-widget-set-logo-mode.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>logo_mode</para></entry>
+<entry role="parameter_description"><para><link linkend="TRUE:CAPS"><literal>TRUE</literal></link> to display the logo, <link linkend="FALSE:CAPS"><literal>FALSE</literal></link> otherwise</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-get-metadata" role="function">
+<title>bacon_video_widget_get_metadata&#160;()</title>
+<indexterm zone="bacon-video-widget-get-metadata"><primary>bacon_video_widget_get_metadata</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+bacon_video_widget_get_metadata (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>,
+                                 <parameter><link linkend="BvwMetadataType"><type>BvwMetadataType</type></link> type</parameter>,
+                                 <parameter><link linkend="GValue"><type>GValue</type></link> *value</parameter>);</programlisting>
+<para>Provides metadata of the given <parameter>type</parameter>
+ about the current stream in <parameter>value</parameter>
+.</para>
+<para>Free the <link linkend="GValue"><type>GValue</type></link> with <link linkend="g-value-unset"><function>g_value_unset()</function></link>.</para>
+<refsect3 id="bacon-video-widget-get-metadata.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>type</para></entry>
+<entry role="parameter_description"><para>the type of metadata to return</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>value</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GValue"><type>GValue</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-get-option-group" role="function">
+<title>bacon_video_widget_get_option_group&#160;()</title>
+<indexterm zone="bacon-video-widget-get-option-group"><primary>bacon_video_widget_get_option_group</primary></indexterm>
+<programlisting language="C"><link linkend="GOptionGroup"><returnvalue>GOptionGroup</returnvalue></link>&#160;*
+bacon_video_widget_get_option_group (<parameter><type>void</type></parameter>);</programlisting>
+<para>Returns the <link linkend="GOptionGroup"><type>GOptionGroup</type></link> containing command-line options for
+<link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link>.</para>
+<para>Applications must call either this exactly once.</para>
+<refsect3 id="bacon-video-widget-get-option-group.returns" role="returns">
+<title>Returns</title>
+<para> a <link linkend="GOptionGroup"><type>GOptionGroup</type></link> giving command-line options for <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-get-position" role="function">
+<title>bacon_video_widget_get_position&#160;()</title>
+<indexterm zone="bacon-video-widget-get-position"><primary>bacon_video_widget_get_position</primary></indexterm>
+<programlisting language="C"><link linkend="double"><returnvalue>double</returnvalue></link>
+bacon_video_widget_get_position (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Returns the current position in the stream, as a value between</para>
+<code class="literal">0</code> and <code class="literal">1</code>.
+<refsect3 id="bacon-video-widget-get-position.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-get-position.returns" role="returns">
+<title>Returns</title>
+<para> the current position, or <code class="literal">-1</code></para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-set-referrer" role="function">
+<title>bacon_video_widget_set_referrer&#160;()</title>
+<indexterm zone="bacon-video-widget-set-referrer"><primary>bacon_video_widget_set_referrer</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+bacon_video_widget_set_referrer (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>,
+                                 <parameter>const <link linkend="char"><type>char</type></link> *referrer</parameter>);</programlisting>
+<para>Sets the HTTP referrer URI to use when fetching HTTP ressources.</para>
+<refsect3 id="bacon-video-widget-set-referrer.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>referrer</para></entry>
+<entry role="parameter_description"><para>a HTTP referrer URI, or <link linkend="NULL:CAPS"><literal>NULL</literal></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-get-rotation" role="function">
+<title>bacon_video_widget_get_rotation&#160;()</title>
+<indexterm zone="bacon-video-widget-get-rotation"><primary>bacon_video_widget_get_rotation</primary></indexterm>
+<programlisting language="C"><link linkend="BvwRotation"><returnvalue>BvwRotation</returnvalue></link>
+bacon_video_widget_get_rotation (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Returns the angle of rotation of the video, in degrees.</para>
+<refsect3 id="bacon-video-widget-get-rotation.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-get-rotation.returns" role="returns">
+<title>Returns</title>
+<para> a <link linkend="BvwRotation"><type>BvwRotation</type></link>.</para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-set-rotation" role="function">
+<title>bacon_video_widget_set_rotation&#160;()</title>
+<indexterm zone="bacon-video-widget-set-rotation"><primary>bacon_video_widget_set_rotation</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+bacon_video_widget_set_rotation (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>,
+                                 <parameter><link linkend="BvwRotation"><type>BvwRotation</type></link> rotation</parameter>);</programlisting>
+<para>Sets the rotation to be applied to the video when it is displayed.</para>
+<refsect3 id="bacon-video-widget-set-rotation.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>rotation</para></entry>
+<entry role="parameter_description"><para>the <link linkend="BvwRotation"><type>BvwRotation</type></link> of the video in degrees</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-get-stream-length" role="function">
+<title>bacon_video_widget_get_stream_length&#160;()</title>
+<indexterm zone="bacon-video-widget-get-stream-length"><primary>bacon_video_widget_get_stream_length</primary></indexterm>
+<programlisting language="C"><link linkend="gint64"><returnvalue>gint64</returnvalue></link>
+bacon_video_widget_get_stream_length (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Returns the total length of the stream, in milliseconds.</para>
+<refsect3 id="bacon-video-widget-get-stream-length.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-get-stream-length.returns" role="returns">
+<title>Returns</title>
+<para> the stream length, in milliseconds, or <code class="literal">-1</code></para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-get-subtitles" role="function">
+<title>bacon_video_widget_get_subtitles&#160;()</title>
+<indexterm zone="bacon-video-widget-get-subtitles"><primary>bacon_video_widget_get_subtitles</primary></indexterm>
+<programlisting language="C"><link linkend="GList"><returnvalue>GList</returnvalue></link>&#160;*
+bacon_video_widget_get_subtitles (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Returns a list of <link linkend="BvwLangInfo"><type>BvwLangInfo</type></link> for each subtitle track.</para>
+<refsect3 id="bacon-video-widget-get-subtitles.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-get-subtitles.returns" role="returns">
+<title>Returns</title>
+<para> a <link linkend="GList"><type>GList</type></link> of <link linkend="BvwLangInfo"><type>BvwLangInfo</type></link>, or <link linkend="NULL:CAPS"><literal>NULL</literal></link>; free each element with <link linkend="bacon-video-widget-lang-info-free"><function>bacon_video_widget_lang_info_free()</function></link> and the list with <link linkend="g-list-free"><function>g_list_free()</function></link></para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-get-subtitle" role="function">
+<title>bacon_video_widget_get_subtitle&#160;()</title>
+<indexterm zone="bacon-video-widget-get-subtitle"><primary>bacon_video_widget_get_subtitle</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+bacon_video_widget_get_subtitle (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Returns the index of the current subtitles.</para>
+<para>If the widget is not playing, <code class="literal">-2</code> will be returned. If no subtitles are
+being used, <code class="literal">-1</code> is returned.</para>
+<refsect3 id="bacon-video-widget-get-subtitle.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-get-subtitle.returns" role="returns">
+<title>Returns</title>
+<para> the subtitle index</para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-set-subtitle" role="function">
+<title>bacon_video_widget_set_subtitle&#160;()</title>
+<indexterm zone="bacon-video-widget-set-subtitle"><primary>bacon_video_widget_set_subtitle</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+bacon_video_widget_set_subtitle (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>,
+                                 <parameter><link linkend="int"><type>int</type></link> subtitle</parameter>);</programlisting>
+<para>Sets the subtitle index for <parameter>bvw</parameter>
+. If <parameter>subtitle</parameter>
+ is <code class="literal">-1</code>, no subtitles will
+be used.</para>
+<refsect3 id="bacon-video-widget-set-subtitle.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>subtitle</para></entry>
+<entry role="parameter_description"><para>a subtitle index</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-set-text-subtitle" role="function">
+<title>bacon_video_widget_set_text_subtitle&#160;()</title>
+<indexterm zone="bacon-video-widget-set-text-subtitle"><primary>bacon_video_widget_set_text_subtitle</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+bacon_video_widget_set_text_subtitle (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>,
+                                      <parameter>const <link linkend="gchar"><type>gchar</type></link> *subtitle_uri</parameter>);</programlisting>
+<para>Sets the URI for the text subtitle file to be displayed alongside
+the current video. Use <link linkend="NULL:CAPS"><literal>NULL</literal></link> if you want to unload the current text subtitle
+file being used.</para>
+<refsect3 id="bacon-video-widget-set-text-subtitle.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>subtitle_uri</para></entry>
+<entry role="parameter_description"><para>the URI of a subtitle file, or <link linkend="NULL:CAPS"><literal>NULL</literal></link>. </para></entry>
+<entry role="parameter_annotations"><emphasis role="annotation">[<acronym>allow-none</acronym>]</emphasis></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-set-subtitle-encoding" role="function">
+<title>bacon_video_widget_set_subtitle_encoding&#160;()</title>
+<indexterm zone="bacon-video-widget-set-subtitle-encoding"><primary>bacon_video_widget_set_subtitle_encoding</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+bacon_video_widget_set_subtitle_encoding
+                               (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>,
+                                <parameter>const <link linkend="char"><type>char</type></link> *encoding</parameter>);</programlisting>
+<para>Sets the encoding system for the subtitles, so that they can be decoded
+properly.</para>
+<refsect3 id="bacon-video-widget-set-subtitle-encoding.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>encoding</para></entry>
+<entry role="parameter_description"><para>an encoding system</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-set-subtitle-font" role="function">
+<title>bacon_video_widget_set_subtitle_font&#160;()</title>
+<indexterm zone="bacon-video-widget-set-subtitle-font"><primary>bacon_video_widget_set_subtitle_font</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+bacon_video_widget_set_subtitle_font (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>,
+                                      <parameter>const <link linkend="char"><type>char</type></link> *font</parameter>);</programlisting>
+<para>Sets the font size and style in which to display subtitles.</para>
+<para><parameter>font</parameter>
+ is a Pango font description string, as understood by
+<link linkend="pango-font-description-from-string"><function>pango_font_description_from_string()</function></link>.</para>
+<refsect3 id="bacon-video-widget-set-subtitle-font.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>font</para></entry>
+<entry role="parameter_description"><para>a font description string</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-set-user-agent" role="function">
+<title>bacon_video_widget_set_user_agent&#160;()</title>
+<indexterm zone="bacon-video-widget-set-user-agent"><primary>bacon_video_widget_set_user_agent</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+bacon_video_widget_set_user_agent (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>,
+                                   <parameter>const <link linkend="char"><type>char</type></link> *user_agent</parameter>);</programlisting>
+<para>Sets the HTTP user agent string to use when fetching HTTP ressources.</para>
+<refsect3 id="bacon-video-widget-set-user-agent.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>user_agent</para></entry>
+<entry role="parameter_description"><para>a HTTP user agent string, or <link linkend="NULL:CAPS"><literal>NULL</literal></link> to use the default</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-get-video-property" role="function">
+<title>bacon_video_widget_get_video_property&#160;()</title>
+<indexterm zone="bacon-video-widget-get-video-property"><primary>bacon_video_widget_get_video_property</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+bacon_video_widget_get_video_property (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>,
+                                       <parameter><link linkend="BvwVideoProperty"><type>BvwVideoProperty</type></link> type</parameter>);</programlisting>
+<para>Returns the given property of the video display, such as its brightness or saturation.</para>
+<para>It is returned as a percentage in the full range of integer values; from <code class="literal">0</code>
+to <code class="literal">65535</code> (inclusive), where <code class="literal">32768</code> is the default.</para>
+<refsect3 id="bacon-video-widget-get-video-property.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>type</para></entry>
+<entry role="parameter_description"><para>the type of property</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-get-video-property.returns" role="returns">
+<title>Returns</title>
+<para> the property's value, in the range <code class="literal">0</code> to <code class="literal">65535</code></para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-set-video-property" role="function">
+<title>bacon_video_widget_set_video_property&#160;()</title>
+<indexterm zone="bacon-video-widget-set-video-property"><primary>bacon_video_widget_set_video_property</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+bacon_video_widget_set_video_property (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>,
+                                       <parameter><link linkend="BvwVideoProperty"><type>BvwVideoProperty</type></link> type</parameter>,
+                                       <parameter><link linkend="int"><type>int</type></link> value</parameter>);</programlisting>
+<para>Sets the given property of the video display, such as its brightness or saturation.</para>
+<para>It should be given as a percentage in the full range of integer values; from <code class="literal">0</code>
+to <code class="literal">65535</code> (inclusive), where <code class="literal">32768</code> is the default.</para>
+<refsect3 id="bacon-video-widget-set-video-property.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>type</para></entry>
+<entry role="parameter_description"><para>the type of property</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>value</para></entry>
+<entry role="parameter_description"><para>the property's value, in the range <code class="literal">0</code> to <code class="literal">65535</code></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-get-volume" role="function">
+<title>bacon_video_widget_get_volume&#160;()</title>
+<indexterm zone="bacon-video-widget-get-volume"><primary>bacon_video_widget_get_volume</primary></indexterm>
+<programlisting language="C"><link linkend="double"><returnvalue>double</returnvalue></link>
+bacon_video_widget_get_volume (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Returns the current volume level, as a percentage between <code class="literal">0</code> and <code class="literal">1</code>.</para>
+<refsect3 id="bacon-video-widget-get-volume.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-get-volume.returns" role="returns">
+<title>Returns</title>
+<para> the volume as a percentage between <code class="literal">0</code> and <code class="literal">1</code></para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-set-volume" role="function">
+<title>bacon_video_widget_set_volume&#160;()</title>
+<indexterm zone="bacon-video-widget-set-volume"><primary>bacon_video_widget_set_volume</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+bacon_video_widget_set_volume (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>,
+                               <parameter><link linkend="double"><type>double</type></link> volume</parameter>);</programlisting>
+<para>Sets the volume level of the stream as a percentage between <code class="literal">0</code> and <code class="literal">1</code>.</para>
+<para>If <link linkend="bacon-video-widget-can-set-volume"><function>bacon_video_widget_can_set_volume()</function></link> returns <link linkend="FALSE:CAPS"><literal>FALSE</literal></link>, this is a no-op.</para>
+<refsect3 id="bacon-video-widget-set-volume.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>volume</para></entry>
+<entry role="parameter_description"><para>the new volume level, as a percentage between <code class="literal">0</code> and <code class="literal">1</code></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-get-zoom" role="function">
+<title>bacon_video_widget_get_zoom&#160;()</title>
+<indexterm zone="bacon-video-widget-get-zoom"><primary>bacon_video_widget_get_zoom</primary></indexterm>
+<programlisting language="C"><link linkend="BvwZoomMode"><returnvalue>BvwZoomMode</returnvalue></link>
+bacon_video_widget_get_zoom (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Returns the zoom mode applied to videos displayed by the widget.</para>
+<refsect3 id="bacon-video-widget-get-zoom.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-get-zoom.returns" role="returns">
+<title>Returns</title>
+<para> a <link linkend="BvwZoomMode"><type>BvwZoomMode</type></link></para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-set-zoom" role="function">
+<title>bacon_video_widget_set_zoom&#160;()</title>
+<indexterm zone="bacon-video-widget-set-zoom"><primary>bacon_video_widget_set_zoom</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+bacon_video_widget_set_zoom (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>,
+                             <parameter><link linkend="BvwZoomMode"><type>BvwZoomMode</type></link> mode</parameter>);</programlisting>
+<para>Sets the zoom type applied to the video when it is displayed.</para>
+<refsect3 id="bacon-video-widget-set-zoom.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>mode</para></entry>
+<entry role="parameter_description"><para>the <link linkend="BvwZoomMode"><type>BvwZoomMode</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-has-angles" role="function">
+<title>bacon_video_widget_has_angles&#160;()</title>
+<indexterm zone="bacon-video-widget-has-angles"><primary>bacon_video_widget_has_angles</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+bacon_video_widget_has_angles (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Returns whether the widget is currently playing a stream with
+multiple angles.</para>
+<refsect3 id="bacon-video-widget-has-angles.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-has-angles.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the current video stream has multiple
+angles, <link linkend="FALSE:CAPS"><literal>FALSE</literal></link> otherwise</para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-set-next-angle" role="function">
+<title>bacon_video_widget_set_next_angle&#160;()</title>
+<indexterm zone="bacon-video-widget-set-next-angle"><primary>bacon_video_widget_set_next_angle</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+bacon_video_widget_set_next_angle (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Select the next angle, or video track in the playing stream.</para>
+<refsect3 id="bacon-video-widget-set-next-angle.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-has-next-track" role="function">
+<title>bacon_video_widget_has_next_track&#160;()</title>
+<indexterm zone="bacon-video-widget-has-next-track"><primary>bacon_video_widget_has_next_track</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+bacon_video_widget_has_next_track (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Determines whether there is another track after the current one, typically
+as a chapter on a DVD.</para>
+<refsect3 id="bacon-video-widget-has-next-track.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-has-next-track.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if there is another track, <link linkend="FALSE:CAPS"><literal>FALSE</literal></link> otherwise</para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-has-previous-track" role="function">
+<title>bacon_video_widget_has_previous_track&#160;()</title>
+<indexterm zone="bacon-video-widget-has-previous-track"><primary>bacon_video_widget_has_previous_track</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+bacon_video_widget_has_previous_track (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Determines whether there is another track before the current one, typically
+as a chapter on a DVD.</para>
+<refsect3 id="bacon-video-widget-has-previous-track.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-has-previous-track.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if there is another track, <link linkend="FALSE:CAPS"><literal>FALSE</literal></link> otherwise</para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-is-playing" role="function">
+<title>bacon_video_widget_is_playing&#160;()</title>
+<indexterm zone="bacon-video-widget-is-playing"><primary>bacon_video_widget_is_playing</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+bacon_video_widget_is_playing (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Returns whether the widget is currently playing a stream.</para>
+<refsect3 id="bacon-video-widget-is-playing.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-is-playing.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if a stream is playing, <link linkend="FALSE:CAPS"><literal>FALSE</literal></link> otherwise</para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-is-seekable" role="function">
+<title>bacon_video_widget_is_seekable&#160;()</title>
+<indexterm zone="bacon-video-widget-is-seekable"><primary>bacon_video_widget_is_seekable</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+bacon_video_widget_is_seekable (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Returns whether seeking is possible in the current stream.</para>
+<para>If no stream is loaded, <link linkend="FALSE:CAPS"><literal>FALSE</literal></link> is returned.</para>
+<refsect3 id="bacon-video-widget-is-seekable.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-is-seekable.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the stream is seekable, <link linkend="FALSE:CAPS"><literal>FALSE</literal></link> otherwise</para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-get-rate" role="function">
+<title>bacon_video_widget_get_rate&#160;()</title>
+<indexterm zone="bacon-video-widget-get-rate"><primary>bacon_video_widget_get_rate</primary></indexterm>
+<programlisting language="C"><link linkend="gfloat"><returnvalue>gfloat</returnvalue></link>
+bacon_video_widget_get_rate (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Get the current playback rate, with 1.0 being normal rate.</para>
+<refsect3 id="bacon-video-widget-get-rate.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-get-rate.returns" role="returns">
+<title>Returns</title>
+<para> the current playback rate</para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-set-rate" role="function">
+<title>bacon_video_widget_set_rate&#160;()</title>
+<indexterm zone="bacon-video-widget-set-rate"><primary>bacon_video_widget_set_rate</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+bacon_video_widget_set_rate (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>,
+                             <parameter><link linkend="gfloat"><type>gfloat</type></link> new_rate</parameter>);</programlisting>
+<para>Sets the current playback rate.</para>
+<refsect3 id="bacon-video-widget-set-rate.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>new_rate</para></entry>
+<entry role="parameter_description"><para>the new playback rate</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-set-rate.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> on success, <link linkend="FALSE:CAPS"><literal>FALSE</literal></link> on failure.</para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-step" role="function">
+<title>bacon_video_widget_step&#160;()</title>
+<indexterm zone="bacon-video-widget-step"><primary>bacon_video_widget_step</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+bacon_video_widget_step (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>,
+                         <parameter><link linkend="gboolean"><type>gboolean</type></link> forward</parameter>,
+                         <parameter><link linkend="GError"><type>GError</type></link> **error</parameter>);</programlisting>
+<para>Step one frame forward, if <parameter>forward</parameter>
+ is <link linkend="TRUE:CAPS"><literal>TRUE</literal></link>, or backwards, if <parameter>forward</parameter>
+ is <link linkend="FALSE:CAPS"><literal>FALSE</literal></link></para>
+<refsect3 id="bacon-video-widget-step.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>forward</para></entry>
+<entry role="parameter_description"><para>the direction of the frame step</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>error</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GError"><type>GError</type></link>, or <link linkend="NULL:CAPS"><literal>NULL</literal></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-step.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> on success, <link linkend="FALSE:CAPS"><literal>FALSE</literal></link> otherwise</para>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-get-controls-object" role="function" condition="since:3.12">
+<title>bacon_video_widget_get_controls_object&#160;()</title>
+<indexterm zone="bacon-video-widget-get-controls-object" role="3.12"><primary>bacon_video_widget_get_controls_object</primary></indexterm>
+<programlisting language="C"><link linkend="GObject"><returnvalue>GObject</returnvalue></link>&#160;*
+bacon_video_widget_get_controls_object
+                               (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Get the widget which displays the video controls.</para>
+<refsect3 id="bacon-video-widget-get-controls-object.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-get-controls-object.returns" role="returns">
+<title>Returns</title>
+<para>controls widget. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3><para role="since">Since: <link linkend="api-index-3.12">3.12</link></para></refsect2>
+<refsect2 id="bacon-video-widget-get-header-controls-object" role="function" condition="since:3.20">
+<title>bacon_video_widget_get_header_controls_object&#160;()</title>
+<indexterm zone="bacon-video-widget-get-header-controls-object" role="3.20"><primary>bacon_video_widget_get_header_controls_object</primary></indexterm>
+<programlisting language="C"><link linkend="GObject"><returnvalue>GObject</returnvalue></link>&#160;*
+bacon_video_widget_get_header_controls_object
+                               (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Get the widget which displays the video header controls.</para>
+<refsect3 id="bacon-video-widget-get-header-controls-object.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="bacon-video-widget-get-header-controls-object.returns" role="returns">
+<title>Returns</title>
+<para>header controls widget. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3><para role="since">Since: <link linkend="api-index-3.20">3.20</link></para></refsect2>
+<refsect2 id="bacon-video-widget-set-fullscreen" role="function">
+<title>bacon_video_widget_set_fullscreen&#160;()</title>
+<indexterm zone="bacon-video-widget-set-fullscreen"><primary>bacon_video_widget_set_fullscreen</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+bacon_video_widget_set_fullscreen (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>,
+                                   <parameter><link linkend="gboolean"><type>gboolean</type></link> fullscreen</parameter>);</programlisting>
+<para>Sets the fullscreen state, enabling a toplevel header bar sliding from
+the top of the video widget.</para>
+<refsect3 id="bacon-video-widget-set-fullscreen.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>fullscreen</para></entry>
+<entry role="parameter_description"><para>the new fullscreen state</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="bacon-video-widget-set-next-language" role="function" condition="since:3.12">
+<title>bacon_video_widget_set_next_language&#160;()</title>
+<indexterm zone="bacon-video-widget-set-next-language" role="3.12"><primary>bacon_video_widget_set_next_language</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+bacon_video_widget_set_next_language (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Switch to the next audio language index for the current video. See
+<link linkend="bacon-video-widget-set-language"><function>bacon_video_widget_set_language()</function></link>.</para>
+<refsect3 id="bacon-video-widget-set-next-language.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><para role="since">Since: <link linkend="api-index-3.12">3.12</link></para></refsect2>
+<refsect2 id="bacon-video-widget-set-next-subtitle" role="function" condition="since:3.12">
+<title>bacon_video_widget_set_next_subtitle&#160;()</title>
+<indexterm zone="bacon-video-widget-set-next-subtitle" role="3.12"><primary>bacon_video_widget_set_next_subtitle</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+bacon_video_widget_set_next_subtitle (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Switch to the next text subtitle index for the current video. See
+<link linkend="bacon-video-widget-set-subtitle"><function>bacon_video_widget_set_subtitle()</function></link>.</para>
+<refsect3 id="bacon-video-widget-set-next-subtitle.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><para role="since">Since: <link linkend="api-index-3.12">3.12</link></para></refsect2>
+<refsect2 id="bacon-video-widget-show-popup" role="function" condition="since:3.12">
+<title>bacon_video_widget_show_popup&#160;()</title>
+<indexterm zone="bacon-video-widget-show-popup" role="3.12"><primary>bacon_video_widget_show_popup</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+bacon_video_widget_show_popup (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>);</programlisting>
+<para>Show the video controls popup, and schedule for it to be hidden again after
+a timeout.</para>
+<refsect3 id="bacon-video-widget-show-popup.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><para role="since">Since: <link linkend="api-index-3.12">3.12</link></para></refsect2>
+<refsect2 id="bacon-video-widget-mark-popup-busy" role="function" condition="since:3.12">
+<title>bacon_video_widget_mark_popup_busy&#160;()</title>
+<indexterm zone="bacon-video-widget-mark-popup-busy" role="3.12"><primary>bacon_video_widget_mark_popup_busy</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+bacon_video_widget_mark_popup_busy (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>,
+                                    <parameter>const <link linkend="char"><type>char</type></link> *reason</parameter>);</programlisting>
+<para>Mark the video controls popup as busy, for the given <parameter>reason</parameter>
+. Use
+<link linkend="bacon-video-widget-unmark-popup-busy"><function>bacon_video_widget_unmark_popup_busy()</function></link> to undo.</para>
+<refsect3 id="bacon-video-widget-mark-popup-busy.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>reason</para></entry>
+<entry role="parameter_description"><para>human-readable reason for the controls popup being marked as busy</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><para role="since">Since: <link linkend="api-index-3.12">3.12</link></para></refsect2>
+<refsect2 id="bacon-video-widget-unmark-popup-busy" role="function" condition="since:3.12">
+<title>bacon_video_widget_unmark_popup_busy&#160;()</title>
+<indexterm zone="bacon-video-widget-unmark-popup-busy" role="3.12"><primary>bacon_video_widget_unmark_popup_busy</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+bacon_video_widget_unmark_popup_busy (<parameter><link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> *bvw</parameter>,
+                                      <parameter>const <link linkend="char"><type>char</type></link> *reason</parameter>);</programlisting>
+<para>Unmark the video controls popup as busy, for the given <parameter>reason</parameter>
+. The popup
+must previously have been marked as busy using
+<link linkend="bacon-video-widget-mark-popup-busy"><function>bacon_video_widget_mark_popup_busy()</function></link>.</para>
+<refsect3 id="bacon-video-widget-unmark-popup-busy.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>bvw</para></entry>
+<entry role="parameter_description"><para>a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>reason</para></entry>
+<entry role="parameter_description"><para>human-readable reason for the controls popup being unmarked as busy</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><para role="since">Since: <link linkend="api-index-3.12">3.12</link></para></refsect2>
+
+</refsect1>
+<refsect1 id="totem-BaconVideoWidget.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="BaconVideoWidget" role="struct">
+<title>BaconVideoWidget</title>
+<indexterm zone="BaconVideoWidget"><primary>BaconVideoWidget</primary></indexterm>
+<programlisting language="C">typedef struct {
+} BaconVideoWidget;
+</programlisting>
+<para>All the fields in the <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> structure are private and should never be accessed directly.</para>
+</refsect2>
+<refsect2 id="BaconVideoWidgetClass" role="struct">
+<title>BaconVideoWidgetClass</title>
+<indexterm zone="BaconVideoWidgetClass"><primary>BaconVideoWidgetClass</primary></indexterm>
+<programlisting language="C">typedef struct {
+} BaconVideoWidgetClass;
+</programlisting>
+<para>All the fields in the <link linkend="BaconVideoWidgetClass"><type>BaconVideoWidgetClass</type></link> structure are private and should never be accessed directly.</para>
+</refsect2>
+<refsect2 id="BvwAspectRatio" role="enum">
+<title>enum BvwAspectRatio</title>
+<indexterm zone="BvwAspectRatio"><primary>BvwAspectRatio</primary></indexterm>
+<para>The pixel aspect ratios available in which to display videos using
+<parameter><link linkend="bacon-video-widget-set-aspect-ratio"><function>bacon_video_widget_set_aspect_ratio()</function></link></parameter>
+.</para>
+<refsect3 id="BvwAspectRatio.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-RATIO-AUTO:CAPS">BVW_RATIO_AUTO</para></entry>
+<entry role="enum_member_description"><para>automatic</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-RATIO-SQUARE:CAPS">BVW_RATIO_SQUARE</para></entry>
+<entry role="enum_member_description"><para>square (1:1)</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-RATIO-FOURBYTHREE:CAPS">BVW_RATIO_FOURBYTHREE</para></entry>
+<entry role="enum_member_description"><para>four-by-three (4:3)</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-RATIO-ANAMORPHIC:CAPS">BVW_RATIO_ANAMORPHIC</para></entry>
+<entry role="enum_member_description"><para>anamorphic (16:9)</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-RATIO-DVB:CAPS">BVW_RATIO_DVB</para></entry>
+<entry role="enum_member_description"><para>DVB (20:9)</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="BvwAudioOutputType" role="enum">
+<title>enum BvwAudioOutputType</title>
+<indexterm zone="BvwAudioOutputType"><primary>BvwAudioOutputType</primary></indexterm>
+<para>The audio output types available for use with <link linkend="bacon-video-widget-set-audio-output-type"><function>bacon_video_widget_set_audio_output_type()</function></link>.</para>
+<refsect3 id="BvwAudioOutputType.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-AUDIO-SOUND-STEREO:CAPS">BVW_AUDIO_SOUND_STEREO</para></entry>
+<entry role="enum_member_description"><para>stereo output</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-AUDIO-SOUND-4CHANNEL:CAPS">BVW_AUDIO_SOUND_4CHANNEL</para></entry>
+<entry role="enum_member_description"><para>4-channel output</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-AUDIO-SOUND-41CHANNEL:CAPS">BVW_AUDIO_SOUND_41CHANNEL</para></entry>
+<entry role="enum_member_description"><para>4.1-channel output</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-AUDIO-SOUND-5CHANNEL:CAPS">BVW_AUDIO_SOUND_5CHANNEL</para></entry>
+<entry role="enum_member_description"><para>5-channel output</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-AUDIO-SOUND-51CHANNEL:CAPS">BVW_AUDIO_SOUND_51CHANNEL</para></entry>
+<entry role="enum_member_description"><para>5.1-channel output</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-AUDIO-SOUND-AC3PASSTHRU:CAPS">BVW_AUDIO_SOUND_AC3PASSTHRU</para></entry>
+<entry role="enum_member_description"><para>AC3 passthrough output</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="BvwDVDEvent" role="enum">
+<title>enum BvwDVDEvent</title>
+<indexterm zone="BvwDVDEvent"><primary>BvwDVDEvent</primary></indexterm>
+<para>The DVD navigation actions available to fire as DVD events to
+the <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link>.</para>
+<refsect3 id="BvwDVDEvent.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-DVD-ROOT-MENU:CAPS">BVW_DVD_ROOT_MENU</para></entry>
+<entry role="enum_member_description"><para>root menu</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-DVD-TITLE-MENU:CAPS">BVW_DVD_TITLE_MENU</para></entry>
+<entry role="enum_member_description"><para>title menu</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-DVD-SUBPICTURE-MENU:CAPS">BVW_DVD_SUBPICTURE_MENU</para></entry>
+<entry role="enum_member_description"><para>subpicture menu (if available)</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-DVD-AUDIO-MENU:CAPS">BVW_DVD_AUDIO_MENU</para></entry>
+<entry role="enum_member_description"><para>audio menu (if available)</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-DVD-ANGLE-MENU:CAPS">BVW_DVD_ANGLE_MENU</para></entry>
+<entry role="enum_member_description"><para>angle menu (if available)</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-DVD-CHAPTER-MENU:CAPS">BVW_DVD_CHAPTER_MENU</para></entry>
+<entry role="enum_member_description"><para>chapter menu</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-DVD-NEXT-CHAPTER:CAPS">BVW_DVD_NEXT_CHAPTER</para></entry>
+<entry role="enum_member_description"><para>the next chapter</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-DVD-PREV-CHAPTER:CAPS">BVW_DVD_PREV_CHAPTER</para></entry>
+<entry role="enum_member_description"><para>the previous chapter</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-DVD-NEXT-TITLE:CAPS">BVW_DVD_NEXT_TITLE</para></entry>
+<entry role="enum_member_description"><para>the next title in the current chapter</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-DVD-PREV-TITLE:CAPS">BVW_DVD_PREV_TITLE</para></entry>
+<entry role="enum_member_description"><para>the previous title in the current chapter</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-DVD-ROOT-MENU-UP:CAPS">BVW_DVD_ROOT_MENU_UP</para></entry>
+<entry role="enum_member_description"><para>go up in the menu</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-DVD-ROOT-MENU-DOWN:CAPS">BVW_DVD_ROOT_MENU_DOWN</para></entry>
+<entry role="enum_member_description"><para>go down in the menu</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-DVD-ROOT-MENU-LEFT:CAPS">BVW_DVD_ROOT_MENU_LEFT</para></entry>
+<entry role="enum_member_description"><para>go left in the menu</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-DVD-ROOT-MENU-RIGHT:CAPS">BVW_DVD_ROOT_MENU_RIGHT</para></entry>
+<entry role="enum_member_description"><para>go right in the menu</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-DVD-ROOT-MENU-SELECT:CAPS">BVW_DVD_ROOT_MENU_SELECT</para></entry>
+<entry role="enum_member_description"><para>select the current menu entry</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="BvwMetadataType" role="enum">
+<title>enum BvwMetadataType</title>
+<indexterm zone="BvwMetadataType"><primary>BvwMetadataType</primary></indexterm>
+<para>The different metadata available for querying from a <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link>
+stream with <link linkend="bacon-video-widget-get-metadata"><function>bacon_video_widget_get_metadata()</function></link>.</para>
+<refsect3 id="BvwMetadataType.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-INFO-TITLE:CAPS">BVW_INFO_TITLE</para></entry>
+<entry role="enum_member_description"><para>the stream's title</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-INFO-ARTIST:CAPS">BVW_INFO_ARTIST</para></entry>
+<entry role="enum_member_description"><para>the artist who created the work</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-INFO-YEAR:CAPS">BVW_INFO_YEAR</para></entry>
+<entry role="enum_member_description"><para>the year in which the work was created</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-INFO-COMMENT:CAPS">BVW_INFO_COMMENT</para></entry>
+<entry role="enum_member_description"><para>a comment attached to the stream</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-INFO-ALBUM:CAPS">BVW_INFO_ALBUM</para></entry>
+<entry role="enum_member_description"><para>the album in which the work was released</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-INFO-DURATION:CAPS">BVW_INFO_DURATION</para></entry>
+<entry role="enum_member_description"><para>the stream's duration, in seconds</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-INFO-TRACK-NUMBER:CAPS">BVW_INFO_TRACK_NUMBER</para></entry>
+<entry role="enum_member_description"><para>the track number of the work on the album</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-INFO-COVER:CAPS">BVW_INFO_COVER</para></entry>
+<entry role="enum_member_description"><para>a <link linkend="GdkPixbuf"><type>GdkPixbuf</type></link> of the cover artwork</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-INFO-CONTAINER:CAPS">BVW_INFO_CONTAINER</para></entry>
+<entry role="enum_member_description"><para>the type of stream container</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-INFO-HAS-VIDEO:CAPS">BVW_INFO_HAS_VIDEO</para></entry>
+<entry role="enum_member_description"><para>whether the stream has video</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-INFO-DIMENSION-X:CAPS">BVW_INFO_DIMENSION_X</para></entry>
+<entry role="enum_member_description"><para>the video's width, in pixels</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-INFO-DIMENSION-Y:CAPS">BVW_INFO_DIMENSION_Y</para></entry>
+<entry role="enum_member_description"><para>the video's height, in pixels</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-INFO-VIDEO-BITRATE:CAPS">BVW_INFO_VIDEO_BITRATE</para></entry>
+<entry role="enum_member_description"><para>the video's bitrate, in kilobits per second</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-INFO-VIDEO-CODEC:CAPS">BVW_INFO_VIDEO_CODEC</para></entry>
+<entry role="enum_member_description"><para>the video's codec</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-INFO-FPS:CAPS">BVW_INFO_FPS</para></entry>
+<entry role="enum_member_description"><para>the number of frames per second in the video</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-INFO-HAS-AUDIO:CAPS">BVW_INFO_HAS_AUDIO</para></entry>
+<entry role="enum_member_description"><para>whether the stream has audio</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-INFO-AUDIO-BITRATE:CAPS">BVW_INFO_AUDIO_BITRATE</para></entry>
+<entry role="enum_member_description"><para>the audio's bitrate, in kilobits per second</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-INFO-AUDIO-CODEC:CAPS">BVW_INFO_AUDIO_CODEC</para></entry>
+<entry role="enum_member_description"><para>the audio's codec</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-INFO-AUDIO-SAMPLE-RATE:CAPS">BVW_INFO_AUDIO_SAMPLE_RATE</para></entry>
+<entry role="enum_member_description"><para>the audio sample rate, in bits per second</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-INFO-AUDIO-CHANNELS:CAPS">BVW_INFO_AUDIO_CHANNELS</para></entry>
+<entry role="enum_member_description"><para>a string describing the number of audio channels in the stream</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="BvwRotation" role="enum">
+<title>enum BvwRotation</title>
+<indexterm zone="BvwRotation"><primary>BvwRotation</primary></indexterm>
+<para>The rotation is used by the video widget, as set by
+<link linkend="bacon-video-widget-set-rotation"><function>bacon_video_widget_set_rotation()</function></link>.</para>
+<refsect3 id="BvwRotation.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-ROTATION-R-ZERO:CAPS">BVW_ROTATION_R_ZERO</para></entry>
+<entry role="enum_member_description"><para>No rotation</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-ROTATION-R-90R:CAPS">BVW_ROTATION_R_90R</para></entry>
+<entry role="enum_member_description"><para>Rotate 90 degrees to the right</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-ROTATION-R-180:CAPS">BVW_ROTATION_R_180</para></entry>
+<entry role="enum_member_description"><para>Rotate 180 degrees</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-ROTATION-R-90L:CAPS">BVW_ROTATION_R_90L</para></entry>
+<entry role="enum_member_description"><para>Rotate 90 degrees to the left</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="BvwVideoProperty" role="enum">
+<title>enum BvwVideoProperty</title>
+<indexterm zone="BvwVideoProperty"><primary>BvwVideoProperty</primary></indexterm>
+<para>The video properties queryable with <link linkend="bacon-video-widget-get-video-property"><function>bacon_video_widget_get_video_property()</function></link>,
+and settable with <link linkend="bacon-video-widget-set-video-property"><function>bacon_video_widget_set_video_property()</function></link>.</para>
+<refsect3 id="BvwVideoProperty.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-VIDEO-BRIGHTNESS:CAPS">BVW_VIDEO_BRIGHTNESS</para></entry>
+<entry role="enum_member_description"><para>the video brightness</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-VIDEO-CONTRAST:CAPS">BVW_VIDEO_CONTRAST</para></entry>
+<entry role="enum_member_description"><para>the video contrast</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-VIDEO-SATURATION:CAPS">BVW_VIDEO_SATURATION</para></entry>
+<entry role="enum_member_description"><para>the video saturation</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-VIDEO-HUE:CAPS">BVW_VIDEO_HUE</para></entry>
+<entry role="enum_member_description"><para>the video hue</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="BvwZoomMode" role="enum">
+<title>enum BvwZoomMode</title>
+<indexterm zone="BvwZoomMode"><primary>BvwZoomMode</primary></indexterm>
+<para>The zoom mode used by the video widget, as set by
+<link linkend="bacon-video-widget-set-zoom"><function>bacon_video_widget_set_zoom()</function></link>.</para>
+<refsect3 id="BvwZoomMode.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-ZOOM-NONE:CAPS">BVW_ZOOM_NONE</para></entry>
+<entry role="enum_member_description"><para>No video zooming/cropping</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-ZOOM-EXPAND:CAPS">BVW_ZOOM_EXPAND</para></entry>
+<entry role="enum_member_description"><para>Fill area with video, and crop the excess</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="BvwError" role="enum">
+<title>enum BvwError</title>
+<indexterm zone="BvwError"><primary>BvwError</primary></indexterm>
+<para>Error codes for <link linkend="BaconVideoWidget"><type>BaconVideoWidget</type></link> operations.</para>
+<refsect3 id="BvwError.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-ERROR-NO-PLUGIN-FOR-FILE:CAPS">BVW_ERROR_NO_PLUGIN_FOR_FILE</para></entry>
+<entry role="enum_member_description"><para>A required GStreamer plugin is missing.</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-ERROR-BROKEN-FILE:CAPS">BVW_ERROR_BROKEN_FILE</para></entry>
+<entry role="enum_member_description"><para>The movie file is broken and cannot be decoded.</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-ERROR-FILE-GENERIC:CAPS">BVW_ERROR_FILE_GENERIC</para></entry>
+<entry role="enum_member_description"><para>A generic error for problems with movie files.</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-ERROR-FILE-PERMISSION:CAPS">BVW_ERROR_FILE_PERMISSION</para></entry>
+<entry role="enum_member_description"><para>Permission was refused to access the stream, or authentication was required.</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-ERROR-FILE-ENCRYPTED:CAPS">BVW_ERROR_FILE_ENCRYPTED</para></entry>
+<entry role="enum_member_description"><para>The stream is encrypted and cannot be played.</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-ERROR-FILE-NOT-FOUND:CAPS">BVW_ERROR_FILE_NOT_FOUND</para></entry>
+<entry role="enum_member_description"><para>The stream cannot be found.</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-ERROR-DVD-ENCRYPTED:CAPS">BVW_ERROR_DVD_ENCRYPTED</para></entry>
+<entry role="enum_member_description"><para>The DVD is encrypted and libdvdcss is not installed.</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-ERROR-INVALID-DEVICE:CAPS">BVW_ERROR_INVALID_DEVICE</para></entry>
+<entry role="enum_member_description"><para>The device given in an MRL (e.g. DVD drive or DVB tuner) did not exist.</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-ERROR-UNKNOWN-HOST:CAPS">BVW_ERROR_UNKNOWN_HOST</para></entry>
+<entry role="enum_member_description"><para>The host for a given stream could not be resolved.</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-ERROR-NETWORK-UNREACHABLE:CAPS">BVW_ERROR_NETWORK_UNREACHABLE</para></entry>
+<entry role="enum_member_description"><para>The host for a given stream could not be reached.</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-ERROR-CONNECTION-REFUSED:CAPS">BVW_ERROR_CONNECTION_REFUSED</para></entry>
+<entry role="enum_member_description"><para>The server for a given stream refused the connection.</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-ERROR-INVALID-LOCATION:CAPS">BVW_ERROR_INVALID_LOCATION</para></entry>
+<entry role="enum_member_description"><para>An MRL was malformed, or CDDB playback was attempted (which is now unsupported).</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-ERROR-GENERIC:CAPS">BVW_ERROR_GENERIC</para></entry>
+<entry role="enum_member_description"><para>A generic error occurred.</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-ERROR-CODEC-NOT-HANDLED:CAPS">BVW_ERROR_CODEC_NOT_HANDLED</para></entry>
+<entry role="enum_member_description"><para>The audio or video codec required by the stream is not supported.</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-ERROR-CANNOT-CAPTURE:CAPS">BVW_ERROR_CANNOT_CAPTURE</para></entry>
+<entry role="enum_member_description"><para>Error determining frame capture support for a video with <link linkend="bacon-video-widget-can-get-frames"><function>bacon_video_widget_can_get_frames()</function></link>.</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-ERROR-READ-ERROR:CAPS">BVW_ERROR_READ_ERROR</para></entry>
+<entry role="enum_member_description"><para>A generic error for problems reading streams.</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-ERROR-PLUGIN-LOAD:CAPS">BVW_ERROR_PLUGIN_LOAD</para></entry>
+<entry role="enum_member_description"><para>A library or plugin could not be loaded.</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="BVW-ERROR-EMPTY-FILE:CAPS">BVW_ERROR_EMPTY_FILE</para></entry>
+<entry role="enum_member_description"><para>A movie file was empty.</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+
+</refsect1>
+
+</refentry>

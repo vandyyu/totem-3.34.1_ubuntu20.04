@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="preferences" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#advanced-options"/>
+    <link type="seealso" xref="subtitles"/>
+    <revision pkgversion="3.30" version="0.2" date="2019-01-10" status="draft"/>
+    <desc>Ein- und Ausgabe-Erweiterungen für Audio und Video einrichten.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan-Arne Petersen</mal:name>
+      <mal:email>jap@gnome.org</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2010, 2012, 2019.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stefan Horning</mal:name>
+      <mal:email>stefan@hornings.de</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2013, 2015,2019.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Einstellungen und zusätzliche Funktionsmerkmale</title>
+
+  <p><app>Videos</app> bietet einige zusätzliche Optionen an. Richten Sie die Anwendung nach Ihren Vorlieben ein. Öffnen Sie das <app>Einstellungen</app>-Fenster, indem Sie das Menü in der oberen rechten Ecke des Fensters öffnen und <gui style="menuitem">Einstellungen</gui> auswählen.</p>
+
+  <section id="pref-general">
+    <title>Allgemein</title>
+      <terms>
+        <item>
+          <title><gui>Externe Untertitel</gui></title>
+            <list>
+              <item>
+                <p>Aktivieren Sie die Option <gui>Untertitel laden, sobald ein Video geladen wird</gui>, falls Sie wollen, dass Untertitel automatisch geladen werden sollen.</p>
+              </item>
+              <item>
+                <p>Passen Sie die Schriftart und -größe an, indem Sie auf deren Namen klicken. Wählen Sie die Schriftart in der Auswahlliste aus. Klicken Sie auf den Schieberegler und ändern Sie die Schriftgröße. Wenn Sie fertig sind, klicken Sie auf <gui>Auswählen</gui>.</p>
+              </item>
+              <item>
+                <p>Wählen Sie die Kodierung in der Auswahlliste aus.</p>
+              </item>
+            </list>
+        </item>
+        <item>
+          <title><gui>Erweiterungen</gui></title>
+          <p>Erweiterungen bieten zusätzliche und erweiterte Funktionalität. Sehen Sie sich die Liste der Erweiterungen an, indem Sie auf <gui style="button">Erweiterungen …</gui> klicken. Wählen Sie die gewünschte Erweiterung aus und klicken Sie auf <gui style="button">Erweiterungen</gui>, sofern verfügbar.</p>
+        </item>
+      </terms>
+  </section>
+
+  <section id="pref-display">
+    <title>Anzeige</title>
+      <terms>
+        <item>
+          <title><gui>Video</gui></title>
+          <p>In <app>Videos</app> können Sie angeben, ob Sie das <gui>Deinterlacing deaktivieren</gui> wollen. Aktivieren Sie dazu diese Option.</p>
+        </item>
+        <item>
+          <title><gui>Farbabgleich</gui></title>
+          <p>Mit dieser Option können Sie <gui>Helligkeit</gui>, <gui>Kontrast</gui>, <gui>Sättigung</gui> oder <gui>Farbton</gui> anpassen. Klicken Sie dazu auf die Schieberegler und ziehen Sie sie.</p>
+            <note style="tip">
+              <p>Sie können durch Klicken auf <gui style="button">Auf Vorgaben zurücksetzen</gui> zu den vorherigen Einstellungen zurückkehren.</p>
+            </note>
+        </item>
+      </terms>
+  </section>
+
+  <section id="pref-audio">
+    <title>Audio</title>
+      <terms>
+        <item>
+          <title><gui>Audio-Ausgabe</gui></title>
+          <p>Wählen Sie den gewünschten Audio-Ausgabetyp aus dem <gui>Audio-Ausgabetyp</gui>-Auswahlmenü.</p>
+        </item>
+      </terms>
+  </section>
+
+</page>

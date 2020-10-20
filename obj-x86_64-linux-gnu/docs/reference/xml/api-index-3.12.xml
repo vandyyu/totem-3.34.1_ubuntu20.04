@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE indexdiv PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+	<!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+	<!ENTITY version SYSTEM "version.xml">
+	<!ENTITY slash "/">
+]>
+<indexdiv id="api-index-3.12">
+<indexdiv><title>B</title>
+<indexentry><primaryie linkends="bacon-video-widget-get-controls-object"><link linkend="bacon-video-widget-get-controls-object">bacon_video_widget_get_controls_object</link>, function in <link linkend="totem-BaconVideoWidget">BaconVideoWidget</link></primaryie></indexentry>
+<indexentry><primaryie linkends="bacon-video-widget-mark-popup-busy"><link linkend="bacon-video-widget-mark-popup-busy">bacon_video_widget_mark_popup_busy</link>, function in <link linkend="totem-BaconVideoWidget">BaconVideoWidget</link></primaryie></indexentry>
+<indexentry><primaryie linkends="bacon-video-widget-set-next-language"><link linkend="bacon-video-widget-set-next-language">bacon_video_widget_set_next_language</link>, function in <link linkend="totem-BaconVideoWidget">BaconVideoWidget</link></primaryie></indexentry>
+<indexentry><primaryie linkends="bacon-video-widget-set-next-subtitle"><link linkend="bacon-video-widget-set-next-subtitle">bacon_video_widget_set_next_subtitle</link>, function in <link linkend="totem-BaconVideoWidget">BaconVideoWidget</link></primaryie></indexentry>
+<indexentry><primaryie linkends="bacon-video-widget-show-popup"><link linkend="bacon-video-widget-show-popup">bacon_video_widget_show_popup</link>, function in <link linkend="totem-BaconVideoWidget">BaconVideoWidget</link></primaryie></indexentry>
+<indexentry><primaryie linkends="bacon-video-widget-unmark-popup-busy"><link linkend="bacon-video-widget-unmark-popup-busy">bacon_video_widget_unmark_popup_busy</link>, function in <link linkend="totem-BaconVideoWidget">BaconVideoWidget</link></primaryie></indexentry>
+</indexdiv>
+</indexdiv>

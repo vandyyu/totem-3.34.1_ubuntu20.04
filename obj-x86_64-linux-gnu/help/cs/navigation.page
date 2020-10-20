@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="navigation" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#playing-media"/>
+    <desc>Jak ovládat přehrávání multimédií.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+  <title>Ovládání</title>
+
+  <p><app>Videa</app> můžete ovládat pomocí ovládacích tlačítek, položek nabídky nebo klávesových zkratek.</p>
+
+  <p>Když chcete během sledování videa zobrazit ovládací tlačítka v dolní části, stačí pohnout ukazatelem myši. Pomocí nich pak můžete:</p>
+
+  <list>
+    <item>
+      <p>Spustit a pozastavit přehrávání: Použijte klávesovou zkratku <key>mezerník</key>, nebo zmáčkněte tlačítko <gui style="button">Přehrát/pozastavit</gui>.</p>
+    </item>
+    <item>
+      <p>Sledovat na celé obrazovce: Zmáčkněte <key>F11</key> nebo tlačítko se dvěma šipkami na záhlavní liště.</p>
+    </item>
+    <item>
+      <p>Upravit hlasitost: Další informace viz <link xref="sound-volume"/>.</p>
+    </item>
+    <item>
+      <p>Přejít na jiné video: Zmáčkněte tlačítko se šipkou <gui style="button">&lt;</gui> v levém horním rohu.</p>
+    </item>
+    <item>
+      <p>Přejít na jinou kapitolu DVD nebo zpět na hlavní obrazovku: Viz <link xref="playing-DVD"/>.</p>
+    </item>
+  </list>
+
+</page>

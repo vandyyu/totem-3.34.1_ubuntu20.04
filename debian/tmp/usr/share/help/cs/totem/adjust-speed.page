@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="adjust-speed" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#playing-media"/>
+    <revision pkgversion="3.30.0" version="0.1" date="2019-01-11" status="draft"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+
+    <desc>Jak změnit rychlost přehrávání filmu.</desc>
+  </info>
+
+  <title>Změna rychlosti</title>
+
+  <p>V pravém dolním rohu si můžete navolit, jak rychle či pomalu se má film přehrávat:</p>
+
+  <list>
+    <item>
+      <p>Zmáčkněte <gui>tlačítko nabídky</gui>, které se nachází pod oblastí s videem.</p>
+    </item>
+    <item>
+      <p>V části <gui>Rychlost</gui> vyberte z:</p>
+      <list>
+        <item><p><gui>× 0,75</gui></p></item>
+        <item><p><gui>Normální</gui></p></item>
+        <item><p><gui>× 1,1</gui></p></item>
+        <item><p><gui>× 1,25</gui></p></item>
+        <item><p><gui>× 1,5</gui></p></item>
+        <item><p><gui>× 1,75</gui></p></item>
+      </list>
+    </item>
+  </list>
+
+</page>

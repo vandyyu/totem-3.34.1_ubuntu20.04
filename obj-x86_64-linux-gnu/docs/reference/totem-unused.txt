@@ -1,0 +1,5 @@
+BvwLangInfo
+BvwTrackType
+bacon_video_widget_lang_info_free
+totem_object_can_seek_next
+totem_object_can_seek_previous

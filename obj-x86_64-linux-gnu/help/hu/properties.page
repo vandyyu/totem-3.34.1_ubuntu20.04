@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="properties" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#advanced-options"/>
+    <revision pkgversion="3.30" version="0.2" date="2019-01-10" status="draft"/>
+    <desc>A lejátszott hang- vagy videofájl tulajdonságainak megtekintése.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name its:translate="no">Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Így add tovább! 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>ur.balazs at fsf dot hu</mal:email>
+      <mal:years>2019.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Fájltulajdonságok</title>
+
+  <p>A lejátszott média tulajdonságait az ablak jobb felső sarkában lévő menügombra kattintva, majd a <gui style="menuitem">Tulajdonságok</gui> menüpont választásával vagy a <keyseq><key>Ctrl</key><key>P</key></keyseq> billentyűkombinációval nézheti meg. Három szakaszt jelenít meg:</p>
+
+  <terms>
+    <item>
+      <title><gui>Általános</gui></title>
+      <p>Cím-, előadó-, album-, év-, időtartam-, megjegyzés- és tárolóinformációk.</p>
+    </item>
+    <item>
+      <title><gui>Videó</gui></title>
+      <p>Méret-, kodek-, képkockasebesség- és bitsebesség-információk.</p>
+    </item>
+    <item>
+      <title><gui>Hang</gui></title>
+      <p>Kodek-, csatorna-, mintavételezés- és bitsebesség-információk.</p>
+    </item>
+  </terms>
+
+</page>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="troubleshooting-subtitles" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#troubleshooting"/>
+    <link type="seealso" xref="subtitles"/>
+    <link type="seealso" xref="preferences"/>
+    <revision pkgversion="3.30" version="0.2" date="2019-01-11" status="draft"/>
+    <desc>Untertitel können nicht geladen werden.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan-Arne Petersen</mal:name>
+      <mal:email>jap@gnome.org</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2010, 2012, 2019.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stefan Horning</mal:name>
+      <mal:email>stefan@hornings.de</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2013, 2015,2019.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Problem mit dem Laden von Untertiteln.</title>
+
+  <p>Obwohl Sie die Anweisungen zu den Untertiteln auf den Seiten <link xref="subtitles"/> oder <link xref="preferences"/> befolgt haben, kann es passieren, dass <app>Videos</app> noch immer keine Untertitel lädt. Die Gründe können sein:</p>
+
+  <list>
+    <item>
+      <p>Falscher Name der Untertiteldatei - öffnen sie den Dateiauswahldialog und prüfen Sie, ob die Namen der Untertiteldatei und der Videodatei übereinstimmen.</p>
+    </item>
+    <item>
+      <p>Untertiteldatei fehlt - öffnen Sie den Dateiauswahldialog und prüfen Sie, ob es im Ordner, in dem sich die Videodateidatei befindet, auch eine Datei mit den Untertiteln befindet.</p>
+    </item>
+  </list>
+
+  <p>Wenn Sie keine Untertiteldatei für Ihren Film haben, können Sie in <app>Videos</app> dansch suchen:</p>
+  <steps>
+    <item><p>Klicken Sie auf den Menüknopf in der oberen rechten Ecke des Fensters und wählen Sie <gui style="menuitem">Einstellungen</gui>.</p>
+    </item>
+    <item>
+      <p>Klicken Sie im Reiter <gui>Allgemein</gui> unter <gui>Erweiterungen</gui> auf <gui style="button">Erweiterungen …</gui>.</p>
+    </item>
+    <item>
+      <p>Aktivieren Sie im Fenster <gui>Erweiterungen einrichten</gui> die Erweiterung <gui>Untertitel-Downloader</gui>. Diese wird versuchen, Untertitel für den aktuell abgespielten Film zu finden und herunterzuladen.</p>
+    </item>
+  </steps>
+
+  <note>
+  <p>Bitte beachten Sie, dass für die Suche nach Untertiteln eine Internetverbindung erforderlich ist.</p>
+  </note>
+
+</page>

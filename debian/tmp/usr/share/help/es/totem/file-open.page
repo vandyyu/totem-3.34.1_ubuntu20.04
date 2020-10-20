@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="file-open" xml:lang="es">
+
+  <info>
+    <revision pkgversion="3.8" version="0.1" date="2013-03-29" status="draft"/>
+    <revision pkgversion="3.30" version="0.2" date="2019-01-10" status="draft"/>
+    <link type="guide" xref="index#playing-media"/>
+
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name its:translate="no">Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+
+    <license>
+      <p>Creative Commons Compartir Igual 3.0</p>
+    </license>
+
+    <desc>Abrir un archivo en <app>Vídeos</app>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodrigo Lledó</mal:name>
+      <mal:email>rodhos92@gmail.com</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012-2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@cvs.GNOME.org</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ver un vídeo</title>
+
+  <p>Puede abrir archivos de vídeo en <app>Vídeos</app> de una de las siguientes maneras:</p>
+
+  <list>
+    <item>
+      <p>Seleccione un vídeo desde la lista que se muestra en la ventana principal.</p>
+    </item>
+    <item>
+      <p>Seleccione <app>Vídeos</app> como la aplicación para abrir archivos de vídeo en el gestor de archivos <app>Archivos</app>.</p>
+    </item>
+    <item>
+      <p>Pulse el botón <gui style="button">+</gui> en la esquina superior izquierda de la ventana y seleccione <gui style="menuitem">Añadir vídeo local…</gui>. Seleccione el o los vídeos que quiere abrir. Pulse <gui style="button">Añadir</gui>. El vídeo se añadirá a la lista de la ventana principal y puede seleccionarlo desde ahí.</p>
+    </item>
+    <item>
+      <p>Pulse el botón <gui style="button">+</gui> en la esquina superior izquierda de la ventana y seleccione <gui style="menuitem">Añadir vídeo web…</gui>. Escriba o pegue la dirección del vídeo que quiere abrir. Pulse <gui style="button">Añadir</gui>. El vídeo se añadirá a la lista de la ventana principal y puede seleccionarlo desde ahí.</p>
+    </item>
+  </list>
+
+</page>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="troubleshooting-debug" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#troubleshooting"/>
+    <revision pkgversion="3.30" version="0.1" date="2019-01-11" status="draft"/>
+    <desc>Hogyan lehet hibakeresési információkat szerezni egy hibajelentéshez.</desc>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Így add tovább! 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>ur.balazs at fsf dot hu</mal:email>
+      <mal:years>2019.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Egyéb videoproblémák felderítése</title>
+
+<p>Ha már elolvasta a <link xref="supported-formats"/> és a <link xref="troubleshooting-DVD"/> fejezeteket, de a videót még mindig nem lehet lejátszani, akkor nyisson meg egy terminálablakot, és írja be a <cmd>totem --help-gst</cmd> parancsot. Ez az elérhető kapcsolók listáját jeleníti meg, amelyeket a hibakeresési kimenet megszerzéséhez használhat. A hiba gyakran egy mögöttes bővítményben van, mint például a <sys>GStreamer</sys> bővítményben, és nem magában a <app>Videók</app> alkalmazásban.</p>
+
+<note style="info"><p>A <sys>GStreamer</sys> szoftverhibáit a <link href="https://gitlab.freedesktop.org/gstreamer"><sys>GStreamer</sys> hibakövetőjében</link> lehet jelenteni.</p></note>
+
+</page>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="troubleshooting-debug" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#troubleshooting"/>
+    <revision pkgversion="3.30" version="0.1" date="2019-01-11" status="draft"/>
+    <desc>Cómo obtener información de depuración para un informe de error.</desc>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Compartir Igual 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodrigo Lledó</mal:name>
+      <mal:email>rodhos92@gmail.com</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012-2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@cvs.GNOME.org</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Identificar otros problemas de vídeo</title>
+
+<p>Si ya ha seguido la sección <link xref="supported-formats"/> y la sección <link xref="troubleshooting-DVD"/> y sigue sin poder reproducir el vídeo, abra una ventana de la terminal e introduzca el comando <cmd>totem --help-gst</cmd>. Esto le mostrará una lista de las opciones disponibles que puede usar para obtener información sobre errores. Frecuentemente el problema está en un complemento subyacente, por ejemplo, en <sys>GStreamer</sys> y no en <app>Vídeos</app>.</p>
+
+<note style="info"><p>Los errores de software de <sys>GStreamer</sys> se pueden informar en el <link href="https://gitlab.freedesktop.org/gstreamer">seguimiento de errores de <sys>GStreamer</sys></link>.</p></note>
+
+</page>

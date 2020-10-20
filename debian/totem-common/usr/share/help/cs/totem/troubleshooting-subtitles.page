@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="troubleshooting-subtitles" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#troubleshooting"/>
+    <link type="seealso" xref="subtitles"/>
+    <link type="seealso" xref="preferences"/>
+    <revision pkgversion="3.30" version="0.2" date="2019-01-11" status="draft"/>
+    <desc>Jak řešit, když se nenačítají titulky.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+  <title>Problém s načítáním titulků</title>
+
+  <p>Může se stát, že přestože se budete řídit instrukcemi k titulkům uvedenými na stránce <link xref="subtitles"/> nebo <link xref="preferences"/>, <app>Videa</app> stále titulky nenačtou. Důvodem může být:</p>
+
+  <list>
+    <item>
+      <p>Nesprávný název souboru s titulky – otevřete dialogové okno pro výběr souboru a zkontrolujte, jestli název souboru s titulky je do písmene stejný, jako název filmu.</p>
+    </item>
+    <item>
+      <p>Chybějící soubor s titulky – otevřete dialogové okno pro výběr souboru a zkontrolujte, jestli je soubor s titulky ve stejné složce jako film.</p>
+    </item>
+  </list>
+
+  <p>Pokud soubor s titulky pro svůj film nemáte, můžete jej zkusit vyhledat přímo z přehrávače <app>Videa</app>:</p>
+  <steps>
+    <item><p>Zmáčkněte tlačítko nabídky v pravém horním rohu okna a zvolte <gui style="menuitem">Předvolby</gui>.</p>
+    </item>
+    <item>
+      <p>Na kartě <gui>Obecné</gui> v části <gui>Zásuvné moduly</gui> zmáčkněte <gui style="button">Zásuvné moduly…</gui></p>
+    </item>
+    <item>
+      <p>V okně <gui>Nastavení zásuvných modulů</gui> povolte zásuvný modul <gui>Stahování titulků</gui>. Ten se pokouší najít a stáhnout titulky k právě přehrávanému filmu.</p>
+    </item>
+  </steps>
+
+  <note>
+  <p>Pamatujte, že k vyhledání požadovaných titulků je zapotřebí připojení k Internetu.</p>
+  </note>
+
+</page>

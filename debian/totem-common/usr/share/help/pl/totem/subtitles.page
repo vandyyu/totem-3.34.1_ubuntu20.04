@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="subtitles" xml:lang="pl">
+
+  <info>
+    <link type="guide" xref="index#playing-media"/>
+    <link type="seealso" xref="preferences"/>
+    <revision pkgversion="3.30.0" version="0.1" date="2019-01-11" status="draft"/>
+    <desc>Ręczny wybór napisów do odtwarzanego filmu.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Piotr Drąg</mal:name>
+      <mal:email>piotrdrag@gmail.com</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Aviary.pl</mal:name>
+      <mal:email>community-poland@mozilla.org</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Napisy</title>
+
+  <p>W zależności od formatu filmu, napisy mogą być wbudowane w plik lub płytę, albo dostępne jako zewnętrzne pliki.</p>
+
+  <p>Aby wybrać napisy używane, kiedy plik lub płyta je zawierają, kliknij przycisk menu w górnym prawym rogu okna i wybierz <gui style="menuitem">Napisy</gui>.</p>
+
+  <p>Program <app>Filmy</app> wczyta zewnętrzne napisy automatycznie, jeśli opcja <gui>Wczytywanie pliku napisów po wczytaniu filmu</gui> jest włączona w <link xref="preferences">Preferencjach</link>.</p>
+
+  <p>Aby ręcznie wczytać zewnętrzny plik z napisami do filmu:</p>
+  <steps>
+    <item>
+      <p>Kliknij przycisk menu w górnym prawym rogu okna i wybierz <guiseq><gui style="menuitem">Napisy</gui> <gui>Wybierz plik napisów…</gui></guiseq>.</p>
+    </item>
+    <item>
+       <p>Zostanie otwarte okno wyboru pliku. Wyszukaj napisy.</p>
+    </item>
+    <item>
+      <p>Zaznacz je i kliknij przycisk <gui>Otwórz</gui>.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Dostosuj rozmiar i czcionkę do własnych potrzeb. Sekcja <guiseq><gui>Ogólne</gui><gui>Zewnętrzne napisy</gui></guiseq> na stronie <link xref="preferences"/> zawiera więcej informacji.</p>
+  </note>
+
+</page>

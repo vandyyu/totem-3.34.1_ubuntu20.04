@@ -1,0 +1,6 @@
+gnome:NextVersion=3.35
+gnome:Version=3.34
+python3:Depends=python3.8, python3:any
+shlibs:Depends=libc6 (>= 2.28), libgdk-pixbuf2.0-0 (>= 2.23.0), libglib2.0-0 (>= 2.37.3), libgtk-3-0 (>= 3.19.4), libpeas-1.0-0 (>= 1.1.0), libtotem0 (>= 3.34.1-2ubuntu2), libtotem0 (<< 3.35)
+misc:Depends=
+misc:Pre-Depends=

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="view-zoom" xml:lang="de">
+
+  <info>
+    <revision pkgversion="3.8" version="0.1" date="2013-03-29" status="draft"/>
+    <revision pkgversion="3.30.0" version="0.2" date="2019-01-09" status="draft"/>
+    <link type="guide" xref="index#playing-media"/>
+
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name its:translate="no">Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+
+    <desc>Das Video vergrößern und die korrekten Proportionen erhalten.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan-Arne Petersen</mal:name>
+      <mal:email>jap@gnome.org</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2010, 2012, 2019.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stefan Horning</mal:name>
+      <mal:email>stefan@hornings.de</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2013, 2015,2019.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Videogröße und Ansichtsverhältnis ändern</title>
+
+  <p>Sie können das Video vergrößern oder das Ansichtsverhältnis korrigieren.</p>
+
+  <terms>
+    <item>
+      <title>Vergrößern</title>
+      <p>Klicken Sie auf den Menüknopf in der oberen rechten Ecke des Fensters und wählen Sie <gui style="menuitem">Vergrößern</gui> oder drücken Sie <key>R</key>. Um zu verkleinern, deaktivieren Sie <gui style="menuitem">Vergrößern</gui> wieder oder drücken Sie <key>T</key>.</p>
+    </item>
+    <item>
+      <title>Das Ansichtsverhältnis einstellen</title>
+      <p>Klicken Sie auf den Menüknopf in der oberen rechten Ecke des Fensters und wählen Sie <gui style="menuitem">Ansichtsverhältnis</gui>.</p>
+      <p>Wählen Sie aus Folgendem:</p>
+      <list>
+        <item><p><gui>Automatisch</gui></p></item>
+        <item><p><gui>Quadratisch</gui></p></item>
+        <item><p><gui>4:3 (TV)</gui></p></item>
+        <item><p><gui>16:9 (Breitbild)</gui></p></item>
+        <item><p><gui>2.11:1 (DVB)</gui></p></item>
+      </list>
+    </item>
+  </terms>
+
+  <note style="info">
+    <p>Das Ansichtsverhältnis ist die Proportion zwischen Breite und Höhe. Mit dieser Option können Sie ein anderes Ansichtsverhältnis für die Anzeige des Films erzwingen.</p>
+  </note>
+
+</page>

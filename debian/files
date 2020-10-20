@@ -1,0 +1,7 @@
+gir1.2-totem-1.0_3.34.1-2ubuntu2_amd64.deb introspection optional
+libtotem-dev_3.34.1-2ubuntu2_amd64.deb libdevel optional
+libtotem0_3.34.1-2ubuntu2_amd64.deb libs optional
+totem-common_3.34.1-2ubuntu2_all.deb video optional
+totem-plugins_3.34.1-2ubuntu2_amd64.deb video optional
+totem_3.34.1-2ubuntu2_amd64.buildinfo video optional
+totem_3.34.1-2ubuntu2_amd64.deb video optional

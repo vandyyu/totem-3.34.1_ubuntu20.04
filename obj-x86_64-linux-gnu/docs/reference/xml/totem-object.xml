@@ -1,0 +1,1223 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+	<!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+	<!ENTITY version SYSTEM "version.xml">
+	<!ENTITY slash "/">
+]>
+<refentry id="totem-TotemObject">
+<refmeta>
+<refentrytitle role="top_of_page" id="totem-TotemObject.top_of_page">TotemObject</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>TOTEM Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>TotemObject</refname>
+<refpurpose>main Totem object</refpurpose>
+</refnamediv>
+<refsect1 id="totem-TotemObject.stability-level">
+<title>Stability Level</title>
+<acronym>Unstable</acronym>, unless otherwise indicated
+</refsect1>
+
+<refsect1 id="totem-TotemObject.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_proto_type" colwidth="150px"/>
+<colspec colname="functions_proto_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-object-show-error">totem_object_show_error</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-object-exit">totem_object_exit</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-object-play">totem_object_play</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-object-play-pause">totem_object_play_pause</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-object-stop">totem_object_stop</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-object-seek-next">totem_object_seek_next</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-object-seek-previous">totem_object_seek_previous</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-object-remote-get-setting">totem_object_remote_get_setting</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-object-remote-set-setting">totem_object_remote_set_setting</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-object-seek-time">totem_object_seek_time</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-object-seek-relative">totem_object_seek_relative</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-object-set-volume">totem_object_set_volume</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-object-remote-command">totem_object_remote_command</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-object-is-playing">totem_object_is_playing</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-object-is-paused">totem_object_is_paused</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-object-is-seekable">totem_object_is_seekable</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GtkWindow"><returnvalue>GtkWindow</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="totem-object-get-main-window">totem_object_get_main_window</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="totem-object-get-current-mrl">totem_object_get_current_mrl</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GtkWidget"><returnvalue>GtkWidget</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="totem-object-get-video-widget">totem_object_get_video_widget</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-object-set-current-subtitle">totem_object_set_current_subtitle</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="guint"><returnvalue>guint</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-object-get-playlist-length">totem_object_get_playlist_length</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="int"><returnvalue>int</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-object-get-playlist-pos">totem_object_get_playlist_pos</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="totem-object-get-title-at-playlist-pos">totem_object_get_title_at_playlist_pos</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="double"><returnvalue>double</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-object-get-volume">totem_object_get_volume</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="gchar"><returnvalue>gchar</returnvalue></link>&#160;* const *
+</entry><entry role="function_name"><link linkend="totem-object-get-supported-content-types">totem_object_get_supported_content_types</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type">const <link linkend="gchar"><returnvalue>gchar</returnvalue></link>&#160;* const *
+</entry><entry role="function_name"><link linkend="totem-object-get-supported-uri-schemes">totem_object_get_supported_uri_schemes</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="float"><returnvalue>float</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-object-get-rate">totem_object_get_rate</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-object-set-rate">totem_object_set_rate</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-object-add-to-playlist">totem_object_add_to_playlist</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-object-add-to-view">totem_object_add_to_view</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-object-clear-playlist">totem_object_clear_playlist</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-object-empty-menu-section">totem_object_empty_menu_section</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gint64"><returnvalue>gint64</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-object-get-current-time">totem_object_get_current_time</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="GMenu"><returnvalue>GMenu</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="totem-object-get-menu-section">totem_object_get_menu_section</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+</entry><entry role="function_name"><link linkend="totem-object-get-short-title">totem_object_get_short_title</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-object-is-fullscreen">totem_object_is_fullscreen</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-object-next-angle">totem_object_next_angle</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-object-pause">totem_object_pause</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="totem-TotemObject.other" role="other_proto">
+<title role="other_proto.title">Types and Values</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="other_proto_type" colwidth="150px"/>
+<colspec colname="other_proto_name"/>
+<tbody>
+<row><entry role="typedef_keyword">typedef</entry><entry role="function_name"><link linkend="Totem">Totem</link></entry></row>
+<row><entry role="datatype_keyword"></entry><entry role="function_name"><link linkend="TotemObject">TotemObject</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="TotemRemoteCommand">TotemRemoteCommand</link></entry></row>
+<row><entry role="datatype_keyword">enum</entry><entry role="function_name"><link linkend="TotemRemoteSetting">TotemRemoteSetting</link></entry></row>
+<row><entry role="define_keyword">#define</entry><entry role="function_name"><link linkend="TOTEM-GSETTINGS-SCHEMA:CAPS">TOTEM_GSETTINGS_SCHEMA</link></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+<refsect1 id="totem-TotemObject.includes"><title>Includes</title><synopsis>#include &lt;totem.h&gt;
+</synopsis></refsect1>
+
+<refsect1 id="totem-TotemObject.description" role="desc">
+<title role="desc.title">Description</title>
+<para><link linkend="TotemObject"><type>TotemObject</type></link> is the core object of Totem; a singleton which controls all Totem's main functions.</para>
+
+</refsect1>
+<refsect1 id="totem-TotemObject.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="totem-object-show-error" role="function">
+<title>totem_object_show_error&#160;()</title>
+<indexterm zone="totem-object-show-error"><primary sortas="object_show_error">totem_object_show_error</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+totem_object_show_error (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>,
+                         <parameter>const <link linkend="char"><type>char</type></link> *title</parameter>,
+                         <parameter>const <link linkend="char"><type>char</type></link> *reason</parameter>);</programlisting>
+<para>Displays a non-blocking error dialog with the
+given <parameter>title</parameter>
+ and <parameter>reason</parameter>
+.</para>
+<refsect3 id="totem-object-show-error.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>title</para></entry>
+<entry role="parameter_description"><para>the error dialog title</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>reason</para></entry>
+<entry role="parameter_description"><para>the error dialog text</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="totem-object-exit" role="function">
+<title>totem_object_exit&#160;()</title>
+<indexterm zone="totem-object-exit"><primary sortas="object_exit">totem_object_exit</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+totem_object_exit (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>);</programlisting>
+<para>Closes Totem.</para>
+<refsect3 id="totem-object-exit.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="totem-object-play" role="function">
+<title>totem_object_play&#160;()</title>
+<indexterm zone="totem-object-play"><primary sortas="object_play">totem_object_play</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+totem_object_play (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>);</programlisting>
+<para>Plays the current stream. If Totem is already playing, it continues
+to play. If the stream cannot be played, and error dialog is displayed.</para>
+<refsect3 id="totem-object-play.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="totem-object-play-pause" role="function">
+<title>totem_object_play_pause&#160;()</title>
+<indexterm zone="totem-object-play-pause"><primary sortas="object_play_pause">totem_object_play_pause</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+totem_object_play_pause (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>);</programlisting>
+<para>Gets the current MRL from the playlist and attempts to play it.
+If the stream is already playing, playback is paused.</para>
+<refsect3 id="totem-object-play-pause.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="totem-object-stop" role="function">
+<title>totem_object_stop&#160;()</title>
+<indexterm zone="totem-object-stop"><primary sortas="object_stop">totem_object_stop</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+totem_object_stop (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>);</programlisting>
+<para>Stops playback, and sets the playlist back at the start.</para>
+<refsect3 id="totem-object-stop.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="totem-object-seek-next" role="function">
+<title>totem_object_seek_next&#160;()</title>
+<indexterm zone="totem-object-seek-next"><primary sortas="object_seek_next">totem_object_seek_next</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+totem_object_seek_next (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>);</programlisting>
+<para>If a DVD is being played, goes to the next chapter. If a normal stream
+is being played, plays the next entry in the playlist.</para>
+<refsect3 id="totem-object-seek-next.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="totem-object-seek-previous" role="function">
+<title>totem_object_seek_previous&#160;()</title>
+<indexterm zone="totem-object-seek-previous"><primary sortas="object_seek_previous">totem_object_seek_previous</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+totem_object_seek_previous (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>);</programlisting>
+<para>If a DVD is being played, goes to the previous chapter. If a normal stream
+is being played, goes to the start of the stream if possible. If seeking is
+not possible, plays the previous entry in the playlist.</para>
+<refsect3 id="totem-object-seek-previous.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="totem-object-remote-get-setting" role="function">
+<title>totem_object_remote_get_setting&#160;()</title>
+<indexterm zone="totem-object-remote-get-setting"><primary sortas="object_remote_get_setting">totem_object_remote_get_setting</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+totem_object_remote_get_setting (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>,
+                                 <parameter><link linkend="TotemRemoteSetting"><type>TotemRemoteSetting</type></link> setting</parameter>);</programlisting>
+<para>Returns the value of <parameter>setting</parameter>
+ for this instance of Totem.</para>
+<refsect3 id="totem-object-remote-get-setting.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>setting</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemRemoteSetting"><type>TotemRemoteSetting</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="totem-object-remote-get-setting.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the setting is enabled, <link linkend="FALSE:CAPS"><literal>FALSE</literal></link> otherwise</para>
+</refsect3></refsect2>
+<refsect2 id="totem-object-remote-set-setting" role="function">
+<title>totem_object_remote_set_setting&#160;()</title>
+<indexterm zone="totem-object-remote-set-setting"><primary sortas="object_remote_set_setting">totem_object_remote_set_setting</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+totem_object_remote_set_setting (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>,
+                                 <parameter><link linkend="TotemRemoteSetting"><type>TotemRemoteSetting</type></link> setting</parameter>,
+                                 <parameter><link linkend="gboolean"><type>gboolean</type></link> value</parameter>);</programlisting>
+<para>Sets <parameter>setting</parameter>
+ to <parameter>value</parameter>
+ on this instance of Totem.</para>
+<refsect3 id="totem-object-remote-set-setting.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>setting</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemRemoteSetting"><type>TotemRemoteSetting</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>value</para></entry>
+<entry role="parameter_description"><para>the new value for the setting</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="totem-object-seek-time" role="function">
+<title>totem_object_seek_time&#160;()</title>
+<indexterm zone="totem-object-seek-time"><primary sortas="object_seek_time">totem_object_seek_time</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+totem_object_seek_time (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>,
+                        <parameter><link linkend="gint64"><type>gint64</type></link> msec</parameter>,
+                        <parameter><link linkend="gboolean"><type>gboolean</type></link> accurate</parameter>);</programlisting>
+<para>Seeks to an absolute time in the stream, or displays an
+error dialog if that's not possible.</para>
+<refsect3 id="totem-object-seek-time.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>msec</para></entry>
+<entry role="parameter_description"><para>the time to seek to</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>accurate</para></entry>
+<entry role="parameter_description"><para>whether to use accurate seek, an accurate seek might be slower for some formats (see GStreamer docs)</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="totem-object-seek-relative" role="function">
+<title>totem_object_seek_relative&#160;()</title>
+<indexterm zone="totem-object-seek-relative"><primary sortas="object_seek_relative">totem_object_seek_relative</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+totem_object_seek_relative (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>,
+                            <parameter><link linkend="gint64"><type>gint64</type></link> offset</parameter>,
+                            <parameter><link linkend="gboolean"><type>gboolean</type></link> accurate</parameter>);</programlisting>
+<para>Seeks to an <parameter>offset</parameter>
+ from the current position in the stream,
+or displays an error dialog if that's not possible.</para>
+<refsect3 id="totem-object-seek-relative.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>offset</para></entry>
+<entry role="parameter_description"><para>the time offset to seek to</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>accurate</para></entry>
+<entry role="parameter_description"><para>whether to use accurate seek, an accurate seek might be slower for some formats (see GStreamer docs)</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="totem-object-set-volume" role="function">
+<title>totem_object_set_volume&#160;()</title>
+<indexterm zone="totem-object-set-volume"><primary sortas="object_set_volume">totem_object_set_volume</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+totem_object_set_volume (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>,
+                         <parameter><link linkend="double"><type>double</type></link> volume</parameter>);</programlisting>
+<para>Sets the volume, with <code class="literal">1.0</code> being the maximum, and <code class="literal">0.0</code> being the minimum level.</para>
+<refsect3 id="totem-object-set-volume.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>volume</para></entry>
+<entry role="parameter_description"><para>the new absolute volume value</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="totem-object-remote-command" role="function">
+<title>totem_object_remote_command&#160;()</title>
+<indexterm zone="totem-object-remote-command"><primary sortas="object_remote_command">totem_object_remote_command</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+totem_object_remote_command (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>,
+                             <parameter><link linkend="TotemRemoteCommand"><type>TotemRemoteCommand</type></link> cmd</parameter>,
+                             <parameter>const <link linkend="char"><type>char</type></link> *url</parameter>);</programlisting>
+<para>Executes the specified <parameter>cmd</parameter>
+ on this instance of Totem. If <parameter>cmd</parameter>
+
+is an operation requiring an MRL, <parameter>url</parameter>
+ is required; it can be <link linkend="NULL:CAPS"><literal>NULL</literal></link>
+otherwise.</para>
+<para>If Totem's fullscreened and the operation is executed correctly,
+the controls will appear as if the user had moved the mouse.</para>
+<refsect3 id="totem-object-remote-command.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>cmd</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemRemoteCommand"><type>TotemRemoteCommand</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>url</para></entry>
+<entry role="parameter_description"><para>an MRL to play, or <link linkend="NULL:CAPS"><literal>NULL</literal></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="totem-object-is-playing" role="function">
+<title>totem_object_is_playing&#160;()</title>
+<indexterm zone="totem-object-is-playing"><primary sortas="object_is_playing">totem_object_is_playing</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+totem_object_is_playing (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>);</programlisting>
+<para>Returns <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if Totem is playing a stream.</para>
+<refsect3 id="totem-object-is-playing.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="totem-object-is-playing.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if Totem is playing a stream</para>
+</refsect3></refsect2>
+<refsect2 id="totem-object-is-paused" role="function">
+<title>totem_object_is_paused&#160;()</title>
+<indexterm zone="totem-object-is-paused"><primary sortas="object_is_paused">totem_object_is_paused</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+totem_object_is_paused (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>);</programlisting>
+<para>Returns <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if playback is paused.</para>
+<refsect3 id="totem-object-is-paused.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="totem-object-is-paused.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if playback is paused, <link linkend="FALSE:CAPS"><literal>FALSE</literal></link> otherwise</para>
+</refsect3></refsect2>
+<refsect2 id="totem-object-is-seekable" role="function">
+<title>totem_object_is_seekable&#160;()</title>
+<indexterm zone="totem-object-is-seekable"><primary sortas="object_is_seekable">totem_object_is_seekable</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+totem_object_is_seekable (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>);</programlisting>
+<para>Returns <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the current stream is seekable.</para>
+<refsect3 id="totem-object-is-seekable.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="totem-object-is-seekable.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the current stream is seekable</para>
+</refsect3></refsect2>
+<refsect2 id="totem-object-get-main-window" role="function">
+<title>totem_object_get_main_window&#160;()</title>
+<indexterm zone="totem-object-get-main-window"><primary sortas="object_get_main_window">totem_object_get_main_window</primary></indexterm>
+<programlisting language="C"><link linkend="GtkWindow"><returnvalue>GtkWindow</returnvalue></link>&#160;*
+totem_object_get_main_window (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>);</programlisting>
+<para>Gets Totem's main window and increments its reference count.</para>
+<refsect3 id="totem-object-get-main-window.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="totem-object-get-main-window.returns" role="returns">
+<title>Returns</title>
+<para>Totem's main window. </para>
+<para><emphasis role="annotation">[<acronym>transfer full</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="totem-object-get-current-mrl" role="function">
+<title>totem_object_get_current_mrl&#160;()</title>
+<indexterm zone="totem-object-get-current-mrl"><primary sortas="object_get_current_mrl">totem_object_get_current_mrl</primary></indexterm>
+<programlisting language="C"><link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+totem_object_get_current_mrl (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>);</programlisting>
+<para>Get the MRL of the current stream, or <link linkend="NULL:CAPS"><literal>NULL</literal></link> if nothing's playing.
+Free with <link linkend="g-free"><function>g_free()</function></link>.</para>
+<refsect3 id="totem-object-get-current-mrl.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="totem-object-get-current-mrl.returns" role="returns">
+<title>Returns</title>
+<para> a newly-allocated string containing the MRL of the current stream</para>
+</refsect3></refsect2>
+<refsect2 id="totem-object-get-video-widget" role="function">
+<title>totem_object_get_video_widget&#160;()</title>
+<indexterm zone="totem-object-get-video-widget"><primary sortas="object_get_video_widget">totem_object_get_video_widget</primary></indexterm>
+<programlisting language="C"><link linkend="GtkWidget"><returnvalue>GtkWidget</returnvalue></link>&#160;*
+totem_object_get_video_widget (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>);</programlisting>
+<para>Gets Totem's video widget and increments its reference count.</para>
+<refsect3 id="totem-object-get-video-widget.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="totem-object-get-video-widget.returns" role="returns">
+<title>Returns</title>
+<para>Totem's video widget. </para>
+<para><emphasis role="annotation">[<acronym>transfer full</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="totem-object-set-current-subtitle" role="function">
+<title>totem_object_set_current_subtitle&#160;()</title>
+<indexterm zone="totem-object-set-current-subtitle"><primary sortas="object_set_current_subtitle">totem_object_set_current_subtitle</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+totem_object_set_current_subtitle (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>,
+                                   <parameter>const <link linkend="char"><type>char</type></link> *subtitle_uri</parameter>);</programlisting>
+<para>Add the <parameter>subtitle_uri</parameter>
+ subtitle file to the playlist, setting it as the subtitle for the current
+playlist entry.</para>
+<refsect3 id="totem-object-set-current-subtitle.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>subtitle_uri</para></entry>
+<entry role="parameter_description"><para>the URI of the subtitle file to add</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="totem-object-get-playlist-length" role="function">
+<title>totem_object_get_playlist_length&#160;()</title>
+<indexterm zone="totem-object-get-playlist-length"><primary sortas="object_get_playlist_length">totem_object_get_playlist_length</primary></indexterm>
+<programlisting language="C"><link linkend="guint"><returnvalue>guint</returnvalue></link>
+totem_object_get_playlist_length (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>);</programlisting>
+<para>Returns the length of the current playlist.</para>
+<refsect3 id="totem-object-get-playlist-length.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="totem-object-get-playlist-length.returns" role="returns">
+<title>Returns</title>
+<para> the playlist length</para>
+</refsect3></refsect2>
+<refsect2 id="totem-object-get-playlist-pos" role="function">
+<title>totem_object_get_playlist_pos&#160;()</title>
+<indexterm zone="totem-object-get-playlist-pos"><primary sortas="object_get_playlist_pos">totem_object_get_playlist_pos</primary></indexterm>
+<programlisting language="C"><link linkend="int"><returnvalue>int</returnvalue></link>
+totem_object_get_playlist_pos (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>);</programlisting>
+<para>Returns the <code class="literal">0</code>-based index of the current entry in the playlist. If
+there is no current entry in the playlist, <code class="literal">-1</code> is returned.</para>
+<refsect3 id="totem-object-get-playlist-pos.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="totem-object-get-playlist-pos.returns" role="returns">
+<title>Returns</title>
+<para> the index of the current playlist entry, or <code class="literal">-1</code></para>
+</refsect3></refsect2>
+<refsect2 id="totem-object-get-title-at-playlist-pos" role="function">
+<title>totem_object_get_title_at_playlist_pos&#160;()</title>
+<indexterm zone="totem-object-get-title-at-playlist-pos"><primary sortas="object_get_title_at_playlist_pos">totem_object_get_title_at_playlist_pos</primary></indexterm>
+<programlisting language="C"><link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+totem_object_get_title_at_playlist_pos
+                               (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>,
+                                <parameter><link linkend="guint"><type>guint</type></link> playlist_index</parameter>);</programlisting>
+<para>Gets the title of the playlist entry at <parameter>index</parameter>
+.</para>
+<refsect3 id="totem-object-get-title-at-playlist-pos.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>playlist_index</para></entry>
+<entry role="parameter_description"><para>the <code class="literal">0</code>-based entry index</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="totem-object-get-title-at-playlist-pos.returns" role="returns">
+<title>Returns</title>
+<para> the entry title at <parameter>index</parameter>
+, or <link linkend="NULL:CAPS"><literal>NULL</literal></link>; free with <link linkend="g-free"><function>g_free()</function></link></para>
+</refsect3></refsect2>
+<refsect2 id="totem-object-get-volume" role="function">
+<title>totem_object_get_volume&#160;()</title>
+<indexterm zone="totem-object-get-volume"><primary sortas="object_get_volume">totem_object_get_volume</primary></indexterm>
+<programlisting language="C"><link linkend="double"><returnvalue>double</returnvalue></link>
+totem_object_get_volume (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>);</programlisting>
+<para>Gets the current volume level, as a value between <code class="literal">0.0</code> and <code class="literal">1.0</code>.</para>
+<refsect3 id="totem-object-get-volume.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="totem-object-get-volume.returns" role="returns">
+<title>Returns</title>
+<para> the volume level</para>
+</refsect3></refsect2>
+<refsect2 id="totem-object-get-supported-content-types" role="function" condition="since:3.1.5">
+<title>totem_object_get_supported_content_types&#160;()</title>
+<indexterm zone="totem-object-get-supported-content-types" role="3.1.5"><primary sortas="object_get_supported_content_types">totem_object_get_supported_content_types</primary></indexterm>
+<programlisting language="C">const <link linkend="gchar"><returnvalue>gchar</returnvalue></link>&#160;* const *
+totem_object_get_supported_content_types
+                               (<parameter><type>void</type></parameter>);</programlisting>
+<para>Get the full list of file content types which Totem supports playing.</para>
+<refsect3 id="totem-object-get-supported-content-types.returns" role="returns">
+<title>Returns</title>
+<para>a <link linkend="NULL:CAPS"><literal>NULL</literal></link>-terminated array of the content types Totem supports. </para>
+<para><emphasis role="annotation">[<acronym>array</acronym> zero-terminated=1][<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3><para role="since">Since: <link linkend="api-index-3.1.5">3.1.5</link></para></refsect2>
+<refsect2 id="totem-object-get-supported-uri-schemes" role="function" condition="since:3.1.5">
+<title>totem_object_get_supported_uri_schemes&#160;()</title>
+<indexterm zone="totem-object-get-supported-uri-schemes" role="3.1.5"><primary sortas="object_get_supported_uri_schemes">totem_object_get_supported_uri_schemes</primary></indexterm>
+<programlisting language="C">const <link linkend="gchar"><returnvalue>gchar</returnvalue></link>&#160;* const *
+totem_object_get_supported_uri_schemes
+                               (<parameter><type>void</type></parameter>);</programlisting>
+<para>Get the full list of URI schemes which Totem supports accessing.</para>
+<refsect3 id="totem-object-get-supported-uri-schemes.returns" role="returns">
+<title>Returns</title>
+<para>a <link linkend="NULL:CAPS"><literal>NULL</literal></link>-terminated array of the URI schemes Totem supports. </para>
+<para><emphasis role="annotation">[<acronym>array</acronym> zero-terminated=1][<acronym>transfer none</acronym>]</emphasis></para>
+</refsect3><para role="since">Since: <link linkend="api-index-3.1.5">3.1.5</link></para></refsect2>
+<refsect2 id="totem-object-get-rate" role="function">
+<title>totem_object_get_rate&#160;()</title>
+<indexterm zone="totem-object-get-rate"><primary sortas="object_get_rate">totem_object_get_rate</primary></indexterm>
+<programlisting language="C"><link linkend="float"><returnvalue>float</returnvalue></link>
+totem_object_get_rate (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>);</programlisting>
+<para>Gets the current playback rate, with <literal>1.0</literal> being the normal playback rate.</para>
+<refsect3 id="totem-object-get-rate.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="totem-object-get-rate.returns" role="returns">
+<title>Returns</title>
+<para> the volume level</para>
+</refsect3></refsect2>
+<refsect2 id="totem-object-set-rate" role="function">
+<title>totem_object_set_rate&#160;()</title>
+<indexterm zone="totem-object-set-rate"><primary sortas="object_set_rate">totem_object_set_rate</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+totem_object_set_rate (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>,
+                       <parameter><link linkend="float"><type>float</type></link> rate</parameter>);</programlisting>
+<para>Sets the playback rate, with <literal>1.0</literal> being the normal playback rate.</para>
+<refsect3 id="totem-object-set-rate.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>rate</para></entry>
+<entry role="parameter_description"><para>the new absolute playback rate</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="totem-object-set-rate.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> on success, <link linkend="FALSE:CAPS"><literal>FALSE</literal></link> on failure.</para>
+</refsect3></refsect2>
+<refsect2 id="totem-object-add-to-playlist" role="function">
+<title>totem_object_add_to_playlist&#160;()</title>
+<indexterm zone="totem-object-add-to-playlist"><primary sortas="object_add_to_playlist">totem_object_add_to_playlist</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+totem_object_add_to_playlist (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>,
+                              <parameter>const <link linkend="char"><type>char</type></link> *uri</parameter>,
+                              <parameter>const <link linkend="char"><type>char</type></link> *display_name</parameter>,
+                              <parameter><link linkend="gboolean"><type>gboolean</type></link> play</parameter>);</programlisting>
+<para>Add <parameter>uri</parameter>
+ to the playlist and play it immediately.</para>
+<refsect3 id="totem-object-add-to-playlist.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>uri</para></entry>
+<entry role="parameter_description"><para>the URI to add to the playlist</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>display_name</para></entry>
+<entry role="parameter_description"><para>the display name of the URI</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>play</para></entry>
+<entry role="parameter_description"><para>whether to play the added item</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="totem-object-add-to-view" role="function">
+<title>totem_object_add_to_view&#160;()</title>
+<indexterm zone="totem-object-add-to-view"><primary sortas="object_add_to_view">totem_object_add_to_view</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+totem_object_add_to_view (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>,
+                          <parameter><link linkend="GFile"><type>GFile</type></link> *file</parameter>,
+                          <parameter>const <link linkend="char"><type>char</type></link> *title</parameter>);</programlisting>
+<para>Adds a local media file to the main view.</para>
+<refsect3 id="totem-object-add-to-view.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>file</para></entry>
+<entry role="parameter_description"><para>a <link linkend="GFile"><type>GFile</type></link> representing a media</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>title</para></entry>
+<entry role="parameter_description"><para>a title for the media, or <link linkend="NULL:CAPS"><literal>NULL</literal></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="totem-object-clear-playlist" role="function">
+<title>totem_object_clear_playlist&#160;()</title>
+<indexterm zone="totem-object-clear-playlist"><primary sortas="object_clear_playlist">totem_object_clear_playlist</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+totem_object_clear_playlist (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>);</programlisting>
+<para>Empties the current playlist.</para>
+<refsect3 id="totem-object-clear-playlist.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="totem-object-empty-menu-section" role="function">
+<title>totem_object_empty_menu_section&#160;()</title>
+<indexterm zone="totem-object-empty-menu-section"><primary sortas="object_empty_menu_section">totem_object_empty_menu_section</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+totem_object_empty_menu_section (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>,
+                                 <parameter>const <link linkend="char"><type>char</type></link> *id</parameter>);</programlisting>
+<para>Empty the GMenu section pointed to by <parameter>id</parameter>
+, and remove any
+related actions. Note that menu items with specific target
+will not have the associated action removed.</para>
+<refsect3 id="totem-object-empty-menu-section.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>id</para></entry>
+<entry role="parameter_description"><para>the ID for the menu section to empty</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="totem-object-get-current-time" role="function">
+<title>totem_object_get_current_time&#160;()</title>
+<indexterm zone="totem-object-get-current-time"><primary sortas="object_get_current_time">totem_object_get_current_time</primary></indexterm>
+<programlisting language="C"><link linkend="gint64"><returnvalue>gint64</returnvalue></link>
+totem_object_get_current_time (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>);</programlisting>
+<para>Gets the current position's time in the stream as a gint64.</para>
+<refsect3 id="totem-object-get-current-time.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="totem-object-get-current-time.returns" role="returns">
+<title>Returns</title>
+<para> the current position in the stream</para>
+</refsect3></refsect2>
+<refsect2 id="totem-object-get-menu-section" role="function">
+<title>totem_object_get_menu_section&#160;()</title>
+<indexterm zone="totem-object-get-menu-section"><primary sortas="object_get_menu_section">totem_object_get_menu_section</primary></indexterm>
+<programlisting language="C"><link linkend="GMenu"><returnvalue>GMenu</returnvalue></link>&#160;*
+totem_object_get_menu_section (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>,
+                               <parameter>const <link linkend="char"><type>char</type></link> *id</parameter>);</programlisting>
+<para>Get the <link linkend="GMenu"><type>GMenu</type></link> of the given <parameter>id</parameter>
+ from the main Totem <link linkend="GtkBuilder"><type>GtkBuilder</type></link> file.</para>
+<refsect3 id="totem-object-get-menu-section.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>id</para></entry>
+<entry role="parameter_description"><para>the ID for the menu section to look up</para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="totem-object-get-menu-section.returns" role="returns">
+<title>Returns</title>
+<para>a <link linkend="GMenu"><type>GMenu</type></link> or <link linkend="NULL:CAPS"><literal>NULL</literal></link> on failure. </para>
+<para><emphasis role="annotation">[<acronym>transfer none</acronym>][<acronym>nullable</acronym>]</emphasis></para>
+</refsect3></refsect2>
+<refsect2 id="totem-object-get-short-title" role="function">
+<title>totem_object_get_short_title&#160;()</title>
+<indexterm zone="totem-object-get-short-title"><primary sortas="object_get_short_title">totem_object_get_short_title</primary></indexterm>
+<programlisting language="C"><link linkend="char"><returnvalue>char</returnvalue></link>&#160;*
+totem_object_get_short_title (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>);</programlisting>
+<para>Gets the title of the current entry in the playlist.</para>
+<refsect3 id="totem-object-get-short-title.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="totem-object-get-short-title.returns" role="returns">
+<title>Returns</title>
+<para> the current entry's title, or <link linkend="NULL:CAPS"><literal>NULL</literal></link>; free with <link linkend="g-free"><function>g_free()</function></link></para>
+</refsect3></refsect2>
+<refsect2 id="totem-object-is-fullscreen" role="function">
+<title>totem_object_is_fullscreen&#160;()</title>
+<indexterm zone="totem-object-is-fullscreen"><primary sortas="object_is_fullscreen">totem_object_is_fullscreen</primary></indexterm>
+<programlisting language="C"><link linkend="gboolean"><returnvalue>gboolean</returnvalue></link>
+totem_object_is_fullscreen (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>);</programlisting>
+<para>Returns <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if Totem is fullscreened.</para>
+<refsect3 id="totem-object-is-fullscreen.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3><refsect3 id="totem-object-is-fullscreen.returns" role="returns">
+<title>Returns</title>
+<para> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if Totem is fullscreened</para>
+</refsect3></refsect2>
+<refsect2 id="totem-object-next-angle" role="function">
+<title>totem_object_next_angle&#160;()</title>
+<indexterm zone="totem-object-next-angle"><primary sortas="object_next_angle">totem_object_next_angle</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+totem_object_next_angle (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>);</programlisting>
+<para>Switches to the next angle, if watching a DVD. If not watching a DVD, this is a
+no-op.</para>
+<refsect3 id="totem-object-next-angle.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="totem-object-pause" role="function">
+<title>totem_object_pause&#160;()</title>
+<indexterm zone="totem-object-pause"><primary sortas="object_pause">totem_object_pause</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+totem_object_pause (<parameter><link linkend="TotemObject"><type>TotemObject</type></link> *totem</parameter>);</programlisting>
+<para>Pauses the current stream. If Totem is already paused, it continues
+to be paused.</para>
+<refsect3 id="totem-object-pause.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>totem</para></entry>
+<entry role="parameter_description"><para>a <link linkend="TotemObject"><type>TotemObject</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+
+</refsect1>
+<refsect1 id="totem-TotemObject.other_details" role="details">
+<title role="details.title">Types and Values</title>
+<refsect2 id="Totem" role="typedef">
+<title>Totem</title>
+<indexterm zone="Totem"><primary sortas="">Totem</primary></indexterm>
+<programlisting language="C">typedef struct _TotemObject Totem;
+</programlisting>
+<para>The <link linkend="Totem"><type>Totem</type></link> object is a handy synonym for <link linkend="TotemObject"><type>TotemObject</type></link>, and the two can be used interchangably.</para>
+</refsect2>
+<refsect2 id="TotemObject" role="struct">
+<title>TotemObject</title>
+<indexterm zone="TotemObject"><primary sortas="Object">TotemObject</primary></indexterm>
+<programlisting language="C">typedef struct _TotemObject TotemObject;</programlisting>
+<para>All the fields in the <link linkend="TotemObject"><type>TotemObject</type></link> structure are private and should never be accessed directly.</para>
+</refsect2>
+<refsect2 id="TotemRemoteCommand" role="enum">
+<title>enum TotemRemoteCommand</title>
+<indexterm zone="TotemRemoteCommand"><primary sortas="RemoteCommand">TotemRemoteCommand</primary></indexterm>
+<para>Represents a command which can be sent to a running Totem instance remotely.</para>
+<refsect3 id="TotemRemoteCommand.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="TOTEM-REMOTE-COMMAND-UNKNOWN:CAPS">TOTEM_REMOTE_COMMAND_UNKNOWN</para></entry>
+<entry role="enum_member_description"><para>unknown command</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="TOTEM-REMOTE-COMMAND-PLAY:CAPS">TOTEM_REMOTE_COMMAND_PLAY</para></entry>
+<entry role="enum_member_description"><para>play the current stream</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="TOTEM-REMOTE-COMMAND-PAUSE:CAPS">TOTEM_REMOTE_COMMAND_PAUSE</para></entry>
+<entry role="enum_member_description"><para>pause the current stream</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="TOTEM-REMOTE-COMMAND-STOP:CAPS">TOTEM_REMOTE_COMMAND_STOP</para></entry>
+<entry role="enum_member_description"><para>stop playing the current stream</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="TOTEM-REMOTE-COMMAND-PLAYPAUSE:CAPS">TOTEM_REMOTE_COMMAND_PLAYPAUSE</para></entry>
+<entry role="enum_member_description"><para>toggle play/pause on the current stream</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="TOTEM-REMOTE-COMMAND-NEXT:CAPS">TOTEM_REMOTE_COMMAND_NEXT</para></entry>
+<entry role="enum_member_description"><para>play the next playlist item</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="TOTEM-REMOTE-COMMAND-PREVIOUS:CAPS">TOTEM_REMOTE_COMMAND_PREVIOUS</para></entry>
+<entry role="enum_member_description"><para>play the previous playlist item</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="TOTEM-REMOTE-COMMAND-SEEK-FORWARD:CAPS">TOTEM_REMOTE_COMMAND_SEEK_FORWARD</para></entry>
+<entry role="enum_member_description"><para>seek forwards in the current stream</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="TOTEM-REMOTE-COMMAND-SEEK-BACKWARD:CAPS">TOTEM_REMOTE_COMMAND_SEEK_BACKWARD</para></entry>
+<entry role="enum_member_description"><para>seek backwards in the current stream</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="TOTEM-REMOTE-COMMAND-VOLUME-UP:CAPS">TOTEM_REMOTE_COMMAND_VOLUME_UP</para></entry>
+<entry role="enum_member_description"><para>increase the volume</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="TOTEM-REMOTE-COMMAND-VOLUME-DOWN:CAPS">TOTEM_REMOTE_COMMAND_VOLUME_DOWN</para></entry>
+<entry role="enum_member_description"><para>decrease the volume</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="TOTEM-REMOTE-COMMAND-FULLSCREEN:CAPS">TOTEM_REMOTE_COMMAND_FULLSCREEN</para></entry>
+<entry role="enum_member_description"><para>toggle fullscreen mode</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="TOTEM-REMOTE-COMMAND-QUIT:CAPS">TOTEM_REMOTE_COMMAND_QUIT</para></entry>
+<entry role="enum_member_description"><para>quit the instance of Totem</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="TOTEM-REMOTE-COMMAND-ENQUEUE:CAPS">TOTEM_REMOTE_COMMAND_ENQUEUE</para></entry>
+<entry role="enum_member_description"><para>enqueue a new playlist item</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="TOTEM-REMOTE-COMMAND-REPLACE:CAPS">TOTEM_REMOTE_COMMAND_REPLACE</para></entry>
+<entry role="enum_member_description"><para>replace an item in the playlist</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="TOTEM-REMOTE-COMMAND-SHOW:CAPS">TOTEM_REMOTE_COMMAND_SHOW</para></entry>
+<entry role="enum_member_description"><para>show the Totem instance</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="TOTEM-REMOTE-COMMAND-UP:CAPS">TOTEM_REMOTE_COMMAND_UP</para></entry>
+<entry role="enum_member_description"><para>go up (DVD controls)</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="TOTEM-REMOTE-COMMAND-DOWN:CAPS">TOTEM_REMOTE_COMMAND_DOWN</para></entry>
+<entry role="enum_member_description"><para>go down (DVD controls)</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="TOTEM-REMOTE-COMMAND-LEFT:CAPS">TOTEM_REMOTE_COMMAND_LEFT</para></entry>
+<entry role="enum_member_description"><para>go left (DVD controls)</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="TOTEM-REMOTE-COMMAND-RIGHT:CAPS">TOTEM_REMOTE_COMMAND_RIGHT</para></entry>
+<entry role="enum_member_description"><para>go right (DVD controls)</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="TOTEM-REMOTE-COMMAND-SELECT:CAPS">TOTEM_REMOTE_COMMAND_SELECT</para></entry>
+<entry role="enum_member_description"><para>select the current item (DVD controls)</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="TOTEM-REMOTE-COMMAND-DVD-MENU:CAPS">TOTEM_REMOTE_COMMAND_DVD_MENU</para></entry>
+<entry role="enum_member_description"><para>go to the DVD menu</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="TOTEM-REMOTE-COMMAND-ZOOM-UP:CAPS">TOTEM_REMOTE_COMMAND_ZOOM_UP</para></entry>
+<entry role="enum_member_description"><para>increase the zoom level</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="TOTEM-REMOTE-COMMAND-ZOOM-DOWN:CAPS">TOTEM_REMOTE_COMMAND_ZOOM_DOWN</para></entry>
+<entry role="enum_member_description"><para>decrease the zoom level</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="TOTEM-REMOTE-COMMAND-EJECT:CAPS">TOTEM_REMOTE_COMMAND_EJECT</para></entry>
+<entry role="enum_member_description"><para>eject the current disc</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="TOTEM-REMOTE-COMMAND-PLAY-DVD:CAPS">TOTEM_REMOTE_COMMAND_PLAY_DVD</para></entry>
+<entry role="enum_member_description"><para>play a DVD in a drive</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="TOTEM-REMOTE-COMMAND-MUTE:CAPS">TOTEM_REMOTE_COMMAND_MUTE</para></entry>
+<entry role="enum_member_description"><para>toggle mute</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+<row role="constant"><entry role="enum_member_name"><para id="TOTEM-REMOTE-COMMAND-TOGGLE-ASPECT:CAPS">TOTEM_REMOTE_COMMAND_TOGGLE_ASPECT</para></entry>
+<entry role="enum_member_description"><para>toggle the aspect ratio</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="TotemRemoteSetting" role="enum">
+<title>enum TotemRemoteSetting</title>
+<indexterm zone="TotemRemoteSetting"><primary sortas="RemoteSetting">TotemRemoteSetting</primary></indexterm>
+<para>Represents a boolean setting or preference on a remote Totem instance.</para>
+<refsect3 id="TotemRemoteSetting.members" role="enum_members">
+<title>Members</title>
+<informaltable role="enum_members_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="enum_members_name" colwidth="300px"/>
+<colspec colname="enum_members_description"/>
+<colspec colname="enum_members_annotations" colwidth="200px"/>
+<tbody>
+<row role="constant"><entry role="enum_member_name"><para id="TOTEM-REMOTE-SETTING-REPEAT:CAPS">TOTEM_REMOTE_SETTING_REPEAT</para></entry>
+<entry role="enum_member_description"><para>whether repeat is enabled</para>
+</entry>
+<entry role="enum_member_annotations"></entry>
+</row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="TOTEM-GSETTINGS-SCHEMA:CAPS" role="macro">
+<title>TOTEM_GSETTINGS_SCHEMA</title>
+<indexterm zone="TOTEM-GSETTINGS-SCHEMA:CAPS"><primary sortas="GSETTINGS_SCHEMA">TOTEM_GSETTINGS_SCHEMA</primary></indexterm>
+<programlisting language="C">#define TOTEM_GSETTINGS_SCHEMA "org.gnome.totem"
+</programlisting>
+<para>The GSettings schema under which all Totem settings are stored.</para>
+</refsect2>
+
+</refsect1>
+
+</refentry>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="properties" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#advanced-options"/>
+    <revision pkgversion="3.30" version="0.2" date="2019-01-10" status="draft"/>
+    <desc>Jak zobrazit vlastnosti přehrávaného souboru se zvukem nebo videem.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name its:translate="no">Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+  <title>Vlastnosti souboru</title>
+
+  <p>Vlastnosti přehrávaných multimédií zobrazíte zmáčknutím tlačítka nabídky v pravém horním rohu okna a zvolením <gui style="menuitem">Vlastnosti</gui> nebo zmáčknutím kláves <keyseq><key>Ctrl</key><key>P</key></keyseq>. Zobrazí se rozdělené do tří částí:</p>
+
+  <terms>
+    <item>
+      <title><gui>Obecné</gui></title>
+      <p>Informace o názvu, umělci, albu, roku, délce, komentáři a kontejneru.</p>
+    </item>
+    <item>
+      <title><gui>Video</gui></title>
+      <p>Informace o rozměrech, kodeku, snímkové rychlosti a datovém toku.</p>
+    </item>
+    <item>
+      <title><gui>Zvuk</gui></title>
+      <p>Informace o kodeku, kanálech, vzorkovací frekvenci a datovém toku.</p>
+    </item>
+  </terms>
+
+</page>

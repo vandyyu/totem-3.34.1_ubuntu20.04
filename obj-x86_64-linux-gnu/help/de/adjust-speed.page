@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="adjust-speed" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#playing-media"/>
+    <revision pkgversion="3.30.0" version="0.1" date="2019-01-11" status="draft"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+
+    <desc>Die Wiedergabegeschwindigkeit eines Films ändern.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan-Arne Petersen</mal:name>
+      <mal:email>jap@gnome.org</mal:email>
+      <mal:years>2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2010, 2012, 2019.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stefan Horning</mal:name>
+      <mal:email>stefan@hornings.de</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2013, 2015,2019.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Geschwindigkeit anpassen</title>
+
+  <p>Sie können in der unteren rechten Ecke anpassen, wie schnell oder langsam ein Film wiedergegeben wird:</p>
+
+  <list>
+    <item>
+      <p>Klicken Sie auf den <gui>Menüknopf</gui> unterhalb des Videobereichs.</p>
+    </item>
+    <item>
+      <p>Im Abschnitt <gui>Geschwindigkeit</gui> können Sie Folgendes auswählen:</p>
+      <list>
+        <item><p><gui>× 0.75</gui></p></item>
+        <item><p><gui>Normal</gui></p></item>
+        <item><p><gui>× 1.1</gui></p></item>
+        <item><p><gui>× 1.25</gui></p></item>
+        <item><p><gui>× 1.5</gui></p></item>
+        <item><p><gui>× 1.75</gui></p></item>
+      </list>
+    </item>
+  </list>
+
+</page>

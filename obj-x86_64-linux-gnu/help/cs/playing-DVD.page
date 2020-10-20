@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="playing-DVD" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#playing-media"/>
+    <revision pkgversion="3.30" version="0.2" date="2019-01-11" status="draft"/>
+    <desc>Jak přehrávat filmy z DVD nebo VCD.</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+  </info>
+
+  <title>Sledování DVD nebo VCD</title>
+
+  <list>
+    <item>
+      <p>Když chcete přehrát disk DVD, stačí jej vložit do mechaniky, najet ukazatelem myši nad <link xref="help:gnome-help/shell-notifications" href="https://help.gnome.org/users/gnome-help/stable/shell-notifications">upozornění</link> a zmáčknout <gui style="button">Otevřít pomocí Videa</gui>.</p>
+      <figure>
+        <title>Upozornění GNOME nabízející otevření disku pomocí přehrávače <app>Videa</app>.</title>
+        <media type="image" mime="image/png" src="figures/dvd-gnome-notification.png">
+          <p>Snímek obrazovky s dialogovým oknem upozornění GNOME.</p>
+        </media>
+      </figure>
+    </item>
+    <item>
+      <p>Když chcete přehrát disk DVD, které je již vložený v mechanice, otevřete <app>Soubory</app>, vyberte disk v postranním panelu a zmáčkněte tlačítko <gui style="button">Videa</gui> v liště <gui>Video DVD</gui>.</p>
+      <figure>
+        <title><app>Soubory</app> nabízející otevření disku pomocí přehrávače <app>Videa</app>.</title>
+        <media type="image" mime="image/png" src="figures/dvd-nautilus.png">
+        <p>Snímek aplikace <app>Soubory</app>.</p>
+        </media>
+      </figure>
+    </item>
+    <item>
+      <p>Když chcete přehrát disk DVD vložený v mechanice, otevřete <app>Videa</app> a vyberte disk DVD v mřížce v hlavním okně <gui>Videa</gui>.</p>
+    </item>
+  </list>
+
+  <p>Při sledování filmu můžete přecházet mezi různými částmi.</p>
+  <list>
+    <item>
+      <p>Zmáčkněte <gui>tlačítko nabídky</gui>, které se nachází pod oblastí s videem.</p>
+    </item>
+    <item>
+    <p>Zvolte jednu z následujících možností:</p>
+    <list>
+      <item>
+        <p>Vyberte <gui style="menuitem">Nabídka DVD</gui>, když chcete zobrazit hlavní nabídku DVD. Obvykle obsahuje výběr jazyka a titulků, seznam scén a speciální funkce.</p>
+      </item>
+      <item>
+        <p>Vyberte <gui style="menuitem">Nabídka titulků</gui>, když chcete vybrat jazyk rozhraní DVD.</p>
+      </item>
+      <item>
+        <p>Vyberte <gui style="menuitem">Nabídka zvuku</gui>, když chcete vybrat jazyk mluveného slova ve filmu.</p>
+      </item>
+      <item>
+        <p>Vyberte <gui style="menuitem">Nabídka úhlů</gui>, když chcete vybrat jiný záběr kamery.</p>
+      </item>
+      <item>
+        <p>Vyberte <gui style="menuitem">Nabídka kapitol</gui>, když chcete zobrazit seznam scén.</p>
+      </item>
+    </list>
+    <note><p>Ne všechna DVD musí obsahovat všechny zmíněné nabídky.</p></note>
+    </item>
+  </list>
+
+</page>

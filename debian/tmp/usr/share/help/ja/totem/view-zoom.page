@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="view-zoom" xml:lang="ja">
+
+  <info>
+    <revision pkgversion="3.8" version="0.1" date="2013-03-29" status="draft"/>
+    <revision pkgversion="3.30.0" version="0.2" date="2019-01-09" status="draft"/>
+    <link type="guide" xref="index#playing-media"/>
+
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name its:translate="no">Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+
+    <license>
+      <p>Creative Commons Share Alike 3.0</p>
+    </license>
+
+    <desc>動画の拡大と、正しい比率への調整を行います。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mitsuya Shibata</mal:name>
+      <mal:email>mty.shibata@gmail.com</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>OKANO Takayoshi</mal:name>
+      <mal:email>kano@na.rim.or.jp</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Takayuki KUSANO</mal:name>
+      <mal:email>AE5T-KSN@asahi-net.or.jp</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jiro Matsuzawa</mal:name>
+      <mal:email>jmatsuzawa@src.gnome.org</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>sujiniku</mal:name>
+      <mal:email>sujinikusityuu@gmail.com</mal:email>
+      <mal:years>2016, 2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>sicklylife</mal:name>
+      <mal:email>translation@sicklylife.jp</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>動画のサイズとアスペクト比を変更する</title>
+
+  <p>動画の表示を大きくしたり、比率を修正したりできます。</p>
+
+  <terms>
+    <item>
+      <title>拡大</title>
+      <p>ウィンドウの右上にあるメニューボタンを押して <gui style="menuitem">拡大する</gui> を選択するか、キーボードの <key>R</key> キーを押すと拡大します。元に戻すには、もう一度 <gui style="menuitem">拡大する</gui> を選択して無効にするか <key>T</key> キーを押します。</p>
+    </item>
+    <item>
+      <title>アスペクト比の設定</title>
+      <p>ウィンドウの右上にあるメニューボタンを押して <gui style="menuitem">アスペクト比</gui> を選択します。</p>
+      <p>以下を選択できます:</p>
+      <list>
+        <item><p><gui>自動</gui></p></item>
+        <item><p><gui>スクエア型</gui></p></item>
+        <item><p><gui>4:3 (TV)</gui></p></item>
+        <item><p><gui>16:9 (ワイドスクリーン)</gui></p></item>
+        <item><p><gui>2.11:1 (DVB)</gui></p></item>
+      </list>
+    </item>
+  </terms>
+
+  <note style="info">
+    <p>アスペクト比とは、横幅と高さの比率です。このオプションは、再生中の動画のアスペクト比を強制的に変更します。</p>
+  </note>
+
+</page>

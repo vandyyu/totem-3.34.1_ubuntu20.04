@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="adjust-speed" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#playing-media"/>
+    <revision pkgversion="3.30.0" version="0.1" date="2019-01-11" status="draft"/>
+
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+
+    <license>
+      <p>Creative Commons Így add tovább! 3.0</p>
+    </license>
+
+    <desc>A film lejátszási sebességének megváltoztatása.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Úr Balázs</mal:name>
+      <mal:email>ur.balazs at fsf dot hu</mal:email>
+      <mal:years>2019.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Sebesség állítása</title>
+
+  <p>Megváltoztathatja a jobb alsó sarokban, hogy egy filmet milyen gyorsan vagy lassan játsszon le:</p>
+
+  <list>
+    <item>
+      <p>Nyomja meg a videoterület alatti <gui>menü gombot</gui>.</p>
+    </item>
+    <item>
+      <p>A <gui>Sebesség</gui> szakaszban válasszon a következők közül:</p>
+      <list>
+        <item><p><gui>× 0,75</gui></p></item>
+        <item><p><gui>Normál</gui></p></item>
+        <item><p><gui>× 1,1</gui></p></item>
+        <item><p><gui>× 1,25</gui></p></item>
+        <item><p><gui>× 1,5</gui></p></item>
+        <item><p><gui>× 1,75</gui></p></item>
+      </list>
+    </item>
+  </list>
+
+</page>

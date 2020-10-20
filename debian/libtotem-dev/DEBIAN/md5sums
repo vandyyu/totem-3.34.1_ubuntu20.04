@@ -1,0 +1,8 @@
+f45c6b88ca00a788a7fe831b8ea5a237  usr/include/totem/1.0/totem-dirs.h
+3d0eb85dbb2015d3a2d49166360c99fd  usr/include/totem/1.0/totem-interface.h
+a17d19cc504ef1d7a4b4b27259d2dee6  usr/include/totem/1.0/totem-plugin.h
+f4b736b82743be64c2cc5c378a5842d6  usr/include/totem/1.0/totem.h
+f0ed7f713cb733e8d6c56ff47a29da19  usr/lib/x86_64-linux-gnu/pkgconfig/totem.pc
+f685d90d661ff0f41aab9c04d5fc6e56  usr/share/doc/libtotem-dev/changelog.Debian.gz
+895062c3f6b7fb6b09b39fca8cbaacab  usr/share/doc/libtotem-dev/copyright
+36f5eae3023f934c40da6b7c6f354d10  usr/share/gir-1.0/Totem-1.0.gir

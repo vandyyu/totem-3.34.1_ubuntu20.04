@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="playing-DVD" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#playing-media"/>
+    <revision pkgversion="3.30" version="0.2" date="2019-01-11" status="draft"/>
+    <desc>Reproducir archivos de un DVD o VCD</desc>
+    <credit type="author">
+      <name its:translate="no">Marta Bogdanowicz</name>
+      <email its:translate="no">majus85@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name its:translate="no">Andre Klapper</name>
+      <email its:translate="no">ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons Compartir Igual 3.0</p>
+    </license>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rodrigo Lledó</mal:name>
+      <mal:email>rodhos92@gmail.com</mal:email>
+      <mal:years>2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012-2019</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@cvs.GNOME.org</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ver un DVD o VCD</title>
+
+  <list>
+    <item>
+      <p>Para reproducir un disco DVD que acaba de insertar en su reproductor, mueva el puntero del ratón sobre la <link xref="help:gnome-help/shell-notifications" href="https://help.gnome.org/users/gnome-help/stable/shell-notifications">notificación</link> y pulse <gui style="button">Abrir con Vídeos</gui>.</p>
+      <figure>
+        <title>Notificación de GNOME que ofrece la opción de abrir el disco con <app>Vídeos</app></title>
+        <media type="image" mime="image/png" src="figures/dvd-gnome-notification.png">
+          <p>Captura de pantalla del diálogo de notificación de GNOME.</p>
+        </media>
+      </figure>
+    </item>
+    <item>
+      <p>Para reproducir un disco DVD en su dispositivo, abra <app>Archivos</app>, seleccione el disco en la barra lateral y pulse <gui style="button">Vídeos</gui> en la barra <gui>Vídeo DVD</gui>.</p>
+      <figure>
+        <title><app>Archivos</app>, ofreciendo la opción de abrir el disco con <app>Vídeos</app></title>
+        <media type="image" mime="image/png" src="figures/dvd-nautilus.png">
+        <p>Capturas de pantalla de <app>Archivos</app></p>
+        </media>
+      </figure>
+    </item>
+    <item>
+      <p>Para reproducir un disco DVD en su dispositivo, abra <app>Videos</app> y seleccione el disco DVD en la cuadrícula de <gui>Videos</gui>.</p>
+    </item>
+  </list>
+
+  <p>Puede navegar mientras ve una película:</p>
+  <list>
+    <item>
+      <p>Pulse el <gui>botón menú</gui> que está debajo del área de vídeo.</p>
+    </item>
+    <item>
+    <p>Elija una de las siguientes opciones:</p>
+    <list>
+      <item>
+        <p>Seleccione <gui style="menuitem">Menú de DVD</gui> para ver el menú principal de un DVD. Personalice el idioma y los subtítulos o vea el índice de escenas o las características especiales.</p>
+      </item>
+      <item>
+        <p>Seleccione <gui style="menuitem">Menú de título</gui> para elegir el idioma de la interfaz del DVD.</p>
+      </item>
+      <item>
+        <p>Seleccione <gui style="menuitem">Menú de sonido</gui> y elija el doblaje de la película.</p>
+      </item>
+      <item>
+        <p>Seleccione <gui style="menuitem">Menú de ángulo</gui> para elegir una perspectiva de cámara diferente.</p>
+      </item>
+      <item>
+        <p>Seleccione <gui style="menuitem">Menú de capítulo</gui> para ver el índice de escena.</p>
+      </item>
+    </list>
+    <note><p>Puede que no todos los DVD admitan estas opciones.</p></note>
+    </item>
+  </list>
+
+</page>

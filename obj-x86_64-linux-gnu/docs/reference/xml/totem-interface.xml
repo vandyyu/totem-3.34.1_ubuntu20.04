@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+	<!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+	<!ENTITY version SYSTEM "version.xml">
+	<!ENTITY slash "/">
+]>
+<refentry id="totem-Interface">
+<refmeta>
+<refentrytitle role="top_of_page" id="totem-Interface.top_of_page">Interface</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>TOTEM Library</refmiscinfo>
+</refmeta>
+<refnamediv>
+<refname>Interface</refname>
+<refpurpose>interface utility/loading/error functions</refpurpose>
+</refnamediv>
+<refsect1 id="totem-Interface.stability-level">
+<title>Stability Level</title>
+<acronym>Unstable</acronym>, unless otherwise indicated
+</refsect1>
+
+<refsect1 id="totem-Interface.functions" role="functions_proto">
+<title role="functions_proto.title">Functions</title>
+<informaltable pgwide="1" frame="none">
+<tgroup cols="2">
+<colspec colname="functions_proto_type" colwidth="150px"/>
+<colspec colname="functions_proto_name"/>
+<tbody>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-interface-error">totem_interface_error</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-interface-error-blocking">totem_interface_error_blocking</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+<row><entry role="function_type"><link linkend="void"><returnvalue>void</returnvalue></link>
+</entry><entry role="function_name"><link linkend="totem-interface-error-with-link">totem_interface_error_with_link</link>&#160;<phrase role="c_punctuation">()</phrase></entry></row>
+
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+<refsect1 id="totem-Interface.includes"><title>Includes</title><synopsis>#include &lt;totem-interface.h&gt;
+</synopsis></refsect1>
+
+<refsect1 id="totem-Interface.description" role="desc">
+<title role="desc.title">Description</title>
+<para>A collection of interface utility functions, for loading interfaces and displaying errors.</para>
+
+</refsect1>
+<refsect1 id="totem-Interface.functions_details" role="details">
+<title role="details.title">Functions</title>
+<refsect2 id="totem-interface-error" role="function">
+<title>totem_interface_error&#160;()</title>
+<indexterm zone="totem-interface-error"><primary sortas="interface_error">totem_interface_error</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+totem_interface_error (<parameter>const <link linkend="char"><type>char</type></link> *title</parameter>,
+                       <parameter>const <link linkend="char"><type>char</type></link> *reason</parameter>,
+                       <parameter><link linkend="GtkWindow"><type>GtkWindow</type></link> *parent</parameter>);</programlisting>
+<para>Display a modal error dialogue with <parameter>title</parameter>
+ as its primary error text, and <parameter>reason</parameter>
+
+as its secondary text.</para>
+<refsect3 id="totem-interface-error.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>title</para></entry>
+<entry role="parameter_description"><para>the error title</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>reason</para></entry>
+<entry role="parameter_description"><para>the error reason (secondary text)</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>parent</para></entry>
+<entry role="parameter_description"><para>the error dialogue's parent <link linkend="GtkWindow"><type>GtkWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="totem-interface-error-blocking" role="function">
+<title>totem_interface_error_blocking&#160;()</title>
+<indexterm zone="totem-interface-error-blocking"><primary sortas="interface_error_blocking">totem_interface_error_blocking</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+totem_interface_error_blocking (<parameter>const <link linkend="char"><type>char</type></link> *title</parameter>,
+                                <parameter>const <link linkend="char"><type>char</type></link> *reason</parameter>,
+                                <parameter><link linkend="GtkWindow"><type>GtkWindow</type></link> *parent</parameter>);</programlisting>
+<para>Display a modal error dialogue like <link linkend="totem-interface-error"><function>totem_interface_error()</function></link> which blocks until the user has
+dismissed it.</para>
+<refsect3 id="totem-interface-error-blocking.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>title</para></entry>
+<entry role="parameter_description"><para>the error title</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>reason</para></entry>
+<entry role="parameter_description"><para>the error reason (secondary text)</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>parent</para></entry>
+<entry role="parameter_description"><para>the error dialogue's parent <link linkend="GtkWindow"><type>GtkWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+<refsect2 id="totem-interface-error-with-link" role="function">
+<title>totem_interface_error_with_link&#160;()</title>
+<indexterm zone="totem-interface-error-with-link"><primary sortas="interface_error_with_link">totem_interface_error_with_link</primary></indexterm>
+<programlisting language="C"><link linkend="void"><returnvalue>void</returnvalue></link>
+totem_interface_error_with_link (<parameter>const <link linkend="char"><type>char</type></link> *title</parameter>,
+                                 <parameter>const <link linkend="char"><type>char</type></link> *reason</parameter>,
+                                 <parameter>const <link linkend="char"><type>char</type></link> *uri</parameter>,
+                                 <parameter>const <link linkend="char"><type>char</type></link> *label</parameter>,
+                                 <parameter><link linkend="GtkWindow"><type>GtkWindow</type></link> *parent</parameter>);</programlisting>
+<para>Display a modal error dialogue like <link linkend="totem-interface-error"><function>totem_interface_error()</function></link>,
+but add a button which will open <parameter>uri</parameter>
+ in a browser window.</para>
+<refsect3 id="totem-interface-error-with-link.parameters" role="parameters">
+<title>Parameters</title>
+<informaltable role="parameters_table" pgwide="1" frame="none">
+<tgroup cols="3">
+<colspec colname="parameters_name" colwidth="150px"/>
+<colspec colname="parameters_description"/>
+<colspec colname="parameters_annotations" colwidth="200px"/>
+<tbody>
+<row><entry role="parameter_name"><para>title</para></entry>
+<entry role="parameter_description"><para>the error title</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>reason</para></entry>
+<entry role="parameter_description"><para>the error reason (secondary text)</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>uri</para></entry>
+<entry role="parameter_description"><para>the URI to open</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>label</para></entry>
+<entry role="parameter_description"><para>a label for the URI's button, or <link linkend="NULL:CAPS"><literal>NULL</literal></link> to use <parameter>uri</parameter>
+as the label</para></entry>
+<entry role="parameter_annotations"></entry></row>
+<row><entry role="parameter_name"><para>parent</para></entry>
+<entry role="parameter_description"><para>the error dialogue's parent <link linkend="GtkWindow"><type>GtkWindow</type></link></para></entry>
+<entry role="parameter_annotations"></entry></row>
+</tbody></tgroup></informaltable>
+</refsect3></refsect2>
+
+</refsect1>
+
+</refentry>
